@@ -10,6 +10,7 @@ body {
 }
 ul.nobullet {
     list-style-type: none;
+    padding-left: 15px;
 }
 table.datasheet tr td:first-child {
     text-align: right;
