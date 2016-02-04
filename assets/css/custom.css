@@ -5,3 +5,13 @@ Place here your custom CSS styles
 body {
 	background-color: #63D4C5 !important;
 }
+.about {
+    /* background-size: contain !important; */
+}
+ul.nobullet {
+    list-style-type: none;
+}
+table.datasheet tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
