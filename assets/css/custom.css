@@ -20,8 +20,18 @@ table.datasheet tr td:first-child {
     display: inline-block !important;
     margin-bottom: 0px !important;
 }
-.work-image canvas, .work-image .bpg{
+.work-image .bpg {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 640px;
+    height: 380px;
+}
+.work-image .ph {
     position: relative;
     top: -360px;
-    margin-bottom: 0px;
+    left: 0px;
+    width: 640px;
+    height: 380px;
+    opacity: 0;
 }
