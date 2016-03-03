@@ -25,13 +25,13 @@ table.datasheet tr td:first-child {
     top: 0px;
     left: 0px;
     width: 640px;
-    height: 380px;
+    height: 360px;
 }
 .work-image .ph {
     position: relative;
     top: -360px;
     left: 0px;
     width: 640px;
-    height: 380px;
+    height: 360px;
     opacity: 0;
 }
