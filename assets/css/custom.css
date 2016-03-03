@@ -16,3 +16,7 @@ table.datasheet tr td:first-child {
     text-align: right;
     font-weight: bold;
 }
+.inline-block {
+    display: inline-block !important;
+    margin-bottom: 0px !important;
+}
