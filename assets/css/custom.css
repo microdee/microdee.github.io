@@ -20,3 +20,8 @@ table.datasheet tr td:first-child {
     display: inline-block !important;
     margin-bottom: 0px !important;
 }
+.work-image canvas, .work-image .bpg{
+    position: relative;
+    top: -360px;
+    margin-bottom: 0px;
+}
