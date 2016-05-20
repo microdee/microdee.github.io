@@ -1,12 +1,8 @@
 window.onload = function() {
-    var start = function(imgs) {
-        console.log("BPG Start");
-    };
-    var oil = function(src, curr, total) {
-        console.log(src + " " + curr + "/" + total);
-    };
-    var fin = function(imgs) {
-        console.log("BPG End");
+    var ctr = 0;
+    var oil = function() {
+        console.log("Loading BPG" + ctr);
+        ctr++;
     };
     bpgDecode(start, oil, fin);
 }

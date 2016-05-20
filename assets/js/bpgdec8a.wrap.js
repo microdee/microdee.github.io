@@ -1,12 +1,11 @@
 
-function bpgDecode(onStart, onImageLoad, onFinished) {
+function bpgDecode(onImageLoad) {
     var a, d, c, e, f, i, g;
     e = document.images;
     d = e.length;
     f = [];
     for (a = 0; a < d; a++) c = e[a], i = c.src, ".bpg" == i.substr(-4, 4).toLowerCase() && (f[f.length] = c);
     d = f.length;
-    onStart(f);
     for (a = 0; a < d; a++) {
         c = f[a];
         i = c.src;
@@ -17,9 +16,9 @@ function bpgDecode(onStart, onImageLoad, onFinished) {
         if (g = c.getAttribute("height") | 0) e.style.height = g + "px";
         c.parentNode.replaceChild(e, c);
         g = e.getContext("2d");
-        onImageLoad(i, a, d);
         c = new BPGDecoder(g);
         c.onload = function(a, c) {
+            onImageLoad();
             function d() {
                 var a =
                     e.n;
@@ -36,5 +35,4 @@ function bpgDecode(onStart, onImageLoad, onFinished) {
         }.bind(c, e, g);
         c.load(i);
     }
-    onFinished();
 };
