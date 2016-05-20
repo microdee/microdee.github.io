@@ -4,5 +4,5 @@ window.onload = function() {
         console.log("Loading BPG" + ctr);
         ctr++;
     };
-    bpgDecode(start, oil, fin);
+    bpgDecode(oil);
 }
