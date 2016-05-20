@@ -35,3 +35,11 @@ table.datasheet tr td:first-child {
     height: 360px;
     opacity: 0;
 }
+#bpgstatus {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
