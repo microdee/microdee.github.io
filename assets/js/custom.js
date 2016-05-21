@@ -26,10 +26,17 @@
             }
 
         }, false);
-
-        $(".gohome").click(function() {
-            window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
-        });
+        if(self==window)
+        {
+            $(".gohome").each(function(i) {
+                $(this).attr('href', $(this).attr('thref'));
+            });
+        }
+        else {
+            $(".gohome").click(function() {
+                window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
+            });
+        }
         $("[target='fsiframe']").click(function() {
             $("html").addClass("noscroll");
             $("#fsiframe").removeClass("hideframe");
