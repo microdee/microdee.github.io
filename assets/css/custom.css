@@ -6,8 +6,8 @@ body {
 	background-color: #63D4C5 !important;
     height:100%;
 }
-body.noscroll {
-    overflow: hidden;
+.noscroll {
+    overflow: hidden !important;
 }
 .about {
     /* background-size: contain !important; */

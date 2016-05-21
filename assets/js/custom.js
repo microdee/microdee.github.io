@@ -10,7 +10,6 @@
 	});
 
 	$(document).ready(function() {
-
         window.addEventListener('message', function(event) {
             if(event.origin == "http://www.mcro.de")
             {
@@ -18,7 +17,7 @@
                 {
                     $("#fsiframe").addClass("hideframe");
                     $("#fsiframe").attr("src","about:blank");
-                    $("body").removeClass("noscroll");
+                    $("html").removeClass("noscroll");
                 }
             }
             else
@@ -32,7 +31,7 @@
             window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
         });
         $("[target='fsiframe']").click(function() {
-            $("body").addClass("noscroll");
+            $("html").addClass("noscroll");
             $("#fsiframe").removeClass("hideframe");
         });
 		/* ---------------------------------------------- /*
