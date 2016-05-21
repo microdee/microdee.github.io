@@ -18,6 +18,7 @@
                 {
                     $("#fsiframe").addClass("hideframe");
                     $("#fsiframe").attr("src","about:blank");
+                    $("body").removeClass("noscroll");
                 }
             }
             else
@@ -31,6 +32,7 @@
             window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
         });
         $("[target='fsiframe']").click(function() {
+            $("body").addClass("noscroll");
             $("#fsiframe").removeClass("hideframe");
         });
 		/* ---------------------------------------------- /*
