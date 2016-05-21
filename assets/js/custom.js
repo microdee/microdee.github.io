@@ -12,7 +12,7 @@
 	$(document).ready(function() {
 
         window.addEventListener('message', function(event) {
-            if(event.origin == "http://mcro.de")
+            if(event.origin == "http://www.mcro.de")
             {
                 if(event.data.message == "closeFrame");
                 {
@@ -27,7 +27,7 @@
         }, false);
 
         $(".gohome").click(function() {
-            window.parent.postMessage({message: 'closeFrame'}, 'http://mcro.de');
+            window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
         });
         $("[target='fsiframe']").click(function() {
             $("#fsiframe").removeClass("hideframe");
