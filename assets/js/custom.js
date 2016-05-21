@@ -17,7 +17,7 @@
                 if(event.data.message == "closeFrame");
                 {
                     $("#fsiframe").addClass("hideframe");
-                    $("#fsiframe").attr('src','about:blank');
+                    $("#fsiframe").attr("src","about:blank");
                 }
             }
             else
