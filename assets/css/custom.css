@@ -4,6 +4,7 @@ Place here your custom CSS styles
 ------------------------------------------------------------------ */
 body {
 	background-color: #63D4C5 !important;
+    height:100%;
 }
 .about {
     /* background-size: contain !important; */
@@ -43,4 +44,14 @@ table.datasheet tr td:first-child {
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 10000;
+}
+#fsiframe {
+    position: fixed;
+    top: 0; left: 0;
+    width:100%;
+    height:100%;
+    z-index: 10000;
+}
+.hideframe {
+    display: none;
 }

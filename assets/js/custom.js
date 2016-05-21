@@ -11,6 +11,27 @@
 
 	$(document).ready(function() {
 
+        window.addEventListener('message', function(event) {
+            if(event.origin == "http://mcro.de")
+            {
+                if(event.data.message == "closeFrame");
+                {
+                    $("#fsiframe").addClass("hideframe");
+                }
+            }
+            else
+            {
+                console.log("dafaqu r u? " + event.origin + " dafaqu is that?");
+            }
+
+        }, false);
+
+        $(".gohome").click(function() {
+            window.parent.postMessage({message: 'closeFrame'}, 'http://mcro.de');
+        });
+        $("[target='fsiframe']").click(function() {
+            $("#fsiframe").removeClass("hideframe");
+        });
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
