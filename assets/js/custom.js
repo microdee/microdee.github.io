@@ -26,7 +26,7 @@
             }
 
         }, false);
-        if(self==window)
+        if(self==top)
         {
             $(".gohome").each(function(i) {
                 $(this).attr('href', $(this).attr('thref'));
