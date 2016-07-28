@@ -20,11 +20,6 @@
                     $("html").removeClass("noscroll");
                 }
             }
-            else
-            {
-                console.log("dafaqu r u? " + event.origin + " dafaqu is that?");
-            }
-
         }, false);
         if(self==top)
         {
