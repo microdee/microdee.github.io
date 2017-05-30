@@ -10,32 +10,6 @@
 	});
 
 	$(document).ready(function() {
-        window.addEventListener('message', function(event) {
-            if(event.origin == "http://www.mcro.de")
-            {
-                if(event.data.message == "closeFrame");
-                {
-                    $("#fsiframe").addClass("hideframe");
-                    $("#fsiframe").attr("src","about:blank");
-                    $("html").removeClass("noscroll");
-                }
-            }
-        }, false);
-        if(self==top)
-        {
-            $(".gohome").each(function(i) {
-                $(this).attr('href', $(this).attr('thref'));
-            });
-        }
-        else {
-            $(".gohome").click(function() {
-                window.parent.postMessage({message: 'closeFrame'}, 'http://www.mcro.de');
-            });
-        }
-        $("[target='fsiframe']").click(function() {
-            $("html").addClass("noscroll");
-            $("#fsiframe").removeClass("hideframe");
-        });
 		/* ---------------------------------------------- /*
 		 * Initialization General Scripts for all pages
 		/* ---------------------------------------------- */
