@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FBX4V Static License Page</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro-font-cdn.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro-colors.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro-schemes.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.metroui.org.ua/css/metro-responsive.min.css">
+
+	<script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/olton/Metro-UI-CSS/develop/build/js/metro.min.js"></script>
+
+</head>
+<body class="bg-grayDark fg-white">
+	<div class="container">
+		<div class="margin40">
+			<h1 class="leader">FBX4V <small class="fg-grayLight">EULA and Setup Options</small></h1>
+			<p class="text-small">(Scroll down for options)</p>
+			<p class="text-accent">FBX4V is <b>free</b> to be used <b> only for non-commercial, educational, research and evaluation</b> purposes. For Commercial applications we will create an automatic subscription system in the future. Temporarily, for commercial licenses please contact us at <b>Uberact</b> via <span class="fg-lightTeal">info@uberact.com</span>, and request a quote.</p>
+			<p class="text-accent align-justify">For the non-commercial version there's a blocking reminder pop-up (in other words annoyware) when you first create the FBXFile node during a session. This is not present for the Commercial version. If you'd like to use FBX4V for an artistic, personal or school project where vvvv have to start automatically without user input, please send an email to <span class="fg-lightTeal">info@uberact.com</span> and tell us about your project (e.g.: its scale, the venue, a short synapse etc). We will most likely provide an annoyware-free version if the project in question is indeed NOT a commercial one.</p>
+			<p class="text-secondary">Note that FBX4V is still in a kinda "release candidate" phase. There are a few known issues and there are plans for features which would ease usage or save some performance.</p>
+			<p class="text-secondary align-justify">A note about support: FBX4V has a general purpose geometry outlet which is compatible with every shader. Accessing Subset- Material- or Instance ID is an easy modification to any publicly available .fx or .gfx (GeomFX) shader (if they don't have already a similar pattern to use). In mp.dx there are shaders and a rendering pipeline which support those semantics but they are not part of FBX4V and they are open-source software under MIT license, which doesn't provide any guarantee or support. If we discover a bug in mp.dx, mp.fxh or mp.essentials which might render FBX4V or any part of it unusable, we will do our best to fix it asap. However if a bug-report turns out to be coming from afore-mentioned packs and further dependencies other than FBX4V, we can't provide the same support regarding those for non-commercial users. This doesn't mean we don't like bug-reports. We love them. In regards with FBX4V send them to <span class="fg-lightTeal">support@uberact.com</span> or in regards with other packs, the respective Github repository issue tracker.</p>
+			<p class="text-secondary align-justify">A note about assets: provided assets are collected from various freely available sources with varying licenses. They are optionally provided here only for showcasing, educating and evaluating FBX4V. For the sake of simplicity they are all FORBIDDEN to be used anywhere else, including projects falling under the non-commercial definition.</p>
+			<p class="text-accent">Enjoy!</p>
+			<hr class="thin">
+			<div class="flex-grid bg-grayDarker padding20">
+				<div class="row cell-auto-size">
+					<div class="cell">
+						<table>
+							<tr>
+								<td>
+									<label class="switch place-left" id="assets">
+									    <input type="checkbox">
+									    <span class="check"></span>
+									</label>
+								</td>
+								<td>
+									<span class="sub-alt-header">Install assets for Girlpower</span><br>
+									<span class="text-secondary fg-grayLight">Downloads and extracts ~600 Mb</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="cell">
+						<table>
+							<tr>
+								<td>
+									<label class="switch place-left" id="debug">
+									    <input type="checkbox">
+									    <span class="check"></span>
+									</label>
+								</td>
+								<td>
+									<span class="sub-alt-header">Get debug binaries</span><br>
+									<span class="text-secondary fg-grayLight">Useful only for Live support and developement</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var setvpm = function() {
+	        if(typeof vpm !== "undefined") {
+	            var installmessage = "";
+	            if(document.getElementById('assets').checked) {
+	            	installmessage += " assets";
+	            }
+	            if(document.getElementById('debug').checked) {
+	            	installmessage += " debug";
+	            }
+	            vpm.setInstallData(installmessage);
+	        }
+		}
+        setvpm();
+        $('.switch').click(function () {
+        	setvpm();
+        });
+	</script>
+</body>
+</html>
