@@ -38,7 +38,7 @@
 								</td>
 								<td>
 									<span class="sub-alt-header">Install assets for Girlpower</span><br>
-									<span class="text-secondary fg-grayLight">Downloads and extracts ~600 Mb</span>
+									<span class="text-secondary fg-grayLight">Downloads and extracts ~623 Mb</span>
 								</td>
 							</tr>
 						</table>
@@ -68,15 +68,14 @@
 	        if(typeof vpm !== "undefined") {
 	            var installmessage = "";
 	            if(document.getElementById('assets').checked) {
-	            	installmessage += " assets";
+	            	installmessage = "assets";
 	            }
 	            if(document.getElementById('debug').checked) {
-	            	installmessage += " debug";
+	            	installmessage += "debug";
 	            }
 	            vpm.setInstallData(installmessage);
 	        }
 		}
-        setvpm();
         $('.switch').click(function () {
         	setvpm();
         });
