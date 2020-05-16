@@ -5,8 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/App';
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
-import ExampleComponent from './components/ExampleComponent';
-import ExampleTwoDeepComponent from './components/ExampleTwoDeepComponent';
+import MdArticle from './components/MdArticle';
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -85,11 +84,7 @@ const routes = (
   // onEnter hook checks if a redirect is needed before App component is loaded
   <Route path="/" mapMenuTitle="Home" component={App} onEnter={checkForRedirect}>
     <IndexRoute component={Home} />
-
-    <Route path="example" mapMenuTitle="Example" component={ExampleComponent}>
-      <Route path="two-deep" mapMenuTitle="Two Deep" component={ExampleTwoDeepComponent} />
-    </Route>
-
+    <Route path="c/*" mapMenuTitle="Markdown reader" component={MdArticle} />
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
   </Route>
 );
