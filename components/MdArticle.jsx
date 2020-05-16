@@ -15,7 +15,7 @@ export default class MdArticle extends React.Component {
 
     componentDidMount()
     {
-        fetch(getRealMdPath(this.props.location.pathname))
+        fetch(this.getRealMdPath(this.props.location.pathname))
             .then((response) => this.setState({
                 mdText: response.text()
             }))
