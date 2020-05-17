@@ -7,6 +7,10 @@ import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
 import MdArticle from './components/MdArticle';
 
+function updateTitle(nextState) {
+  document.title = `mcro.de ${nextState.location.pathname}`;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 // React for GitHub Pages - https://github.com/rafrex/react-github-pages
@@ -22,6 +26,8 @@ function checkForRedirect(nextState, replace) {
     parseRedirectQuery(location.query, replace);
   } else if (location.pathname.split('/')[1] === gitHubRepoName) {
     redirectToDomain();
+  } else {
+    document.title = `mcro.de ${nextState.location.pathname}`;
   }
 }
 ///////////////////////////////////////////////////////////////////////////////
@@ -56,6 +62,8 @@ function parseRedirectQuery(query, replace) {
     redirectTo.hash = `#${query.hash}`
   }
 
+  document.title = `mcro.de ${redirectTo.pathname}`;
+
   replace(redirectTo)
 }
 ///////////////////////////////////////////////////////////////////////////////
@@ -82,7 +90,13 @@ function redirectToDomain() {
 
 const routes = (
   // onEnter hook checks if a redirect is needed before App component is loaded
-  <Route path="/" mapMenuTitle="Home" component={App} onEnter={checkForRedirect}>
+  <Route
+    path="/"
+    mapMenuTitle="Home"
+    component={App}
+    onEnter={checkForRedirect}
+    onChange={(prevState, nextState, replace) => updateTitle(nextState)}
+  >
     <IndexRoute component={Home} />
     <Route path="c/*" mapMenuTitle="Markdown reader" component={MdArticle} />
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
