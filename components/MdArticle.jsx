@@ -10,18 +10,24 @@ export default class MdArticle extends React.Component {
     }
 
     getRealMdPath() {
-        return this.props.location.pathname.replace("/c/", "/content/") + ".md";
+        return this.props.path.replace("/c/", "/content/") + ".md";
     }
 
     componentDidMount()
     {
         fetch(this.getRealMdPath())
-            .then((response) => response.text())
+            .then((response) => {
+                if(response.status < 200 || response.status >= 300)
+                    throw {
+                        status: response.statusText
+                    }
+                return response.text()
+            })
             .then((data) => this.setState({
                 mdText: data
             }))
             .catch((reason) => this.setState({
-                mdText: `## Sucks to be you.\n\n\`\`\`\n${JSON.stringify(reason, null, 4)}\n\`\`\``
+                mdText: `I'm sorry but **${this.props.path}** ain't gonna happen.\n\n\`\`\`\n${JSON.stringify(reason, null, 4)}\n\`\`\``
             }));
     }
 
@@ -38,7 +44,7 @@ export default class MdArticle extends React.Component {
                     try {
                         return new URL(uri).href
                     } catch {
-                        let base = new URL(this.props.location.pathname, window.origin);
+                        let base = new URL(this.props.path, window.origin);
                         return new URL(uri, base.href).href;
                     }
                 }).bind(this)}
@@ -52,9 +58,16 @@ export default class MdArticle extends React.Component {
                     }
                 }).bind(this)}
                 parserOptions={{
-                    gfm: true,
+                    gfm: true
                 }}
             />
         )
     }
+}
+
+export function RoutedMdArticle({ location })
+{
+    return (
+        <MdArticle path={location.pathname} />
+    )
 }

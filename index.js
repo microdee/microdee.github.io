@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/App';
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
-import MdArticle from './components/MdArticle';
+import { MdArticle, RoutedMdArticle } from './components/MdArticle';
 
 function updateTitle(nextState) {
   document.title = `mcro.de ${nextState.location.pathname}`;
@@ -98,7 +98,7 @@ const routes = (
     onChange={(prevState, nextState, replace) => updateTitle(nextState)}
   >
     <IndexRoute component={Home} />
-    <Route path="c/*" mapMenuTitle="Markdown reader" component={MdArticle} />
+    <Route path="c/*" mapMenuTitle="Markdown reader" component={RoutedMdArticle} />
     <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
   </Route>
 );
