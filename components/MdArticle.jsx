@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown/with-html';
 
 export default class MdArticle extends React.Component {
     constructor(props) {
@@ -9,13 +9,13 @@ export default class MdArticle extends React.Component {
         }
     }
 
-    getRealMdPath(path) {
-        return path.replace("/c/", "/content/") + ".md";
+    getRealMdPath() {
+        return this.props.location.pathname.replace("/c/", "/content/") + ".md";
     }
 
     componentDidMount()
     {
-        fetch(this.getRealMdPath(this.props.location.pathname))
+        fetch(this.getRealMdPath())
             .then((response) => response.text())
             .then((data) => this.setState({
                 mdText: data
@@ -27,7 +27,34 @@ export default class MdArticle extends React.Component {
 
     render() {
         return (
-            <ReactMarkdown source={this.state.mdText} escapeHtml={false} />
+            <ReactMarkdown
+                className="mdArticle"
+                source={this.state.mdText}
+                escapeHtml={false}
+                sourcePos={true}
+                allowNode={() => true}
+                transformLinkUri={((uri) => {
+                    if(uri === undefined || uri == "" || uri == null) return uri;
+                    try {
+                        return new URL(uri).href
+                    } catch {
+                        let base = new URL(this.props.location.pathname, window.origin);
+                        return new URL(uri, base.href).href;
+                    }
+                }).bind(this)}
+                transformImageUri={((uri) => {
+                    if(uri === undefined || uri == "" || uri == null) return uri;
+                    try {
+                        return new URL(uri).href
+                    } catch {
+                        let base = new URL(this.getRealMdPath(), window.origin);
+                        return new URL(uri, base.href).href
+                    }
+                }).bind(this)}
+                parserOptions={{
+                    gfm: true,
+                }}
+            />
         )
     }
 }
