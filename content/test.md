@@ -2,9 +2,9 @@
 
 <MyTag yolo="swag">I wonder what will happen</MyTag>.
 
-## Testing picture
+## Testing pictures
 
-![dx11](dx11.png)
+![toilet](toiletposition.gif)
 
 ![gif](emergent.gif)
 
