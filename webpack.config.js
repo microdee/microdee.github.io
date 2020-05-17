@@ -1,35 +1,39 @@
 const webpack = require('webpack');
 
+const devMode = true;
+
 module.exports = {
+  mode: devMode ? 'development' : 'production',
   context: __dirname,
   entry: './index.js',
   output: {
     path: __dirname + '/__build__',
     filename: 'bundle.js',
   },
+  devServer: {
+    historyApiFallback: {
+      from: /^\/c\//
+    }
+  },
   module: {
-    loaders: [
-      {
-        test: /\.json$/,
-        loader: 'json-loader',
-      },
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015', 'react']
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react']
         }
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify(devMode ? 'development' : 'production')
       }
     })
   ]
