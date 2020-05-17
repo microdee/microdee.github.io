@@ -16,8 +16,9 @@ export default class MdArticle extends React.Component {
     componentDidMount()
     {
         fetch(this.getRealMdPath(this.props.location.pathname))
-            .then((response) => this.setState({
-                mdText: response.text()
+            .then((response) => response.text())
+            .then((data) => this.setState({
+                mdText: data
             }))
             .catch((reason) => this.setState({
                 mdText: `## Sucks to be you.\n\n\`\`\`\n${JSON.stringify(reason, null, 4)}\n\`\`\``
