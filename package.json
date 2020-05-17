@@ -13,7 +13,8 @@
     "url": "https://github.com/rafrex/react-github-pages/issues"
   },
   "scripts": {
-    "start": "webpack -d && webpack-dev-server --open"
+    "start": "webpack -d && webpack-dev-server --open",
+    "deploy": "webpack -p"
   },
   "homepage": "https://github.com/rafrex/react-github-pages#readme",
   "dependencies": {
