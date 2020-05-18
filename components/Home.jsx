@@ -4,12 +4,9 @@ import { Link } from 'react-router';
 export default function Home() {
   return (
     <div>
-      <p>
-        There was once a lush and beautiful website, but everything comes to an end, to make way to the new.
-      </p>
-      <p>
-        A slightly worse website is incoming. I know, but that's just how thermodynamics works :(
-      </p>
+      <h2>Unimpressive.Articles</h2>
+      <p>Statically served, all-client, Markdown and React based article reader website boilerplate for lazy and/or poor people who still wants total control tho.</p>
+      <p>Originally designed for Github pages, but works with a dead simple default nginx as well.</p>
       <div><Link to="/c/test">Test article</Link></div>
     </div>
   );
