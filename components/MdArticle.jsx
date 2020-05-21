@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
-import ReactMarkdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
+import htmlParser from 'react-markdown/plugins/html-parser';
 import TrackVisibility from 'react-on-screen';
 
 export default class MdArticle extends React.Component {
@@ -8,10 +9,49 @@ export default class MdArticle extends React.Component {
         this.state = {
             mdText: "### Loading",
             loading: true,
-            error: false,
-            nextProcessed: false,
-            next: null
+            error: false
         }
+        this.parseHtml = htmlParser({
+            isValidNode: () => true,
+            processingInstructions: [
+                {
+                    shouldProcessNode: node =>
+                        node.name === 'iframe' || node.type === 'iframe',
+                    replaceChildren: false,
+                    processNode: this.handleIframe.bind(this)
+                },
+                {
+                    shouldProcessNode: node =>
+                        node.name === 'nextmd' || node.type === 'nextmd' ||
+                        node.name === 'insertmd' || node.type === 'insertmd',
+                    replaceChildren: false,
+                    processNode: this.handleNextMd.bind(this)
+                }
+            ]
+        })
+    }
+
+    handleIframe(node, children) {
+        let iframeProps = {...node.attribs};
+        iframeProps.width = this.getAppDomNode().clientWidth;
+
+        if(node.attribs.height) {
+            let aspect = node.attribs.width / node.attribs.height;
+            iframeProps.height = iframeProps.width / aspect;
+        }
+        return (
+            <iframe {...iframeProps} />
+        )
+    }
+
+    handleNextMd(node, children) {
+        return (
+            <ArticleLoader path={node.attribs.href} />
+        )
+    }
+
+    getAppDomNode() {
+        return document.getElementById("appRoot");
     }
 
     getRealMdPath() {
@@ -20,19 +60,6 @@ export default class MdArticle extends React.Component {
 
     componentDidUpdate()
     {
-        if(this.state.error || this.state.loading || this.state.nextProcessed) return;
-
-        let nextMatch = /\<nextmd\s+href="(.*?)"\s+\/\>/gm.exec(this.state.mdText);
-        if(nextMatch && nextMatch.length > 0)
-        {
-            this.setState({
-                next: nextMatch[1]
-            });
-        }
-
-        this.setState({
-            nextProcessed: true
-        })
     }
 
     componentDidMount()
@@ -61,13 +88,16 @@ export default class MdArticle extends React.Component {
         if(this.state.loading) return (
             <h1>Loading</h1>
         )
-        else return ( <div>
+        else return (
             <ReactMarkdown
                 className="mdArticle"
                 source={this.state.mdText}
                 escapeHtml={false}
                 sourcePos={true}
                 allowNode={() => true}
+                astPlugins={[
+                    this.parseHtml
+                ]}
                 transformLinkUri={((uri) => {
                     if(uri === undefined || uri == "" || uri == null) return uri;
                     try {
@@ -90,10 +120,7 @@ export default class MdArticle extends React.Component {
                     gfm: true
                 }}
             />
-            { this.state.next &&
-                <ArticleLoader path={this.state.next} />
-            }
-        </div> )
+        )
     }
 }
 
