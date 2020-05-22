@@ -4,15 +4,34 @@
 
 ## Testing pictures
 
-![md.full](toiletposition.gif)
+normal:
 
+![](toiletposition.gif)
+![](emergent.gif)
+
+expanded:
+
+![md.expand](toiletposition.gif)
+![md.expand](emergent.gif)
+
+full width:
+
+![md.full](toiletposition.gif)
 ![md.full](emergent.gif)
 
 ## Testing embedded content
 
-<iframe full="true" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTe_-YOccdM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+normal:
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTe_-YOccdM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+full width:
+
+<iframe full="true" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTe_-YOccdM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe full="true" width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+Some paragraph right after iframes.
 
 # Markdown: Syntax
 
