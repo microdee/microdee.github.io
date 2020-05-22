@@ -58,6 +58,11 @@ p {
 pre, code {
     font-family: 'Fira Code', monospace;
 }
+p code {
+    background-color: rgba(125,125,125,0.45);
+    padding: 0px 3px;
+    margin: 0px 2px;
+}
 
 h1, h2, h3, h4 {
     font-style: normal;

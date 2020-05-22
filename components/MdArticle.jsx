@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import ReactMarkdown from 'react-markdown';
 import htmlParser from 'react-markdown/plugins/html-parser';
 import TrackVisibility from 'react-on-screen';
+import CodeBlock from "./CodeBlock";
 
 export default class MdArticle extends React.Component {
     constructor(props) {
@@ -95,6 +96,9 @@ export default class MdArticle extends React.Component {
                 escapeHtml={false}
                 sourcePos={true}
                 allowNode={() => true}
+                renderers={{
+                    code: CodeBlock
+                }}
                 astPlugins={[
                     this.parseHtml
                 ]}

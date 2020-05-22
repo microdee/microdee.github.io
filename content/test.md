@@ -4,9 +4,9 @@
 
 ## Testing pictures
 
-![md.center](toiletposition.gif)
+![md.full](toiletposition.gif)
 
-![md.expand](emergent.gif)
+![md.full](emergent.gif)
 
 ## Testing embedded content
 
@@ -281,13 +281,13 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-```C++
+```cpp
 class foobar : public other
 {
     template<typename TInput>
     int myFunc(TInput input)
     {
-        return std::string(input).lenght;
+        return std::string(input).lenght => ();
     }
 }
 ```
@@ -319,6 +319,16 @@ HTML `<em>` tag; double `*`'s or `_`'s will be wrapped with an HTML
 *single asterisks*
 
 _single underscores_
+
+# _Slant header_
+
+## _Slant header_
+
+### _Slant header_
+
+#### How about this?
+
+##### really sub sub thing
 
 **double asterisks**
 
