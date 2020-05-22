@@ -10,11 +10,9 @@
 
 ## Testing embedded content
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTe_-YOccdM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe full="true" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTe_-YOccdM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
-
-<script src="https://gist.github.com/loneshark99/e6b370e588d9153330b21583247e4e16.js"></script>
+<iframe full="true" width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
 # Markdown: Syntax
 
@@ -287,7 +285,7 @@ class foobar : public other
     template<typename TInput>
     int myFunc(TInput input)
     {
-        return std::string(input).lenght => ();
+        return std::string(input).lenght([&, this](SomeVeryLongTemplatedType<ThisIsRidiculous> nonsensicallyLongArgumentName) { return WhyThis(); });
     }
 }
 ```

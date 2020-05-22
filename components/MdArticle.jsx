@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import htmlParser from 'react-markdown/plugins/html-parser';
 import TrackVisibility from 'react-on-screen';
 import CodeBlock from "./CodeBlock";
+import IframeWrapper from './IframeWrapper';
 
 export default class MdArticle extends React.Component {
     constructor(props) {
@@ -33,15 +34,8 @@ export default class MdArticle extends React.Component {
     }
 
     handleIframe(node, children) {
-        let iframeProps = {...node.attribs};
-        iframeProps.width = this.getAppDomNode().clientWidth;
-
-        if(node.attribs.height) {
-            let aspect = node.attribs.width / node.attribs.height;
-            iframeProps.height = iframeProps.width / aspect;
-        }
         return (
-            <iframe {...iframeProps} />
+            <IframeWrapper {...node.attribs} />
         )
     }
 
