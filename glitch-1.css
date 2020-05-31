@@ -5,7 +5,8 @@
     --f: calc(var(--f-size) * var(--f-unit));
 }
 
-.glitch-1 .before, .glitch-1 .after {
+.glitch-1 .before, .glitch-1 .after,
+.glitch-1-hover .before, .glitch-1-hover .after {
     --top: 0;
     --left: 0;
     --v-height: 30%;
@@ -23,11 +24,15 @@
     background-color: black;
     clip-path: polygon(0% var(--t-cut), 100% var(--t-cut), 100% var(--b-cut), 0% var(--b-cut));
 }
-.glitch-1 .before {
-    animation: glitch-b 1.7s infinite alternate-reverse;
+
+.glitch-1 .before,
+.glitch-1-hover:hover .before {
+    animation: glitch-b 0.9s infinite alternate-reverse;
 }
-.glitch-1 .after {
-    animation: glitch-a 3.1s infinite alternate;
+
+.glitch-1 .after,
+.glitch-1-hover:hover .after {
+    animation: glitch-a 1.6s infinite alternate;
 }
 
 @keyframes glitch-p {

@@ -1,0 +1,1 @@
+<nextmd href="/c/log/first-entry" />

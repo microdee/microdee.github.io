@@ -107,6 +107,22 @@ h4 {
     font-size: 96px;
 }
 
+.mdArticle {
+    position: relative;
+    top: 0px;
+    margin-top: 50px;
+}
+
+.mdArticle::before {
+    display: block;
+    width: 100vw;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: calc(var(--app-left) * -1);
+    border-bottom: solid #fff;
+}
+
 .mdArticle img {
     max-width: 100%;
 }
@@ -124,6 +140,7 @@ h4 {
     max-width: none;
     width: 100vw;
     left: calc(var(--app-left) * -1);
+    z-index: 20;
 }
 
 .mdArticle img[alt*="md.center"] {
@@ -136,6 +153,47 @@ h4 {
     margin-bottom: -6px;
 }
 
+.mdArticle iframe[full*="true"] {
+    z-index: 20;
+}
+
 .thumb {
     background-color: white;
+}
+
+#mainMenu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: -50px;
+}
+
+#mainMenu .cover {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    left: calc(var(--app-left) * -1);
+    background: black;
+    border-bottom: solid;
+}
+
+#mainMenu .flexing {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainMenu .menuItem {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
