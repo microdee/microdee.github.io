@@ -86,7 +86,7 @@ h1, h2, h3, h4 {
     font-style: normal;
     font-weight: normal;
 }
-h1 {
+h1, .h0 {
     font-family: 'Iceberg', sans-serif;
     font-size: 64px;
 }
@@ -101,6 +101,10 @@ h3 {
 h4 {
     font-family: 'Quantico', sans-serif;
     font-size: 20px;
+}
+
+.h0 {
+    font-size: 96px;
 }
 
 .mdArticle img {

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Gh1, Gh2} from './Gh';
 import { Link } from 'react-router';
 
 export default class App extends React.Component {
@@ -11,7 +12,7 @@ export default class App extends React.Component {
         
         return(
             <div id="appRoot">
-                <h1>mcro.de/WIP</h1>
+                <Gh1 className="h0" glitchType="1">mcro.de</Gh1>
                 {children}
             </div>
         );
