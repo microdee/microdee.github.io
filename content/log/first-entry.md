@@ -8,7 +8,7 @@ Because I'm working with more barebones tools now, a lot of eye-candy has been l
 
 Why not use a service for this or a social media surface? Excellent question hypothetical Reader, who might even be a real person!
 
-[Works](/c/works) and [Software](/c/ware) sections are getting filled up to represent reality. But they're not complete yet.
+[Works](/c/works) and [Software](/c/ware) sections are getting filled up by time to represent reality slightly better. But they're not complete yet. The projects for HERE Technologies I've been also involved in, have actually complete insight articles, as far as I concern. 
 
 Articles are written in markdown (rendered with [React-Markdown](https://github.com/rexxars/react-markdown)) referenced with url transformation using [React-Router](https://reacttraining.com/react-router/). I started from [this boilerplate](https://github.com/rafrex/react-github-pages) apparently last committed to 4 years ago, needless to say a lot of its bells-and-whistles needed updates.
 

@@ -6,6 +6,17 @@ Control Editor viewports with the best camera control device out there, even wit
 
 ## [Get it](https://github.com/microdee/UE4-SpaceMouse)
 
+----
+
+## UE4 Material Expression node Generator
+
+This is a VS Code plugin to generate custom material expression nodes and their boilerplate for UE4 to the clipboard, ready to be pasted in the material editor.
+
+Get it via the extensions panel in VS Code or,  
+[Check out the source code](https://github.com/microdee/ue4-material-expression-generator)
+
+----
+
 # Coming Soon™
 
 ## BlueWindow
