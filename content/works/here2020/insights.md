@@ -8,6 +8,7 @@
   - [Main Challanges:](#main-challanges)
     - [Automatic updating of running instances](#automatic-updating-of-running-instances)
     - [Versatile, zero-config, responsive, multi-monitor support](#versatile-zero-config-responsive-multi-monitor-support)
+    - [Custom levels for individual use-cases](#custom-levels-for-individual-use-cases)
     - [Display diverse content from many external sources with high efficiency](#display-diverse-content-from-many-external-sources-with-high-efficiency)
     - [Conclusion](#conclusion)
 
@@ -26,11 +27,15 @@ The audience facing frontend of this presenter were written using Unreal Engine 
 
 ### Automatic updating of running instances
 
-This was achieved by our internal tool dubbed ___Warden Daemon___ which was not only managing updates, but restarted UnrealityCore on potential but unlikely crashes and memory leaks.
+This was achieved by our internal tool dubbed ___Warden Daemon___ which was not only managing updates, but restarted UnrealityCore on potential but unlikely crashes and memory leaks. Once an update notification got published via our Gitlab CI/CD pipeline, Warden Daemon would fade in its full screen covers, stop UnrealityCore and its subprocesses, update UnrealityCore and even itself, then restart the application. All while a potential witness of the process would never see a Windows desktop or anything outside of HERE brand space.
 
 ### Versatile, zero-config, responsive, multi-monitor support
 
 UnrealityCore needs to run on many different screen configurations ranging from 1 to 3 screens. This was achived by developing an internal plugin package which I dubbed ___BlueWindow___, which makes it easy to manage multiple windows on multiple screens created from UE4. These Windows at the time of writing only support UMG or Slate widgets, but arbitrary viewport and level loading is planned.
+
+### Custom levels for individual use-cases
+
+For each use-case HERE Technologies wanted to communicate they needed an immersive storyline in the UE4 scene. These were expressed as sublevels which were loaded via UE4's built in level streaming functionality. To design and create these levels MESO partnered with **[Bizzlogic](https://www.bizzlogic.de/)** who helped us out greatly with the process. I exposed an API to them about application events, which they were using to organically integrate with the look/feel of the overall app. They made some tools for us so our technical artists could also create these levels in a short amount of time.
 
 ### Display diverse content from many external sources with high efficiency
 
