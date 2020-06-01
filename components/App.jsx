@@ -16,6 +16,7 @@ export default class App extends React.Component {
                 <Gh1 className="h0" glitchType="1">mcro.de</Gh1>
                 <MainMenu />
                 {children}
+                <div id="footer"></div>
             </div>
         );
     }

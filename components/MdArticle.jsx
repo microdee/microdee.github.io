@@ -1,19 +1,52 @@
 import React, { Suspense } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router';
 import htmlParser from 'react-markdown/plugins/html-parser';
 import TrackVisibility from 'react-on-screen';
 import CodeBlock from "./CodeBlock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
 
+function getMainTextOfComponent(component) {
+    if(typeof(component) === 'string') return component;
+    return getMainTextOfComponent(component[0].props.children);
+}
+
 function getCoreProps(props) {
     return props['data-sourcepos'] ? {'data-sourcepos': props['data-sourcepos']} : {}
 }
 
 function MdHeading(props) {
-    if(props.level == 1) return (<Gh1 glitchType="2">{props.children}</Gh1>);
-    if(props.level == 2) return (<Gh2 glitchType="2">{props.children}</Gh2>);
-    return React.createElement(`h${props.level}`, getCoreProps(props), props.children);
+    let headerText = getMainTextOfComponent(props.children);
+    let anchorText = headerText
+        .replace(/[^a-z0-9]+/gi, '-')
+        .replace(/[^a-z0-9]+$/gi, '')
+        .toLowerCase();
+    if(props.level == 1) return (<Gh1 glitchType="2" id={anchorText}>{props.children}</Gh1>);
+    if(props.level == 2) return (<Gh2 glitchType="2" id={anchorText}>{props.children}</Gh2>);
+    let hprops = {
+        ...props,
+        id: anchorText
+    }
+    return React.createElement(`h${hprops.level}`, hprops, hprops.children);
+}
+
+function IsCurrentDomain(urlin) {
+    return urlin.includes('localhost') || urlin.includes('mcro.de')
+}
+
+function GetLocalPathFromUrl(urlin) {
+    return new URL(urlin).pathname;
+}
+
+function MdLinkHandler(props) {
+    if(IsCurrentDomain(props.href)) return (
+        <Link to={GetLocalPathFromUrl(props.href)}>{props.children}</Link>
+    )
+    if(props.href.startsWith('about:blank#')) return (
+        <a {...props} href={props.href.replace('about:blank', '')}>{props.children}</a>
+    )
+    return ( <a {...props} target="_blank">{props.children}</a> )
 }
 
 export default class MdArticle extends React.Component {
@@ -111,7 +144,8 @@ export default class MdArticle extends React.Component {
                 allowNode={() => true}
                 renderers={{
                     code: CodeBlock,
-                    heading: MdHeading
+                    heading: MdHeading,
+                    link: MdLinkHandler
                 }}
                 astPlugins={[
                     this.parseHtml

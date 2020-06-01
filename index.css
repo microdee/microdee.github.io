@@ -1,7 +1,8 @@
 :root {
     --app-left: 15vw;
     --app-width: 60vw;
-    --p-margin: 8px;
+    --p-margin: 18px;
+    --anchor-offs: -200px;
 }
 
 body {
@@ -196,4 +197,8 @@ h4 {
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+#footer {
+    height: 150px;
 }

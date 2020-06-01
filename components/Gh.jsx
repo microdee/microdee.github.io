@@ -21,9 +21,10 @@ export class Gh1 extends React.Component {
         } = this;
 
         let hoverSuffix = props.onlyHover ? "-hover" : "";
+        let idattr = props.id ? { id: props.id } : {};
 
         return (
-            <div className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
+            <div {...idattr} className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
                 <h1 {...props} style={{...props.style, ...GhOrigStyle}}>
                     {props.children}
                 </h1>
@@ -52,9 +53,10 @@ export class Gh2 extends React.Component {
         } = this;
         
         let hoverSuffix = props.onlyHover ? "-hover" : "";
+        let idattr = props.id ? { id: props.id } : {};
 
         return (
-            <div className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
+            <div {...idattr} className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
                 <h2 {...props} style={{...props.style, ...GhOrigStyle}}>
                     {props.children}
                 </h2>
