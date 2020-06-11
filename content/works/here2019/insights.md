@@ -50,4 +50,4 @@ This was achieved by our internal tool dubbed ___Warden Daemon___ which was not 
 
 Of course this article was a quick simplified version, we faced many more intricate endeavours during developing this presenter. This was our last large scope project built with VVVV at MESO. We are now transitioning to UE4 and our first project with it was actually the next version of the HERE Reality Core presenter.
 
-[See the HERE Reality Core presenter made for CES 2020](/c/works/here2020)
+[See the HERE Reality Core presenter made for CES 2020](/c/works/here2020/insights)
