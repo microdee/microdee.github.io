@@ -80,6 +80,8 @@ p {
 }
 pre, code {
     font-family: 'Fira Code', monospace;
+    -moz-tab-size: 4;
+    tab-size: 4;
 }
 p code {
     background-color: rgba(125,125,125,0.45);
