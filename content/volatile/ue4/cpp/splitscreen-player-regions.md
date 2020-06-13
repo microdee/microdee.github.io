@@ -34,3 +34,5 @@ Then in your player controller class somewhere
 	GetLocalPlayer()->Size = /* FVector2D with 0..1 range */;
 	GetLocalPlayer()->Origin = /* FVector2D with 0..1 range */;
 ```
+
+then change `Game Viewport Client` class in your project settings from default to your class.
