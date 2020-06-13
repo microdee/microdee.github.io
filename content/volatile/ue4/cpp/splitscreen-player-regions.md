@@ -21,7 +21,7 @@ public:
 **MyGameVpClient.cpp**
 ```
 
-void UKmhViewportClient::LayoutPlayers()
+void UMyGameVpClient::LayoutPlayers()
 {
 	// Deliberately empty
 }
