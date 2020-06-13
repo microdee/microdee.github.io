@@ -3,6 +3,8 @@
     --app-width: 60vw;
     --p-margin: 18px;
     --anchor-offs: -200px;
+    --main-menu-pos: sticky;
+    --main-menu-flexdir: row;
 }
 
 body {
@@ -45,6 +47,8 @@ body::-webkit-scrollbar-thumb {
     :root {
         --app-left: 5vw;
         --app-width: 90vw;
+        --main-menu-pos: relative;
+        --main-menu-flexdir: column;
     }
 }
 
@@ -162,9 +166,13 @@ h4 {
     background-color: white;
 }
 
+#mcrode a {
+    border: none;
+}
+
 #mainMenu {
     position: -webkit-sticky;
-    position: sticky;
+    position: var(--main-menu-pos);
     top: 0px;
     z-index: 10;
     padding-top: 10px;
@@ -188,7 +196,7 @@ h4 {
     left: 0px;
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: var(--main-menu-flexdir);
     justify-content: space-between;
 }
 
@@ -201,4 +209,19 @@ h4 {
 
 #footer {
     height: 150px;
+}
+
+div.logo {
+    position: relative;
+    left: calc(var(--app-left) * -1);
+    width: 100vw;
+    height: 84vh;
+    overflow: hidden;
+    max-width: none;
+    z-index: 0;
+    margin-bottom: -5vh;
+}
+
+iframe.logo {
+    margin-top: -30px;
 }

@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 
-const devMode = true;
+const devMode = false;
 
 module.exports = {
   mode: devMode ? 'development' : 'production',
