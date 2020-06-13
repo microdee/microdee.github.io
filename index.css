@@ -85,6 +85,8 @@ p code {
     background-color: rgba(125,125,125,0.45);
     padding: 0px 3px;
     margin: 0px 2px;
+    -moz-tab-size: 4;
+    tab-size: 4;
 }
 
 h1, h2, h3, h4 {
