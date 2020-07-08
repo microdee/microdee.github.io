@@ -16,6 +16,15 @@ Advanced UI interaction library in 3D space.
 
 ----
 
+## Vanadium
+Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom build of CEF (Chromium Embedded Framework).
+
+![md.expand](vanadium.png)
+
+## [Get it](https://github.com/meso-unimpressed/Vanadium)
+
+----
+
 ## mp.dx
 and mp.essentials
 
