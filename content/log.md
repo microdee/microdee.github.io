@@ -1,1 +1,1 @@
-<nextmd href="/c/log/first-entry" />
+<nextmd href="/c/log/change-resolution-script" />
