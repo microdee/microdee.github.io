@@ -1,4 +1,4 @@
-# Change Windows screen resolution via scripts
+## Change Windows screen resolution via scripts
 [(10.07.2020)](/c/log/change-resolution-script)
 
 I have an annoying situation that my laptop has a gorgeous 4K OLED screen (oh the suffering), but it doesn't exactly have the graphics power to drive games on that resolution. "It's fine just set the resolution in your game and your non-problem is solved" I hear you say. But there's a slight problem with that. Many games actually use fake borderless fullscreen, which has 2 possible problems:
