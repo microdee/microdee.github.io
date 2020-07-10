@@ -19,6 +19,12 @@ Get it via the extensions panel in VS Code or,
 
 # Coming Soon™
 
+## BlueKinect
+
+Industry-proof and versatile implementation of Azure Kinect into UE4
+
+Currently being developed at MESO.
+
 ## BlueWindow
 
 Manage multiple UMG windows from Blueprint and other UI related features.
