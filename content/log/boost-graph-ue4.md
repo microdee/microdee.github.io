@@ -1,6 +1,6 @@
 # boost::graph + UE4
 
-We work for [HERE]() [again](), and this year I decided to make our presentations slightly smarter than what we've done for [CES 20]() especially the immersive 3D narrative entities. For that I've set the objective to make an automated routing system, so our artists can avoid animating 16 stories each with 2 or more possible path states (at least according to initial drafts).
+We work for [HERE](/c/works/here2020/insights) [again](/c/works/here2019/insights), and this year I'm attempting to make our presentations slightly smarter than what we've done for [CES 20](/c/works/here2020/insights) especially the immersive 3D narrative entities. For that I've set the objective to make an automated routing system, so our artists can avoid animating 16 stories each with 2 or more possible path states (at least according to initial drafts).
 
 I could convince managers to spend a week on a more automated solution, rather than crying blood during crunchtime. I'm sure we will never regret this decision and everything will work out A. O. K. ...
 
