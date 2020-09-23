@@ -4,6 +4,6 @@ import MdArticle from './MdArticle';
 
 export default function Home() {
   return (
-    <MdArticle path="/c/log" />
+    <MdArticle path="/c/works" />
   );
 }
