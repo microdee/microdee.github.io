@@ -10,7 +10,7 @@ Decentralized package manager for vvvv
 ## Notuiv
 Advanced UI interaction library in 3D space.
 
-<iframe full="true" src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<iframe src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 ## [Get it](https://vvvv.org/contribution/notuiv)
 
