@@ -17,6 +17,14 @@ Get it via the extensions panel in VS Code or,
 
 ----
 
+## Buest
+
+A shared, managed and IWYU dependency on Boost for your C++ plugins and projects.
+
+## [Get it](https://github.com/microdee/Buest)
+
+----
+
 # Coming Soon™
 
 ## BlueKinect
