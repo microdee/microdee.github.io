@@ -1,27 +1,27 @@
 ## VPM
 Vvvv Package Manager
 
-Decentralized package manager for vvvv
+Decentralized package manager for vvvv. Without it, contribution dependency is a completely manual endeavour in vvvv.
 
-## [Get it](https://vvvvpm.github.io)
+### [Get it](https://vvvvpm.github.io)
 
 ----
 
 ## Notuiv
 Advanced UI interaction library in 3D space.
 
-<iframe src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+### [Get it](https://vvvv.org/contribution/notuiv)
 
-## [Get it](https://vvvv.org/contribution/notuiv)
+<iframe src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 ----
 
 ## Vanadium
 Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom build of CEF (Chromium Embedded Framework).
 
-![md.expand](vanadium.png)
+### [Get it](https://github.com/meso-unimpressed/Vanadium)
 
-## [Get it](https://github.com/meso-unimpressed/Vanadium)
+![md.expand](vanadium.png)
 
 ----
 
@@ -35,7 +35,7 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 * **[md.stdl](https://github.com/microdee/md.stdl)** a C# standard library of misc things.
   * This is being deprecated tho in favor of its .NET Core port which doesn't rely on VVVV.Utils anymore
 
+### [Get it](https://vvvv.org/contribution/mp.dx)
+
 ![md.expand](mp.dx.png)
 ![md.expand](mp.essentials.png)
-
-## [Get it](https://vvvv.org/contribution/mp.dx)
