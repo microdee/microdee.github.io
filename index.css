@@ -219,10 +219,21 @@ div.logo {
     position: relative;
     left: calc(var(--app-left) * -1);
     width: 100vw;
-    height: 84vh;
-    overflow: hidden;
+    height: calc(100vh - 86px);
+    /* overflow: hidden; */
     max-width: none;
     z-index: 0;
+    margin-bottom: -116px;
+}
+
+div.logo video {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    height: 100%;
+}
+
+div.logo.shadertoy {
     margin-bottom: -5vh;
 }
 

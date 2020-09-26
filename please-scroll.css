@@ -1,0 +1,73 @@
+:root {
+    --please-scroll-height: 50px;
+    --please-scroll-width: 17px;
+    --please-scroll-padding: 6px;
+    --please-scroll-indicator-height: 40%;
+}
+
+@keyframes initial-fadein {
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes please-scroll-anim {
+    0% {
+        opacity: 0;
+        top: var(--please-scroll-padding);
+        bottom: auto;
+        border-top-left-radius: var(--please-scroll-width);
+        border-top-right-radius: var(--please-scroll-width);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    33% {
+        opacity: 1;
+        top: var(--please-scroll-padding);
+        bottom: auto;
+        border-top-left-radius: var(--please-scroll-width);
+        border-top-right-radius: var(--please-scroll-width);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    66% {
+        opacity: 1;
+        top: calc(100% - var(--please-scroll-indicator-height) - var(--please-scroll-padding));
+        border-bottom-left-radius: var(--please-scroll-width);
+        border-bottom-right-radius: var(--please-scroll-width);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    100% {
+        opacity: 0;
+        top: calc(100% - var(--please-scroll-indicator-height) - var(--please-scroll-padding));
+        border-bottom-left-radius: var(--please-scroll-width);
+        border-bottom-right-radius: var(--please-scroll-width);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+.pleaseScroll {
+    position: absolute;
+    width: var(--please-scroll-width);
+    height: var(--please-scroll-height);
+    bottom: calc(0px - var(--please-scroll-height) - 6px);
+    right: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: var(--please-scroll-width);
+    padding: var(--please-scroll-padding);
+    
+    animation: initial-fadein 6s ease 1;
+}
+
+.pleaseScroll .indicator {
+    position: absolute;
+    width: calc(100% - var(--please-scroll-padding) * 2);
+    height: var(--please-scroll-indicator-height);
+    background-color: white;
+
+    animation: please-scroll-anim 1.5s ease infinite;
+}
