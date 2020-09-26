@@ -26,6 +26,15 @@
 | **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
 | **Freelance work**<br>as Media Artist | 2009 - 2012 |
 
+#### Contacts:
+
+* _@mcro.de / m@mcro.de / david.morasz@meso.design
+* [Github](https://github.com/microdee)
+* [Mastodon](https://mastodon.social/web/accounts/850016)
+* [Twitter](https://twitter.com/microdeedev)
+
+![md.expand](me.jpg)
+
 #### Tools/Languages
 
 Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
@@ -57,6 +66,15 @@ Still usable, in order of confidence
 * Blender
 * Unity
 
+#### Applicable skills
+
+* Software architecture design for complex and potentially volatile scenarios.
+* Quickly learn and adopt to vast complex tools/frameworks/libraries.
+* Experience with UX design: manufacturing tools focusing on ease of usage, while maintaining versatility.
+* Efficiently working with teams, especially when it's assisted with infrastructure
+  * Git and other VCS's
+  * SCRUM project management
+
 #### Education:
 
 * Started computer science then media arts university, and then I didn't finish them.
@@ -68,13 +86,4 @@ Still usable, in order of confidence
 * Born in Hungary, Budapest
 * Currently living in Germany, Frankfurt am Main
 
-#### Contacts:
-
-* _@mcro.de / m@mcro.de / david.morasz@meso.design
-* [Github](https://github.com/microdee)
-* [Mastodon](https://mastodon.social/web/accounts/850016)
-* [Twitter](https://twitter.com/microdeedev)
-
-![md.expand](me.jpg)
-
-### [Get a printer friendly CV](/cv.pdf)
+### [Get a printer friendly CV](cv.pdf)

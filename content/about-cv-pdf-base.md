@@ -59,6 +59,15 @@ Still usable, in order of confidence
 * **Blender**
 * **Unity**
 
+### Applicable skills
+
+* Software architecture design for complex and potentially volatile scenarios.
+* Quickly learn and adopt to vast complex tools/frameworks/libraries.
+* Experience with UX design: manufacturing tools focusing on ease of usage, while maintaining versatility.
+* Efficiently working with teams, especially when it's assisted with infrastructure
+  * Git and other VCS's
+  * SCRUM project management
+
 ### Education:
 
 * Started computer science then media arts university, and then I didn't finish them.
