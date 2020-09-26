@@ -17,7 +17,7 @@ Get it via the extensions panel in VS Code or,
 
 ----
 
-## Buest
+## Buest \[byːst\]
 
 A shared, managed and IWYU dependency on [Boost](https://www.boost.org/) for your C++ plugins and projects. No need to deal with manual installation of Boost and its BCP tool.
 
