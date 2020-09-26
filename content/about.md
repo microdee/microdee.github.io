@@ -1,32 +1,74 @@
+<style>
+    th {
+        display: none;
+    }
+</style>
+
 ## About me
 
-Most importantly:
+#### Most importantly:
 
 * Name is **Dávid Mórász**
+* Fully operational since 2010
 * I'm a **software developer** per occupation
   * Mainly working with:
     * **UE4** (C++)
     * **.NET** (C#, C++/CLI)
-    * many tools/languages required by specific projects
-  * Employment history:
-    * **[MESO Digital Interiors GmbH.](https://meso.design)** (2018- ...)
-    * **[Uberact Ltd.](https://uberact.com/)** (2014-2017)
-    * **[Kitchen Budapest](http://kitchenbudapest.hu/)** (2012-2014)
-    * **Freelance work** (2007-2012)
+    * many tools/languages required by specific projects (see below)
 * Also have minimal artistic/design background
 
-Education:
+#### Employment history
+
+| | |
+|-|-|
+|**[MESO Digital Interiors GmbH.](https://meso.design)**<br>as Real-time Software Developer | 2018 - present |
+| **[Uberact Ltd.](https://uberact.com/)**<br>as Lead Developer | 2014 - 2018 |
+| **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
+| **Freelance work**<br>as Media Artist | 2009 - 2012 |
+
+#### Tools/Languages
+
+Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
+
+* **.NET**
+  * C#
+  * XAML (WPF)
+  * C++/CLI
+* **[VVVV](https://vvvv.org)**
+* **C++** (mostly on Windows)
+  * Unreal Engine 4
+  * Chromium Embedded Framework (CEF)
+  * Graphics programming with Direct3D
+  * ImGui
+  * boost
+* **Tooling/Scripting**
+  * Python
+  * Powershell
+
+Still usable, in order of confidence
+
+* **CMake** (I still have to fully master it)
+* **Webstack / Frontend**
+  * Usual JS/HTML/CSS
+  * Frameworks:
+    * React + Redux
+    * Electron.js
+    * node.js
+* Blender
+* Unity
+
+#### Education:
 
 * Started computer science then media arts university, and then I didn't finish them.
   * BME (Budapest University of Technology and Economy)
   * MOME (Moholy Nagy University of Arts and Design)
 
-Location:
+#### Location:
 
 * Born in Hungary, Budapest
 * Currently living in Germany, Frankfurt am Main
 
-Contacts:
+#### Contacts:
 
 * _@mcro.de / m@mcro.de / david.morasz@meso.design
 * [Github](https://github.com/microdee)
@@ -34,3 +76,5 @@ Contacts:
 * [Twitter](https://twitter.com/microdeedev)
 
 ![md.expand](me.jpg)
+
+### [Get a printer friendly CV](cv.pdf)
