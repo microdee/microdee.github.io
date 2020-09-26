@@ -40,7 +40,9 @@ function GetLocalPathFromUrl(urlin) {
 }
 
 function MdLinkHandler(props) {
-    if(IsCurrentDomain(props.href)) return (
+    let localPath = GetLocalPathFromUrl(props.href);
+
+    if(IsCurrentDomain(props.href) && !localPath.includes('.')) return (
         <Link to={GetLocalPathFromUrl(props.href)}>{props.children}</Link>
     )
     if(props.href.startsWith('about:blank#')) return (
