@@ -61,6 +61,7 @@
     padding: var(--please-scroll-padding);
     
     animation: initial-fadein 6s ease 1;
+    z-index: 30;
 }
 
 .pleaseScroll .indicator {
