@@ -40,7 +40,7 @@ Industry-proof and versatile implementation of Azure Kinect into UE4. Main featu
 * Retrieve camera images efficiently. Upload only color and raw depth to graphics memory from Kinect Azure SDK, calculate the rest with compute-shaders.
   * (images are not yet shared across the network)
 
-Currently being developed at MESO. 
+**Currently being developed at MESO.**  
 It's already used and well tested in one of our large-scale interactive projects at MESO.
 
 ----
@@ -53,7 +53,7 @@ Manage multiple UMG windows from Blueprint and other UI related features.
 * Utilities for complex multitouch interactions.
 * UMG utilities for better preview at design time.
 
-Currently being developed at MESO.
+**Currently being developed at MESO.**  
 It's already being used almost in all of our complete and running projects at MESO.
 
 ----
@@ -69,5 +69,5 @@ The fastest full CEF implementation for UE4 so far, embracing recent features of
 * Integration into Unreal's own audio system.
 * UMG abstraction layer, a full fledged browser widget.
 
-Currently being developed at MESO.
+**Currently being developed at MESO.**  
 It's currently at proof-of-concept stage. Due to the backlash of public showcases caused by the 2020 pandemic, further development of this plugin is on hold.
