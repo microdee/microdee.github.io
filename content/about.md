@@ -77,4 +77,4 @@ Still usable, in order of confidence
 
 ![md.expand](me.jpg)
 
-### [Get a printer friendly CV](cv.pdf)
+### [Get a printer friendly CV](/cv.pdf)
