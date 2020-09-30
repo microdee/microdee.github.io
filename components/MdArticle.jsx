@@ -40,6 +40,10 @@ function GetLocalPathFromUrl(urlin) {
 }
 
 function MdLinkHandler(props) {
+    let localPath = GetLocalPathFromUrl(props.href);
+    if(IsCurrentDomain(props.href) && localPath.includes('.')) return (
+        <a {...props} href={props.href.replace('/c/', '/')} target="_blank">{props.children}</a>
+    )
     if(IsCurrentDomain(props.href)) return (
         <Link to={GetLocalPathFromUrl(props.href)}>{props.children}</Link>
     )
