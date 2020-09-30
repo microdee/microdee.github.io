@@ -17,7 +17,7 @@ export default class App extends React.Component {
             return(
                 <div id="appRoot">
                     <Logo />
-                    <Gh1 className="h0" glitchType="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
+                    <Gh1 className="h0" glitchtype="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
                     <MainMenu />
                     {children}
                     <div id="footer"></div>
@@ -28,7 +28,7 @@ export default class App extends React.Component {
         {
             return(
                 <div id="appRoot">
-                    <Gh1 className="h0" glitchType="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
+                    <Gh1 className="h0" glitchtype="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
                     <MainMenu />
                     {children}
                     <div id="footer"></div>

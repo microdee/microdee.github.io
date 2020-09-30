@@ -22,8 +22,8 @@ function MdHeading(props) {
         .replace(/[^a-z0-9]+/gi, '-')
         .replace(/[^a-z0-9]+$/gi, '')
         .toLowerCase();
-    if(props.level == 1) return (<Gh1 glitchType="2" id={anchorText}>{props.children}</Gh1>);
-    if(props.level == 2) return (<Gh2 glitchType="2" id={anchorText}>{props.children}</Gh2>);
+    if(props.level == 1) return (<Gh1 glitchtype="2" id={anchorText}>{props.children}</Gh1>);
+    if(props.level == 2) return (<Gh2 glitchtype="2" id={anchorText}>{props.children}</Gh2>);
     let hprops = {
         ...props,
         id: anchorText
@@ -137,7 +137,7 @@ export default class MdArticle extends React.Component {
             
     render() {
         if(this.state.loading) return (
-            <Gh1 glitchType="1">Loading</Gh1>
+            <Gh1 glitchtype="1">Loading</Gh1>
         )
         else return (
             <ReactMarkdown
@@ -183,7 +183,7 @@ export default class MdArticle extends React.Component {
 function ArticleLoader({ path }) {
     return (
         <TrackVisibility once partialVisibility>
-            {({ isVisible }) => isVisible ? <MdArticle path={path} /> : <Gh1 glitchType="1">Loading</Gh1>}
+            {({ isVisible }) => isVisible ? <MdArticle path={path} /> : <Gh1 glitchtype="1">Loading</Gh1>}
         </TrackVisibility>
     )
 }

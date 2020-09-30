@@ -20,21 +20,31 @@ export class Gh1 extends React.Component {
             props,
         } = this;
 
-        let hoverSuffix = props.onlyHover ? "-hover" : "";
+        let hoverSuffix = props.onlyhover ? "-hover" : "";
         let idattr = props.id ? { id: props.id } : {};
 
+        let hprops = {...props};
+        try {
+            delete hprops.glitchtype;
+        } catch (error) {
+        }
+        try {
+            delete hprops.onlyhover;
+        } catch (error) {
+        }
+
         return (
-            <div {...idattr} className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
-                <h1 {...props} style={{...props.style, ...GhOrigStyle}}>
+            <div {...idattr} className={`glitch-${props.glitchtype}${hoverSuffix}`} style={{ position: "relative"}}>
+                <h1 {...hprops} style={{...props.style, ...GhOrigStyle}}>
                     {props.children}
                 </h1>
-                <h1 {...props} style={{...props.style, ...GhMiddleStyle}}>
+                <h1 {...hprops} style={{...props.style, ...GhMiddleStyle}}>
                     {props.children}
                 </h1>
-                <h1 {...props} className={`${props.className} before`}>
+                <h1 {...hprops} className={`${props.className} before`}>
                     {props.children}
                 </h1>
-                <h1 {...props} className={`${props.className} after`}>
+                <h1 {...hprops} className={`${props.className} after`}>
                     {props.children}
                 </h1>
             </div>
@@ -52,21 +62,31 @@ export class Gh2 extends React.Component {
             props,
         } = this;
         
-        let hoverSuffix = props.onlyHover ? "-hover" : "";
+        let hoverSuffix = props.onlyhover ? "-hover" : "";
         let idattr = props.id ? { id: props.id } : {};
 
+        let hprops = {...props};
+        try {
+            delete hprops.glitchtype;
+        } catch (error) {
+        }
+        try {
+            delete hprops.onlyhover;
+        } catch (error) {
+        }
+
         return (
-            <div {...idattr} className={`glitch-${props.glitchType}${hoverSuffix}`} style={{ position: "relative"}}>
-                <h2 {...props} style={{...props.style, ...GhOrigStyle}}>
+            <div {...idattr} className={`glitch-${props.glitchtype}${hoverSuffix}`} style={{ position: "relative"}}>
+                <h2 {...hprops} style={{...props.style, ...GhOrigStyle}}>
                     {props.children}
                 </h2>
-                <h2 {...props} style={{...props.style, ...GhMiddleStyle}}>
+                <h2 {...hprops} style={{...props.style, ...GhMiddleStyle}}>
                     {props.children}
                 </h2>
-                <h2 {...props} className={`${props.className} before`}>
+                <h2 {...hprops} className={`${props.className} before`}>
                     {props.children}
                 </h2>
-                <h2 {...props} className={`${props.className} after`}>
+                <h2 {...hprops} className={`${props.className} after`}>
                     {props.children}
                 </h2>
             </div>
