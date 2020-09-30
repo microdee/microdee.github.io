@@ -5,35 +5,12 @@
     --anchor-offs: -200px;
     --main-menu-pos: sticky;
     --main-menu-flexdir: row;
-}
 
-body {
-    color: white;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-#fakeBody {
-    width: 100%;
-}
-body, #fakeBody {
-    overflow-x: hidden;
-}
-body, div, img {
-    margin: 0;
-    padding: 0;
-    line-height: 1.44;
-}
-body::-webkit-scrollbar {
-    width: 0px;
-}
-body::-webkit-scrollbar * {
-    background: transparent;
-}
-body::-webkit-scrollbar-track {
-    display: none;
-}
-body::-webkit-scrollbar-thumb {
-    background: white !important;
+    --app-total-width: calc(min(var(--app-width), 800px) + var(--app-left));
+    --app-side-width: calc(100vw - var(--app-total-width));
+    --app-side-center: calc(100vw - var(--app-side-width) / 2);
+
+    scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -52,11 +29,53 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+#fakeBody {
+    width: 100%;
+}
+body, #fakeBody {
+    overflow-x: hidden;
+}
+body, div, img {
+    margin: 0;
+    padding: 0;
+    line-height: 1.44;
+}
+body::-webkit-scrollbar, #root::-webkit-scrollbar {
+    width: 0px;
+}
+body::-webkit-scrollbar *, #root::-webkit-scrollbar * {
+    background: transparent;
+}
+body::-webkit-scrollbar-track, #root::-webkit-scrollbar-track {
+    display: none;
+}
+body::-webkit-scrollbar-thumb, #root::-webkit-scrollbar-thumb {
+    background: white !important;
+}
+
+#root {
+    scroll-behavior: smooth;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    perspective: 10px;
+    perspective-origin: var(--app-side-center);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 #appRoot {
     position: relative;
     width: var(--app-width);
     left: var(--app-left);
     max-width: 800px;
+    background: black;
+    box-shadow: 200px 0px 200px black;
 }
 
 
@@ -158,6 +177,15 @@ h4 {
     transform: translate(-50%, 0);
 }
 
+.mdArticle img[alt*="md.side-parallax"] {
+    position: relative;
+    left: 100%;
+    transform: translate(0, 25%) translateZ(-20px) scale(3);
+    margin-bottom: calc(var(--app-side-width) * -1);
+    z-index: -30;
+    width: var(--app-side-width);
+}
+
 .mdArticle iframe {
     margin-bottom: -6px;
 }
@@ -224,6 +252,7 @@ div.logo {
     max-width: none;
     z-index: 0;
     margin-bottom: -5vh;
+    filter: contrast(1.05);
 }
 
 iframe.logo {
