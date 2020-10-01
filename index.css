@@ -292,6 +292,10 @@ iframe.logo {
     margin-top: -30px;
 }
 
+.tocContent {
+    padding: 10px 0px;
+}
+
 @media only screen and (min-width: 1200px) {
     .tocContent {
         background-image: linear-gradient(to right, rgba(0,0,0,1.0), 86%, rgba(0,0,0,0.0));
@@ -303,7 +307,7 @@ iframe.logo {
         top: 140px;
         transform: translate(var(--app-calc-width), 0);
         height:0px;
-        z-index: 0;
+        z-index: 2;
         width: var(--app-side-width);
         max-width: none;
         min-width: 100%;
