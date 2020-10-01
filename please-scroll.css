@@ -52,16 +52,16 @@
     position: absolute;
     width: var(--please-scroll-width);
     height: var(--please-scroll-height);
-    bottom: calc(0px - var(--please-scroll-height) - 6px);
+    top:50vh;
+    transform: translate(0, -50%);
     right: 30px;
     border-style: solid;
     border-color: white;
     border-width: 4px;
     border-radius: var(--please-scroll-width);
     padding: var(--please-scroll-padding);
-    
     animation: initial-fadein 6s ease 1;
-    z-index: 30;
+    z-index: 10;
 }
 
 .pleaseScroll .indicator {
