@@ -26,6 +26,7 @@
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
+    "react-intersection-observer": "^8.29.0",
     "react-markdown": "^4.3.1",
     "react-on-screen": "^2.1.1",
     "react-router": "^3.2.6",
