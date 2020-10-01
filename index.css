@@ -185,7 +185,7 @@ table {
 }
 
 @media only screen and (min-width: 1200px) {
-    .mdArticle img[alt*="md.side-parallax"] {
+    .mdArticle img[alt*="md.parallax"] {
         position: relative;
         left: 100%;
         transform: translate(0, 25%) translateZ(-20px) scale(3);
@@ -197,7 +197,7 @@ table {
     }
 }
 @media only screen and (max-width: 1200px) {
-    .mdArticle img[alt*="md.side-parallax"] {
+    .mdArticle img[alt*="md.parallax"] {
         width: 100%;
     }
 }
@@ -293,6 +293,11 @@ iframe.logo {
 }
 
 @media only screen and (min-width: 1200px) {
+    .tocContent {
+        background-image: linear-gradient(to right, rgba(0,0,0,1.0), 86%, rgba(0,0,0,0.0));
+        width: 60%;
+        padding: 20px;
+    }
     .mdSideToc {
         position: sticky;
         top: 140px;

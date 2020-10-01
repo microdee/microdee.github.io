@@ -6,7 +6,7 @@
 
 ## About me
 
-![md.side-parallax](me.jpg)
+![md.parallax](me.jpg)
 
 #### Most importantly:
 
