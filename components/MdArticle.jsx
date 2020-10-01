@@ -1,8 +1,7 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router';
 import htmlParser from 'react-markdown/plugins/html-parser';
-import TrackVisibility from 'react-on-screen';
 import CodeBlock from "./CodeBlock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
@@ -53,15 +52,66 @@ function MdLinkHandler(props) {
     return ( <a {...props} target="_blank">{props.children}</a> )
 }
 
+function trLinkUri(uri, path) {
+    if(uri === undefined || uri == "" || uri == null) return uri;
+    try {
+        return new URL(uri).href
+    } catch {
+        let base = new URL(path, window.origin);
+        return new URL(uri, base.href).href;
+    }
+}
+
+function trImageUri(uri, path) {
+    if(uri === undefined || uri == "" || uri == null) return uri;
+    try {
+        return new URL(uri).href
+    } catch {
+        let base = new URL(path, window.origin);
+        return new URL(uri, base.href).href
+    }
+}
+
+function MdSideToc({mdText, path, realMdPath}) {
+
+    return (
+        <div className="mdSideToc">
+            <ReactMarkdown
+                className="tocContent"
+                source={mdText}
+                escapeHtml={false}
+                sourcePos={true}
+                allowNode={() => true}
+                renderers={{
+                    code: CodeBlock,
+                    heading: MdHeading,
+                    link: MdLinkHandler
+                }}
+                astPlugins={[
+                    htmlParser({
+                        isValidNode: () => true
+                    })
+                ]}
+                transformLinkUri={(uri) => trLinkUri(uri, path)}
+                transformImageUri={(uri) => trImageUri(uri, realMdPath)}
+                parserOptions={{
+                    gfm: true
+                }}
+            />
+        </div>
+    )
+}
+
 export default class MdArticle extends React.Component {
     constructor(props) {
         super(props);
         this.prevPath = "";
         this.state = {
             mdText: "# Loading",
+            enteredVp: false,
             loading: true,
             error: false
-        }
+        };
         this.parseHtml = htmlParser({
             isValidNode: () => true,
             processingInstructions: [
@@ -77,20 +127,61 @@ export default class MdArticle extends React.Component {
                     node.name === 'insertmd' || node.type === 'insertmd',
                     replaceChildren: false,
                     processNode: this.handleNextMd.bind(this)
+                },
+                {
+                    shouldProcessNode: node =>
+                    node.name === 'tocmd' || node.type === 'tocmd' ||
+                    node.name === 'mdtoc' || node.type === 'mdtoc',
+                    replaceChildren: false,
+                    processNode: this.handleTocMd.bind(this)
                 }
             ]
-        })
+        });
+        this.intersectionObserver = null;
+        this.elementCache = null;
+    }
+
+    onRef(element) {
+        if(element === null) return;
+        if(this.elementCache !== element) {
+            if(this.elementCache !== null && this.intersectionObserver !== null)
+                this.intersectionObserver.unobserve(this.elementCache);
+            if(this.intersectionObserver !== null)
+                this.intersectionObserver.observe(element);
+            this.elementCache = element;
+        }
+    }
+
+    handleIntersection(entries, observer) {
+        entries.forEach(e => {
+            if(e.isIntersecting && !this.state.enteredVp) {
+                this.setState({
+                    enteredVp: true
+                }, () => this.updateArticle());
+                console.log("article entered")
+            }
+        });
     }
     
     handleIframe(node, children) {
-    return (
+        return (
             <IframeWrapper {...node.attribs} />
         )
     }
         
     handleNextMd(node, children) {
         return (
-            <ArticleLoader path={node.attribs.href} />
+            <MdArticle path={node.attribs.href} />
+        )
+    }
+
+    handleTocMd(node, children) {
+        return (
+            <MdSideToc
+                mdText={node.children[0].data}
+                path={this.props.path}
+                realMdPath={this.getRealMdPath()}
+            />
         )
     }
         
@@ -124,68 +215,53 @@ export default class MdArticle extends React.Component {
     }
         
     componentDidUpdate() {
-        if(this.prevPath !== this.props.path) {
+        if(this.prevPath !== this.props.path && this.state.enteredVp) {
             this.updateArticle();
         }
         this.prevPath = this.props.path;
     }
         
     componentDidMount() {
+        this.intersectionObserver = new IntersectionObserver(this.handleIntersection.bind(this), {
+            root: document.querySelector("#root"),
+            rootMargin: '0px',
+            threshold: 0.75
+        });
+        if(this.elementCache !== null)
+            this.intersectionObserver.observe(this.elementCache);
         this.prevPath = this.props.path;
-        this.updateArticle();
     }
             
     render() {
-        if(this.state.loading) return (
-            <Gh1 glitchtype="1">Loading</Gh1>
-        )
-        else return (
-            <ReactMarkdown
-                className="mdArticle"
-                source={this.state.mdText}
-                escapeHtml={false}
-                sourcePos={true}
-                allowNode={() => true}
-                renderers={{
-                    code: CodeBlock,
-                    heading: MdHeading,
-                    link: MdLinkHandler
-                }}
-                astPlugins={[
-                    this.parseHtml
-                ]}
-                transformLinkUri={((uri) => {
-                    if(uri === undefined || uri == "" || uri == null) return uri;
-                    try {
-                        return new URL(uri).href
-                    } catch {
-                        let base = new URL(this.props.path, window.origin);
-                        return new URL(uri, base.href).href;
-                    }
-                }).bind(this)}
-                transformImageUri={((uri) => {
-                    if(uri === undefined || uri == "" || uri == null) return uri;
-                    try {
-                        return new URL(uri).href
-                    } catch {
-                        let base = new URL(this.getRealMdPath(), window.origin);
-                        return new URL(uri, base.href).href
-                    }
-                }).bind(this)}
-                parserOptions={{
-                    gfm: true
-                }}
-            />
-        )
+        return <div ref={this.onRef.bind(this)}>
+            {
+                this.state.loading ? (
+                    <Gh1 glitchtype="1">Loading</Gh1>
+                ) : (
+                    <ReactMarkdown
+                        className="mdArticle"
+                        source={this.state.mdText}
+                        escapeHtml={false}
+                        sourcePos={true}
+                        allowNode={() => true}
+                        renderers={{
+                            code: CodeBlock,
+                            heading: MdHeading,
+                            link: MdLinkHandler
+                        }}
+                        astPlugins={[
+                            this.parseHtml
+                        ]}
+                        transformLinkUri={((uri) => trLinkUri(uri, this.props.path)).bind(this)}
+                        transformImageUri={((uri) => trImageUri(uri, this.getRealMdPath())).bind(this)}
+                        parserOptions={{
+                            gfm: true
+                        }}
+                    />
+                )
+            }
+        </div>
     }
-}
-                
-function ArticleLoader({ path }) {
-    return (
-        <TrackVisibility once partialVisibility>
-            {({ isVisible }) => isVisible ? <MdArticle path={path} /> : <Gh1 glitchtype="1">Loading</Gh1>}
-        </TrackVisibility>
-    )
 }
     
 export function RoutedMdArticle({ location })

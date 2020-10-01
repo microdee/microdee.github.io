@@ -5,8 +5,9 @@
     --anchor-offs: -200px;
     --main-menu-pos: sticky;
     --main-menu-flexdir: row;
-
-    --app-total-width: calc(min(var(--app-width), 800px) + var(--app-left));
+    
+    --app-calc-width: calc(min(var(--app-width), 800px));
+    --app-total-width: calc(var(--app-calc-width) + var(--app-left));
     --app-side-width: calc(100vw - var(--app-total-width));
     --app-side-center: calc(100vw - var(--app-side-width) / 2);
 
@@ -289,4 +290,17 @@ div.logo.shadertoy {
 
 iframe.logo {
     margin-top: -30px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .mdSideToc {
+        position: sticky;
+        top: 140px;
+        transform: translate(var(--app-calc-width), 0);
+        height:0px;
+        z-index: 0;
+        width: var(--app-side-width);
+        max-width: none;
+        min-width: 100%;
+    }
 }
