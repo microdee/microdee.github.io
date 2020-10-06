@@ -300,7 +300,9 @@ iframe.logo {
     .tocContent {
         background-image: linear-gradient(to right, rgba(0,0,0,1.0), 86%, rgba(0,0,0,0.0));
         width: 60%;
-        padding: 20px;
+        padding: 25px 10px 25px 5px;
+        border-left: solid #fff;
+        margin-left: 30px;
     }
     .mdSideToc {
         position: sticky;
