@@ -25,11 +25,14 @@ normal:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NR2CH8V4rgY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+<iframe title="A 3D model" width="640" height="360" src="https://sketchfab.com/models/2a0763de025f465187f1c985cdaf0b43/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 
 full width:
 
 <iframe full="true" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dkqbk-fuaGs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe full="true" width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+<iframe full="true" title="A 3D model" width="640" height="360" src="https://sketchfab.com/models/2a0763de025f465187f1c985cdaf0b43/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Some paragraph right after iframes.
 
