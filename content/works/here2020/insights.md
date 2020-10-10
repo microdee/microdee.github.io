@@ -2,6 +2,13 @@
 
 ### Versatile presentation tool
 
+Developed during 2019 and still actively maintained.
+
+This article is just a quick summary about some of the problems we faced and the solutions we came up with to tackle them during the software development of this project. My role was in engineering the on-site presenter software architecture, which we dubbed ___UnrealityCore___ (this is a word-play combining "Unreal Engine" with the official internal name of the software package "HERE Reality Core")
+
+<iframe full="true" src="https://player.vimeo.com/video/412334178?color=a88e54&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<tocmd>
 - [HERE Technologies, CES 2020](#here-technologies-ces-2020)
     - [Versatile presentation tool](#versatile-presentation-tool)
   - [Read the official article at MESO](#read-the-official-article-at-meso)
@@ -11,12 +18,7 @@
     - [Custom levels for individual use-cases](#custom-levels-for-individual-use-cases)
     - [Display diverse content from many external sources with high efficiency](#display-diverse-content-from-many-external-sources-with-high-efficiency)
     - [Conclusion](#conclusion)
-
-Developed during 2019 and still actively maintained.
-
-This article is just a quick summary about some of the problems we faced and the solutions we came up with to tackle them during the software development of this project. My role was in engineering the on-site presenter software architecture, which we dubbed ___UnrealityCore___ (this is a word-play combining "Unreal Engine" with the official internal name of the software package "HERE Reality Core")
-
-<iframe full="true" src="https://player.vimeo.com/video/412334178?color=a88e54&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</tocmd>
 
 This article focuses on my involvement in the project and the challanges I faced. For an official representation of the entire project, and the list of others involved, please follow this link:
 ## [Read the official article at MESO](https://meso.design/en/projects/here-technologies-holistic-experience-platform-on-the-future-of-location-intelligence)
@@ -57,4 +59,4 @@ Of course this article was a quick simplified version, we faced many more intric
 
 UnrealityCore was our first ambitious software realized in UE4 at MESO and it helped us a lot transitioning to it from VVVV.
 
-<nextmd href="/c/works/here2019" />
+**[See the previous HERE Reality Core presenter made for CES 2019](/c/works/here2019/insights)**

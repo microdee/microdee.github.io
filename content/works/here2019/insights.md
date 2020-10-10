@@ -8,6 +8,18 @@ This article is just a quick summary about some of the problems we faced and the
 
 <iframe full="true" src="https://player.vimeo.com/video/325198966?color=a88e54&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
+<tocmd>
+- [HERE Technologies, CES 2019](#here-technologies-ces-2019)
+    - [Versatile presentation tool](#versatile-presentation-tool)
+  - [Read the official article at MESO](#read-the-official-article-at-meso)
+  - [Main Challange:](#main-challange)
+    - [Display diverse content from many external sources with high efficiency](#display-diverse-content-from-many-external-sources-with-high-efficiency)
+    - [Displaying HTML content](#displaying-html-content)
+    - [Interactive Unity content displayed in VVVV](#interactive-unity-content-displayed-in-vvvv)
+    - [Automatic updating of running instances](#automatic-updating-of-running-instances)
+    - [Conclusion](#conclusion)
+</tocmd>
+
 This article focuses on my involvement in the project and the challanges I faced. For an official representation of the entire project, and the list of others involved, please follow this link:
 
 ## [Read the official article at MESO](https://meso.design/en/projects/here-technologies-scalable-storytelling-environment-for-international-location-technology-firm)
@@ -50,4 +62,4 @@ This was achieved by our internal tool dubbed ___Warden Daemon___ which was not 
 
 Of course this article was a quick simplified version, we faced many more intricate endeavours during developing this presenter. This was our last large scope project built with VVVV at MESO. We are now transitioning to UE4 and our first project with it was actually the next version of the HERE Reality Core presenter.
 
-[See the HERE Reality Core presenter made for CES 2020](/c/works/here2020/insights)
+**[See the next HERE Reality Core presenter made for CES 2020](/c/works/here2020/insights)**
