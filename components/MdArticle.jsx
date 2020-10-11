@@ -1,10 +1,12 @@
-import React, { Suspense, useState } from 'react';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router';
 import htmlParser from 'react-markdown/plugins/html-parser';
 import CodeBlock from "./CodeBlock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
+import MdLottie from './MdLottie';
+import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
 
 function getMainTextOfComponent(component) {
     if(typeof(component) === 'string') return component;
@@ -30,28 +32,6 @@ function MdHeading(props) {
     return React.createElement(`h${hprops.level}`, hprops, hprops.children);
 }
 
-function IsCurrentDomain(urlin) {
-    return urlin.includes('localhost') || urlin.includes('mcro.de')
-}
-
-function GetLocalPathFromUrl(urlin) {
-    return new URL(urlin).pathname;
-}
-
-function MdLinkHandler(props) {
-    let localPath = GetLocalPathFromUrl(props.href);
-    if(IsCurrentDomain(props.href) && localPath.includes('.')) return (
-        <a {...props} href={props.href.replace('/c/', '/')} target="_blank">{props.children}</a>
-    )
-    if(IsCurrentDomain(props.href)) return (
-        <Link to={GetLocalPathFromUrl(props.href)}>{props.children}</Link>
-    )
-    if(props.href.startsWith('about:blank#')) return (
-        <a {...props} href={props.href.replace('about:blank', '')}>{props.children}</a>
-    )
-    return ( <a {...props} target="_blank">{props.children}</a> )
-}
-
 function trLinkUri(uri, path) {
     if(uri === undefined || uri == "" || uri == null) return uri;
     try {
@@ -73,7 +53,6 @@ function trImageUri(uri, path) {
 }
 
 function MdSideToc({mdText, path, realMdPath}) {
-
     return (
         <div className="mdSideToc">
             <ReactMarkdown
@@ -124,6 +103,8 @@ export default class MdArticle extends React.Component {
                 {
                     shouldProcessNode: node =>
                     node.name === 'nextmd' || node.type === 'nextmd' ||
+                    node.name === 'mdnext' || node.type === 'mdnext' ||
+                    node.name === 'mdinsert' || node.type === 'mdinsert' ||
                     node.name === 'insertmd' || node.type === 'insertmd',
                     replaceChildren: false,
                     processNode: this.handleNextMd.bind(this)
@@ -134,6 +115,13 @@ export default class MdArticle extends React.Component {
                     node.name === 'mdtoc' || node.type === 'mdtoc',
                     replaceChildren: false,
                     processNode: this.handleTocMd.bind(this)
+                },
+                {
+                    shouldProcessNode: node =>
+                    node.name === 'lottiemd' || node.type === 'lottiemd' ||
+                    node.name === 'mdlottie' || node.type === 'mdlottie',
+                    replaceChildren: false,
+                    processNode: this.handleMdLottie.bind(this)
                 }
             ]
         });
@@ -182,6 +170,18 @@ export default class MdArticle extends React.Component {
                 path={this.props.path}
                 realMdPath={this.getRealMdPath()}
             />
+        )
+    }
+
+    handleMdLottie(node, children) {
+        let {url, isFile, isDomain} = GetMdUrl(node.attribs.href);
+        let passAttribs = {...node.attribs};
+        delete passAttribs.href;
+        if(isFile || !isDomain) return (
+            <MdLottie href={url} {...passAttribs} />
+        );
+        return (
+            <div className="mdLottie invalid"></div>
         )
     }
         

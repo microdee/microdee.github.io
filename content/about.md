@@ -86,4 +86,4 @@ Still usable, in order of confidence
 * Born in Hungary, Budapest
 * Currently living in Germany, Frankfurt am Main
 
-### [Get a printer friendly CV](cv.pdf)
+### [Get a printer friendly CV](root/cv.pdf)

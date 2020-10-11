@@ -2,16 +2,24 @@
 
 <MyTag yolo="swag">I wonder what will happen</MyTag>.
 
+## Testing Lottie
+
+<mdlottie href="dotcom-bubble.json" parallax desaturate />
+
+<mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" />
+
+<mdlottie href="hello.json" invert />
+
 ## Testing pictures
-
-parallax:
-
-![md.parallax](emergent.gif)
 
 normal:
 
 ![](toiletposition.gif)
 ![](emergent.gif)
+
+parallax:
+
+![md.parallax](emergent.gif)
 
 expanded:
 
@@ -23,6 +31,8 @@ full width:
 ![md.full](toiletposition.gif)
 ![md.full](emergent.gif)
 
+Some paragraph right after images.
+
 ## Testing embedded content
 
 normal:
@@ -30,7 +40,6 @@ normal:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NR2CH8V4rgY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdfGW4?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 <iframe title="A 3D model" width="640" height="360" src="https://sketchfab.com/models/2a0763de025f465187f1c985cdaf0b43/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
 
 full width:
 
@@ -44,6 +53,7 @@ Some paragraph right after iframes.
 
 <tocmd>
 - [Testing custom tags](#testing-custom-tags)
+  - [Testing Lottie](#testing-lottie)
   - [Testing pictures](#testing-pictures)
   - [Testing embedded content](#testing-embedded-content)
 - [Markdown: Syntax](#markdown-syntax)

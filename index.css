@@ -6,6 +6,9 @@
     --main-menu-pos: sticky;
     --main-menu-flexdir: row;
     
+    --emphasized-content-margin: 15px;
+    --iframe-anti-margin: 6px;
+    
     --app-calc-width: calc(min(var(--app-width), 800px));
     --app-total-width: calc(var(--app-calc-width) + var(--app-left));
     --app-side-width: calc(100vw - var(--app-total-width));
@@ -184,8 +187,12 @@ table {
     transform: translate(-50%, 0);
 }
 
+.mdArticle img:last-child {
+    margin-bottom: calc(var(--emphasized-content-margin) - 10px);
+}
+
 @media only screen and (min-width: 1200px) {
-    .mdArticle img[alt*="md.parallax"] {
+    .mdArticle img[alt*="md.parallax"], .mdArticle .parallax, .mdArticle *[parallax] {
         position: relative;
         left: 100%;
         transform: translate(0, 25%) translateZ(-20px) scale(3);
@@ -202,12 +209,24 @@ table {
     }
 }
 
+.mdArticle img[alt*="md.invert"], .mdArticle .invert, .mdArticle *[invert] {
+    filter: invert(100%);
+}
+
+.mdArticle img[alt*="md.desaturate"], .mdArticle .desaturate, .mdArticle *[desaturate] {
+    filter: saturate(0%);
+}
+
 .mdArticle iframe {
-    margin-bottom: -6px;
+    margin-bottom: calc(var(--iframe-anti-margin) * -1);
 }
 
 .mdArticle iframe[full*="true"] {
     z-index: 20;
+}
+
+.mdArticle iframe + :not(iframe) {
+    margin-top: calc(var(--emphasized-content-margin) + var(--iframe-anti-margin));
 }
 
 .thumb {
