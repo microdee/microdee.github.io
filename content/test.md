@@ -4,7 +4,7 @@
 
 ## Testing Lottie
 
-<mdlottie href="dotcom-bubble.json" parallax desaturate />
+<mdlottie href="dotcom-bubble.json" parallax />
 
 <mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" />
 

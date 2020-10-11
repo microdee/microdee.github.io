@@ -23,9 +23,9 @@ export function GetLocalPathFromUrl(urlin) {
 
 export function GetMdUrl(href) {
     let {url, localPath} = GetLocalPathFromUrl(href);
-    if(IsCurrentDomain(url.href) && localPath.includes('.') && localPath.startsWith('root/'))
+    if(IsCurrentDomain(url.href) && localPath.includes('.') && localPath.includes('root/'))
         return {
-            url: window.location.origin + '/' + localPath,
+            url: new URL(localPath.replace(/.*root\//gm, ''), window.origin).href,
             isRoot: true,
             isFile: true,
             isLocal: false,
