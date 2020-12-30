@@ -2,6 +2,7 @@
 
 ![md.parallax](vaporw1.webp)
 ![md.expand](toiletposition.gif)
+![md.expand](hard-work.webp)
 ![md.expand](woodech.gif)
 ![md.expand](atomchicken.gif)
 ![md.expand](buttonchicken.gif)
