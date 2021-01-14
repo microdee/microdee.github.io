@@ -46,9 +46,9 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 * **[VVVV](https://vvvv.org)**
 * **C++** (mostly on Windows)
   * Unreal Engine 4
+  * CMake
   * Chromium Embedded Framework (CEF)
   * Graphics programming with Direct3D
-  * ImGui
   * boost
 * **Tooling/Scripting**
   * Python
@@ -56,7 +56,6 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 
 Still usable, in order of confidence
 
-* **CMake** (I still have to fully master it)
 * **Webstack / Frontend**
   * Usual JS/HTML/CSS
   * Frameworks:
