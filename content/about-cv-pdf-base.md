@@ -39,8 +39,8 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 * **VVVV** (legacy large-scale-media creation tool)
 * **C++** (mostly on Windows)
   * Unreal Engine 4
+  * CMake
   * Chromium Embedded Framework (CEF)
-  * ImGui
   * Graphics programming with Direct3D
   * boost
 * **Tooling/Scripting**
@@ -49,7 +49,6 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 
 Still usable, in order of confidence
 
-* **CMake** (I still have to fully master it)
 * **Webstack / Frontend**
   * Usual JS/HTML/CSS
   * Frameworks:
