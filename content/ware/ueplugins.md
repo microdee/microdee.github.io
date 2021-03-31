@@ -22,7 +22,7 @@ A lot of enhancements and features are planned, but the basic components are alr
 
 Control Editor viewports with the best camera control device out there, even without the official drivers.
 
-### [Get it](https://github.com/microdee/UE4-SpaceMouse)
+### [Get it](https://github.com/microdee/UE4-SpaceMouse) | [Buy it](https://www.unrealengine.com/marketplace/en-US/product/spacemouse-for-unreal-engine)
 
 ![md.expand](sm-thumb.png)
 
