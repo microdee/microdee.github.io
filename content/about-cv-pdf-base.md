@@ -23,7 +23,8 @@
 
 | | | |
 |-|-|-|
-|**MESO Digital Interiors GmbH.**<br>as Real-time Software Developer | 2018 - present | https://meso.design |
+|**Realworld One GmbH. & Co. KG**<br>as Senior Unreal Programmer | 2021 - present | https://realworld-one.com/ |
+|**MESO Digital Interiors GmbH.**<br>as Real-time Software Developer | 2018 - 2021 | https://meso.design |
 | **Uberact Ltd.**<br>as Lead Developer | 2014 - 2018 | https://uberact.com/ |
 | **Kitchen Budapest**<br>as Media Systems Designer | 2012 - 2014 | http://kitchenbudapest.hu/ |
 | **Freelance work**<br>as Media Artist | 2009 - 2012 | |
