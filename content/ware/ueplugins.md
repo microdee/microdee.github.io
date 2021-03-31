@@ -1,18 +1,10 @@
-## UE4-SpaceMouse
-
-Control Editor viewports with the best camera control device out there, even without the official drivers.
-
-### [Get it](https://github.com/microdee/UE4-SpaceMouse)
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qibig0gQWvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-----
-
 ## Uranium
 
 ![md.center](ur_logo_atom_ondark.png)
 
 The fastest full CEF implementation for UE4 so far, embracing recent features of CEF's Off-screen rendering mode.
+
+### [Get it](https://github.com/microdee/Uranium)
 
 * Use mostly everything what CEF can offer, translated to an Unreal friendly API.
 * Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
@@ -21,10 +13,18 @@ The fastest full CEF implementation for UE4 so far, embracing recent features of
 * Integration into Unreal's own audio system.
 * UMG abstraction layer, a full fledged browser widget.
 
-### [Get it](https://github.com/microdee/Uranium)
-
 **Recently open-sourced. It started development at MESO**  
 A lot of enhancements and features are planned, but the basic components are already usable.
+
+----
+
+## SpaceMouse for Unreal Engine
+
+Control Editor viewports with the best camera control device out there, even without the official drivers.
+
+### [Get it](https://github.com/microdee/UE4-SpaceMouse)
+
+![md.expand](sm-thumb.png)
 
 ----
 
