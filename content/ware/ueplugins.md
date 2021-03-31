@@ -8,6 +8,26 @@ Control Editor viewports with the best camera control device out there, even wit
 
 ----
 
+## Uranium
+
+![md.center](ur_logo_atom_ondark.png)
+
+The fastest full CEF implementation for UE4 so far, embracing recent features of CEF's Off-screen rendering mode.
+
+* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
+* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
+  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
+* Full multitouch capability.
+* Integration into Unreal's own audio system.
+* UMG abstraction layer, a full fledged browser widget.
+
+### [Get it](https://github.com/microdee/Uranium)
+
+**Recently open-sourced. It started development at MESO**  
+A lot of enhancements and features are planned, but the basic components are already usable.
+
+----
+
 ## UE4 Material Expression node Generator
 
 This is a VS Code plugin to generate custom material expression nodes and their boilerplate for UE4 to the clipboard, ready to be pasted in the material editor.
@@ -55,19 +75,3 @@ Manage multiple UMG windows from Blueprint and other UI related features.
 
 **Currently being developed at MESO.**  
 It's already being used almost in all of our complete and running projects at MESO.
-
-----
-
-## Uranium
-
-The fastest full CEF implementation for UE4 so far, embracing recent features of CEF's Off-screen rendering mode.
-
-* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
-* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
-  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
-* Full multitouch capability.
-* Integration into Unreal's own audio system.
-* UMG abstraction layer, a full fledged browser widget.
-
-**Currently being developed at MESO.**  
-It's currently at proof-of-concept stage. Due to the backlash of public showcases caused by the 2020 pandemic, further development of this plugin is on hold.
