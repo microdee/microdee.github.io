@@ -3,6 +3,7 @@
 
 <tocmd>
 - [Nuke.Unreal](#nukeunreal)
+    - [Get it here](#get-it-here)
   - [TL;DR features](#tldr-features)
   - [Prelude/Reasoning](#preludereasoning)
   - [Setup](#setup)
@@ -16,6 +17,8 @@
 ![md.parallax](../nu_logo.svg)
 
 This article is about using C# and [Nuke](https://nuke.build) to automate tasks and build steps around your Unreal project. It will generally describe the workflow and how to set it up yourself. This is still deep in development so this article should be a teaser-trailer really.
+
+### [Get it here](https://github.com/microdee/Nuke.Unreal)
 
 ## TL;DR features
 
