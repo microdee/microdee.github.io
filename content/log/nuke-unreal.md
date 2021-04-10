@@ -124,5 +124,3 @@ This feature is incomplete yet, and this article will be updated once I fully im
 `Nuke.Unreal` includes a dotnet generator which references the C# automation DLL's from an Unreal installation. Using reflection it can extract all the automations you can do with them and transforms those into a fluent command-line builder API. The resulting API then executes the associated tool with the arguments built up with the `Fluent().Function().Calls()`.
 
 [ATM it is developed here](https://github.com/microdee/Nuke.Unreal/tree/topic/fluent-uetool-api/src/Nuke.Unreal.ToolGenerators)
-
-<nextmd href="/c/log/change-resolution-script" />
