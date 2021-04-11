@@ -41,6 +41,8 @@ To cut this short I went with Nuke out of some alternatives I considered (CAKE, 
 
 ## Setup
 
+[You can read the Nuke.Unreal setup instructions here](https://github.com/microdee/Nuke.Unreal#usage)
+
 You can go to Nuke's own documentation to see [detailed setup instructions](https://nuke.build/docs/getting-started/setup.html) for any of your project, but TL;DR: it creates a dotnet console application for you where you can define your targets as properties in a `Build` class, and program it like any other C# application out there. Additionally it places some extra files and scripts in your project root, to make everyone's life so much easier.
 
 Nuke's documentation suggests couple of strategies to share build tasks, one of them being submodules. I will use them for now, because they require the least immediate boilerplate while developing and testing them and the least amount of chore to publish changes.
