@@ -37,7 +37,7 @@ Recently I had some time and incentive to finally updgrade the way I package my 
 
 Of course build automation packages and CI/CD systems are built specifically to solve problems like this, and now I can ruin my vacation trying to force one of them to work with Unreal Engine. Unreal itself has its own automation workflow buuut it suffers from recurring problems around their ecosystem: documentation is a single A4 page article, it is a pain to work with, don't embrace external tools and libraries which would improve productivity tenfold, and it's only available when you're working with engine source for your project.
 
-To cut this short I went with Nuke out of some alternatives I considered (CAKE, PSake, FAKE, Gradle, Meson). It also felt natural to use a tool which you program with C# since Unreal itself uses C# to configure its targets and modules (albeit a pretty old language version).
+To cut this short I went with **Nuke** out of some alternatives I considered (CAKE, PSake, FAKE, Gradle, Meson). It also felt natural to use a tool which you program with C# since Unreal itself uses C# to configure its targets and modules (albeit a pretty old language version).
 
 ## Setup
 
