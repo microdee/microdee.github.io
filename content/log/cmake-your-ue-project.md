@@ -37,7 +37,7 @@ For these amazing ideas CMake people were kind enough to unironically have the `
 
 Now about that Super Easy™ part: if you eventually want to build your project as well from that solution of yours, unfortunately UBT will only cooperate when that said solution is sitting next to the respective `.uproject` file. You can achieve this if you run `cmake -G` from your Unreal project folder. Downside is tho, CMake will pollute your tidy Unreal project.
 
-You will not need to include the UE4.vcxproj, but even if you want to, you might not able to do so. The reason is that UE4.vcxproj only has one architecture-config combo: `BuiltWithUnrealBuildTool|Win32` and if you're generating your CMake project for x64 only, Visual Studio will not be able to load the project. As for reference including it would look like this:
+You will not need to include the UE4.vcxproj, but even if you want to, you might not be able to do so. The reason is that UE4.vcxproj only has one architecture-config combo: `BuiltWithUnrealBuildTool|Win32` and if you're generating your CMake project for x64 only, Visual Studio will not be able to load the project. As for reference including it would look like this:
 
 ```CMake
 include_external_msproject(
