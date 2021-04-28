@@ -145,10 +145,17 @@ table {
     width: 100%;
 }
 
+.header-anchor {
+    position: relative;
+    top: -150px;
+    display: table-column;
+}
+
 .mdArticle {
     position: relative;
     top: 0px;
     margin-top: 50px;
+    overflow-y: clip;
 }
 
 .mdArticle::before {

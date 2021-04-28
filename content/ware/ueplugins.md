@@ -36,6 +36,8 @@ High level project automations for UE4 in C#, using the [Nuke build tool](https:
 
 ![](../nu_logo-250.png)
 
+----
+
 ## UE4 Material Expression node Generator
 
 This is a VS Code plugin to generate custom material expression nodes and their boilerplate for UE4 to the clipboard, ready to be pasted in the material editor.

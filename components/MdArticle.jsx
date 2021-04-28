@@ -23,13 +23,25 @@ function MdHeading(props) {
         .replace(/[^a-z0-9]+/gi, '-')
         .replace(/[^a-z0-9]+$/gi, '')
         .toLowerCase();
-    if(props.level == 1) return (<Gh1 glitchtype="2" id={anchorText}>{props.children}</Gh1>);
-    if(props.level == 2) return (<Gh2 glitchtype="2" id={anchorText}>{props.children}</Gh2>);
     let hprops = {
         ...props,
         id: anchorText
     }
-    return React.createElement(`h${hprops.level}`, hprops, hprops.children);
+    function H(inprops, inhprops)
+    {
+        if(inprops.level == 1) return (<Gh1 glitchtype="2" id={anchorText}>{inprops.children}</Gh1>);
+        if(inprops.level == 2) return (<Gh2 glitchtype="2" id={anchorText}>{inprops.children}</Gh2>);
+        return React.createElement(`h${inhprops.level}`, inhprops, inhprops.children);
+    }
+
+    return (
+        <div>
+            <a id={anchorText} className="header-anchor">anchor</a>
+            {
+                H(props, hprops)
+            }
+        </div>
+    )
 }
 
 function trLinkUri(uri, path) {

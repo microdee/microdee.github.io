@@ -24,14 +24,10 @@ export class Gh1 extends React.Component {
         let idattr = props.id ? { id: props.id } : {};
 
         let hprops = {...props};
-        try {
-            delete hprops.glitchtype;
-        } catch (error) {
-        }
-        try {
-            delete hprops.onlyhover;
-        } catch (error) {
-        }
+        try { delete hprops.glitchtype; } catch (error) { }
+        try { delete hprops.onlyhover; } catch (error) { }
+        try { delete hprops.id; } catch (error) { }
+        
 
         return (
             <div {...idattr} className={`glitch-${props.glitchtype}${hoverSuffix}`} style={{ position: "relative"}}>
@@ -66,14 +62,9 @@ export class Gh2 extends React.Component {
         let idattr = props.id ? { id: props.id } : {};
 
         let hprops = {...props};
-        try {
-            delete hprops.glitchtype;
-        } catch (error) {
-        }
-        try {
-            delete hprops.onlyhover;
-        } catch (error) {
-        }
+        try { delete hprops.glitchtype; } catch (error) { }
+        try { delete hprops.onlyhover; } catch (error) { }
+        try { delete hprops.id; } catch (error) { }
 
         return (
             <div {...idattr} className={`glitch-${props.glitchtype}${hoverSuffix}`} style={{ position: "relative"}}>
