@@ -2,10 +2,10 @@
 [(04.10.2021)](/c/log/nuke-unreal)
 
 <tocmd>
-- [Nuke.Unreal](#nukeunreal)
+- [Nuke.Unreal](#nuke-unreal)
     - [Get it here](#get-it-here)
-  - [TL;DR features](#tldr-features)
-  - [Prelude/Reasoning](#preludereasoning)
+  - [TL;DR features](#tl-dr-features)
+  - [Prelude/Reasoning](#prelude-reasoning)
   - [Setup](#setup)
     - [Scaffolding](#scaffolding)
     - [Working with UE4 Plugins](#working-with-ue4-plugins)
