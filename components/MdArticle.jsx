@@ -259,7 +259,16 @@ export default class MdArticle extends React.Component {
                         renderers={{
                             code: CodeBlock,
                             heading: MdHeading,
-                            link: MdLinkHandler
+                            link: MdLinkHandler,
+                            image: (props) => props.alt === "md.full"
+                                ? (
+                                    <div className="md-full">
+                                        <img {...props} />
+                                    </div>
+                                )
+                                : (
+                                    <img {...props} />
+                                )
                         }}
                         astPlugins={[
                             this.parseHtml

@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb, #root::-webkit-scrollbar-thumb {
     width: 100vw;
     height: 100vh;
     perspective: 10px;
-    perspective-origin: var(--app-side-center);
+    /*perspective-origin: var(--app-side-center);*/
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -108,7 +108,7 @@ pre, code {
     -moz-tab-size: 4;
     tab-size: 4;
 }
-p code {
+code:not(pre code) {
     background-color: rgba(125,125,125,0.45);
     padding: 0px 3px;
     margin: 0px 2px;
@@ -180,12 +180,21 @@ table {
     width: 100%;
 }
 
-.mdArticle img[alt*="md.full"] {
+.md-full {
     position: relative;
-    max-width: none;
     width: 100vw;
+    max-width: none;
     left: calc(var(--app-left) * -1);
     z-index: 20;
+    margin-bottom: -7px;
+    overflow: hidden;
+}
+.md-full img {
+    position: relative;
+    width: 100vw;
+    max-width: none;
+    margin-bottom: 0px !important;
+    transform: translate(0, 25%) translateZ(-40px) scale(5);
 }
 
 .mdArticle img[alt*="md.center"] {
@@ -198,10 +207,15 @@ table {
     margin-bottom: calc(var(--emphasized-content-margin) - 10px);
 }
 
+.mdArticle .md-full:last-child {
+    margin-bottom: calc(var(--emphasized-content-margin) - 10px);
+}
+
 @media only screen and (min-width: 1200px) {
     .mdArticle img[alt*="md.parallax"], .mdArticle .parallax, .mdArticle *[parallax] {
         position: relative;
         left: 100%;
+        transform-origin: calc(var(--app-side-center) * -0.09);
         transform: translate(0, 25%) translateZ(-20px) scale(3);
         margin-bottom: calc(max(var(--app-side-width), 100%) * -1);
         z-index: -30;
@@ -234,6 +248,15 @@ table {
 
 .mdArticle iframe + :not(iframe) {
     margin-top: calc(var(--emphasized-content-margin) + var(--iframe-anti-margin));
+}
+
+.mdArticle pre::-webkit-scrollbar {
+    height: 5px;
+    background-color: transparent;
+}
+
+.mdArticle pre::-webkit-scrollbar-thumb {
+    background-color: white;
 }
 
 .thumb {
@@ -329,6 +352,20 @@ iframe.logo {
         padding: 25px 10px 25px 5px;
         border-left: solid #fff;
         margin-left: 30px;
+        max-height: calc(100vh - 260px);
+        overflow-y: scroll;
+        direction: rtl;
+    }
+    .tocContent * {
+        direction: ltr;
+    }
+
+    .tocContent::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+    .tocContent::-webkit-scrollbar-thumb {
+        background-color: white;
     }
     .mdSideToc {
         position: sticky;
