@@ -1228,7 +1228,7 @@ void SetupPS(
 
 Find it in [Engine/Source/Runtime/Renderer/Private/ScreenPass.h](https://github.com/EpicGames/UnrealEngine/blob/c3caf7b6bf12ae4c8e09b606f10a09776b4d1f38/Engine/Source/Runtime/Renderer/Private/ScreenPass.h#L220)
 
-Contains a transform that maps UV coordinates from one screen pass texture viewport to another. Assumes normalized UV coordinates [0, 0]x[1, 1] where [0, 0] maps to the source view min coordinate and [1, 1] maps to the source view rect max coordinate.
+Contains a transform that maps UV coordinates from one screen pass texture viewport to another. Assumes normalized UV coordinates \[0, 0\]x\[1, 1\] where \[0, 0\] maps to the source view min coordinate and \[1, 1\] maps to the source view rect max coordinate.
 
 Example Usage:
 
