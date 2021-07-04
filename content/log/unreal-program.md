@@ -1,6 +1,8 @@
-## Useless knowledge: Make arbitrary programs with UE
+## Useless knowledge: Make programs with UE
 
 [(05.07.2021)](/c/log/unreal-program)
+
+![md.parallax md.not-in-article](wiity.jpg)
 
 What if I told you, Unreal Engine is a C++ framework, and as such you can make arbitrary programs with it, without all the Game-engine related bloat. Now there are not too many reasons to make such applications but here are couple really persuasive ones:
 
