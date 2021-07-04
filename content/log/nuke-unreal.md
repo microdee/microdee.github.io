@@ -41,6 +41,14 @@ To cut this short I went with **Nuke** out of some alternatives I considered (CA
 
 ## Setup
 
+To initialize it with your project execute this:
+
+```Powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/microdee/Nuke.Unreal.WorkflowTemplate/main/Setup.ps1'))
+```
+
+It will install the necessary boilerplate, [see Scaffolding](#scaffolding).
+
 [You can read the Nuke.Unreal setup instructions here](https://github.com/microdee/Nuke.Unreal#usage)
 
 You can go to Nuke's own documentation to see [detailed setup instructions](https://nuke.build/docs/getting-started/setup.html) for any of your project, but TL;DR: it creates a dotnet console application for you where you can define your targets as properties in a `Build` class, and program it like any other C# application out there. Additionally it places some extra files and scripts in your project root, to make everyone's life so much easier.

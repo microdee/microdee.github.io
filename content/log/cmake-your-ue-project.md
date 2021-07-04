@@ -2,7 +2,7 @@
 
 [(04.29.2021)](/c/log/cmake-your-ue-project)
 
-![md.parallax](Cmake.svg)
+![md.parallax md.not-in-article](Cmake.svg)
 
 Because god has abandoned us long ago.
 
