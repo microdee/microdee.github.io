@@ -228,6 +228,9 @@ table {
     .mdArticle img[alt*="md.parallax"] {
         width: 100%;
     }
+    .mdArticle img[alt*="md.not-in-article"] {
+        display: none;
+    }
 }
 
 .mdArticle img[alt*="md.invert"], .mdArticle .invert, .mdArticle *[invert] {
@@ -236,6 +239,10 @@ table {
 
 .mdArticle img[alt*="md.desaturate"], .mdArticle .desaturate, .mdArticle *[desaturate] {
     filter: saturate(0%);
+}
+
+.mdArticle img[alt*="md.invert-desaturate"], .mdArticle .invert-desaturate, .mdArticle *[invert-desaturate] {
+    filter: invert(100%) saturate(0%);
 }
 
 .mdArticle iframe {

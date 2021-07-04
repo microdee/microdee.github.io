@@ -2,6 +2,8 @@
 
 [(04.29.2021)](/c/log/cmake-your-ue-project)
 
+![md.parallax](Cmake.svg)
+
 Because god has abandoned us long ago.
 
 This idea is actually useful when you need to debug your external service built outside of the unique snowflake UBT system for any perfectly valid reason, and test it simultaneously with your Unreal project. Or debug multiple Unreal projects inside the same solution.
