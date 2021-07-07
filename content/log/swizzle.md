@@ -2,6 +2,8 @@
 
 [(07.07.2021)](/c/log/unreal-program)
 
+![md.parallax md.not-in-article](swizzle-sticks-v.jpg)
+
 [Vector swizzling](https://en.wikipedia.org/wiki/Swizzling_(computer_graphics)) is when you can get / assign the components of your vector in any order at once. In HLSL or GLSL it looks like this:
 
 ```HLSL
@@ -301,3 +303,5 @@ auto B = swg<'xyxy'>(A); // B -> FVector4
 and use B directly as a vector.
 
 That's it! I'm sure it can be improved and it can be more modular, but it's good enough for me. Now I go and leave Earth, byeee!
+
+(photo of swizzle sticks by [Lizzie Munro](http://www.lizziemunro.com/))
