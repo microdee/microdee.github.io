@@ -2,7 +2,7 @@
 
 [(07.07.2021)](/c/log/swizzle)
 
-![md.parallax md.not-in-article](swizzle-sticks-v.jpg)
+![md.parallax md.not-in-article](swizzle-sticks.jpg)
 
 [Vector swizzling](https://en.wikipedia.org/wiki/Swizzling_(computer_graphics)) is when you can get / assign the components of your vector in any order at once. In HLSL or GLSL it looks like this:
 
