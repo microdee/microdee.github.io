@@ -1,6 +1,6 @@
 ## Elegant™ vector swizzling in C++
 
-[(07.07.2021)](/c/log/unreal-program)
+[(07.07.2021)](/c/log/swizzle)
 
 ![md.parallax md.not-in-article](swizzle-sticks-v.jpg)
 
