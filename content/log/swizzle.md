@@ -87,7 +87,7 @@ constexpr int dimension(T inp)
 }
 ```
 
-Now we get the bytes. Here's a slight problem though: this expression must be executed inside template arguments. In this case using an union is not very stable and using pointer arithmetics are not allowed at all. So we're forced to use bit-shifting. With that tho comes another problem: bit-wise operations happens on binary number form, not on the bytes in storage which is. This means `'xy'` is `0x00007879`. We want our `get_byte` function to return 'x' on `i=0`, not 'y'. So we have to flip the order in our `get_byte` function before we can use it:
+Now we get the bytes. Here's a slight problem though: this expression must be executed inside template arguments. In this case using an union is not very stable and using pointer arithmetics are not allowed at all. So we're forced to use bit-shifting. With that tho comes another problem: bit-wise operations happens on binary number form, not on the bytes in storage (thank god). This means `'xy'` is `0x00007879`. We want our `get_byte` function to return 'x' on `i=0`, not 'y'. So we have to flip the order in our `get_byte` function before we can use it:
 
 ```Cpp
 // we do bitshifting shenanigans to get our component characters
@@ -208,17 +208,55 @@ struct assigner_base
         }
         return Output;
     }
-
-    // assign a right hand side vector components to the
-    // components of the left vector specified by SwizzText
-    void operator = (const RightVecT& right)
+    
+    // per-component operation where T is float(int c, int i)
+    template<typename T>
+    void operation_base(T op)
     {
         for(int i=0; i<dimension(SwizzText); i++)
         {
             auto curr_c = map_comp_char(get_byte(SwizzText, i));
-            get_comp(left, curr_c) = get_comp(right, i);
+            get_comp(left, curr_c) = op(i);
         }
     }
+
+    // assign a right hand side vector components to the
+    // components of the left vector specified by SwizzText
+    // and for the heck of it I've added incremental operators
+    void operator = (const RightVecT& right)
+    {
+        operation_base([&](int, int i) { return get_comp(right, i); });
+    }
+
+    void operator *= (const RightVecT& right)
+    {
+        operation_base([&](int c, int i) { return get_comp(left, c) * get_comp(right, i); });
+    };
+
+    void operator /= (const RightVecT& right)
+    {
+        operation_base([&](int c, int i) { return get_comp(left, c) / get_comp(right, i); });
+    };
+
+    void operator += (const RightVecT& right)
+    {
+        operation_base([&](int c, int i) { return get_comp(left, c) + get_comp(right, i); });
+    };
+
+    void operator -= (const RightVecT& right)
+    {
+        operation_base([&](int c, int i) { return get_comp(left, c) - get_comp(right, i); });
+    };
+
+    void operator --()
+    {
+        operation_base([&](int c, int) { return get_comp(left, c) - 1.0f; });
+    };
+
+    void operator ++()
+    {
+        operation_base([&](int c, int) { return get_comp(left, c) + 1.0f; });
+    };
 };
 ```
 
@@ -231,18 +269,41 @@ struct assigner : public assigner_base<SwizzText, LeftVecT, RightVecT>
 {
     using super_t = assigner_base<SwizzText, LeftVecT, RightVecT>;
     
-    // just use parent class operator
-    void operator = (const RightVecT& right) { super_t::operator=(right); }
-    
     // allow scalars to be assigned to multiple components
     void operator = (const float& right)
     {
-        for(int i=0; i<dimension(SwizzText); i++)
-        {
-            auto curr_c = map_comp_char(get_byte(SwizzText, i));
-            get_comp(super_t::left, curr_c) = right;
-        }
+        super_t::operation_base([&](int, int) { return right; });
     }
+
+    void operator *= (const float& right)
+    {
+        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) * right; });
+    };
+
+    void operator /= (const float& right)
+    {
+        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) / right; });
+    };
+
+    void operator += (const float& right)
+    {
+        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) + right; });
+    };
+
+    void operator -= (const float& right)
+    {
+        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) - right; });
+    };
+    
+    // use parent class operators
+    // for some reason operator overloads of parent class didn't carry over
+    void operator = (const RightVecT& right) { super_t::operator=(right); }
+    void operator *= (const RightVecT& right) { super_t::operator*=(right); }
+    void operator /= (const RightVecT& right) { super_t::operator/=(right); }
+    void operator += (const RightVecT& right) { super_t::operator+=(right); }
+    void operator -= (const RightVecT& right) { super_t::operator-=(right); }
+    void operator ++ () { super_t::operator++(); }
+    void operator -- () { super_t::operator--(); }
 };
 ```
 
@@ -255,8 +316,13 @@ struct assigner<SwizzText, LeftVecT, float> : public assigner_base<SwizzText, Le
 {
     using super_t = assigner_base<SwizzText, LeftVecT, float>;
     
-    // just use parent class operator and omit the scalar equivalent (as that would be the same)
+    // use parent class operator and omit the scalar equivalent (as that would be the same)
+    // for some reason operator overloads of parent class didn't carry over
     void operator = (const float& right) { super_t::operator=(right); }
+    void operator *= (const float& right) { super_t::operator*=(right); }
+    void operator /= (const float& right) { super_t::operator/=(right); }
+    void operator += (const float& right) { super_t::operator+=(right); }
+    void operator -= (const float& right) { super_t::operator-=(right); }
 };
 ```
 
@@ -301,6 +367,29 @@ auto B = swg<'xyxy'>(A); // B -> FVector4
 ```
 
 and use B directly as a vector.
+
+Other nice things with it:
+
+```Cpp
+// get a 3D vector out of a float
+auto A = swg<'xxx'>(1.0f);
+
+// modify
+sw<'yz'>(A)++;
+sw<'xy'>(A) += 0.5;
+sw<'xz'>(A) *= 0.5;
+
+// packing
+FVector4 rect; // xy center, zw size
+sw<'xy'>(rect) = pos;
+sw<'zw'>(rect) = 100;
+
+// unpacking
+auto pos = swg<'xy'>(rect);
+auto size = swg<'zw'>(rect);
+
+// etc...
+```
 
 That's it! I'm sure it can be improved and it can be more modular, but it's good enough for me. Now I go and leave Earth, byeee!
 
