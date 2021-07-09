@@ -178,3 +178,5 @@ Add-Type -Path "$PSScriptRoot\SetResolution.dll"
 ```
 
 Well that was a sudden brain-fart, I've spent some 20 minutes on, bye!
+
+<mdcomment />

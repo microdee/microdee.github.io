@@ -52,7 +52,10 @@
       - [Defining in the shader](#defining-in-the-shader)
       - [Draw Screen Pass API](#draw-screen-pass-api)
       - [Transform UV’s Between Viewports](#transform-uv-s-between-viewports)
+  - [Discussion](#discussion)
 </tocmd>
+
+If you have any comments or insights [please tell us!](#discussion)
 
 Useful links:
 
@@ -1251,3 +1254,7 @@ SCREEN_PASS_TEXTURE_VIEWPORT_TRANSFORM(SceneColorToVelocity)
 
 float2 VelocityUV = SceneColorUV * SceneColorToVelocity_Scale + SceneColorToVelocity_Bias;
 ```
+
+## Discussion
+
+<mdcomment />

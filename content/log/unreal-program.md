@@ -63,3 +63,5 @@ Don't take it yet as 100% committed way of listing your `.uproject`'s like that,
 I haven't tested Unreal plugins and to be fair I give them like 45% chance of working, as this is already flakey territory in regards of Officially Supported Use-cases™. I can totally imagine that you need to load them yourself in runtime, but who knows, it might as well just work.
 
 Now go and eat your vegetables!
+
+<mdcomment />

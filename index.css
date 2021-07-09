@@ -385,3 +385,32 @@ iframe.logo {
         min-width: 100%;
     }
 }
+
+.md-comments summary
+{
+    margin-top: 40px;
+    border-bottom-
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.md-comments summary::after {
+    transition: width 0.2s;
+    background-color: #fff; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 150px;
+}
+
+.md-comments summary:hover::after {
+    width: 100%;
+}
+
+.md-comments[open] summary::after {
+    width: 100%;
+}

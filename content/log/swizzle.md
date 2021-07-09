@@ -394,3 +394,5 @@ auto size = swg<'zw'>(rect);
 That's it! I'm sure it can be improved and it can be more modular, but it's good enough for me. Now I go and leave Earth, byeee!
 
 (photo of swizzle sticks by [Lizzie Munro](http://www.lizziemunro.com/))
+
+<mdcomment />

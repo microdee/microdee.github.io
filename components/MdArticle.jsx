@@ -6,6 +6,7 @@ import CodeBlock from "./CodeBlock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
 import MdLottie from './MdLottie';
+import MdComment from './MdComment';
 import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
 
 function getMainTextOfComponent(component) {
@@ -108,32 +109,39 @@ export default class MdArticle extends React.Component {
             processingInstructions: [
                 {
                     shouldProcessNode: node =>
-                    node.name === 'iframe' || node.type === 'iframe',
+                        node.name === 'iframe' || node.type === 'iframe',
                     replaceChildren: false,
                     processNode: this.handleIframe.bind(this)
                 },
                 {
                     shouldProcessNode: node =>
-                    node.name === 'nextmd' || node.type === 'nextmd' ||
-                    node.name === 'mdnext' || node.type === 'mdnext' ||
-                    node.name === 'mdinsert' || node.type === 'mdinsert' ||
-                    node.name === 'insertmd' || node.type === 'insertmd',
+                        node.name === 'nextmd' || node.type === 'nextmd' ||
+                        node.name === 'mdnext' || node.type === 'mdnext' ||
+                        node.name === 'mdinsert' || node.type === 'mdinsert' ||
+                        node.name === 'insertmd' || node.type === 'insertmd',
                     replaceChildren: false,
                     processNode: this.handleNextMd.bind(this)
                 },
                 {
                     shouldProcessNode: node =>
-                    node.name === 'tocmd' || node.type === 'tocmd' ||
-                    node.name === 'mdtoc' || node.type === 'mdtoc',
+                        node.name === 'tocmd' || node.type === 'tocmd' ||
+                        node.name === 'mdtoc' || node.type === 'mdtoc',
                     replaceChildren: false,
                     processNode: this.handleTocMd.bind(this)
                 },
                 {
                     shouldProcessNode: node =>
-                    node.name === 'lottiemd' || node.type === 'lottiemd' ||
-                    node.name === 'mdlottie' || node.type === 'mdlottie',
+                        node.name === 'lottiemd' || node.type === 'lottiemd' ||
+                        node.name === 'mdlottie' || node.type === 'mdlottie',
                     replaceChildren: false,
                     processNode: this.handleMdLottie.bind(this)
+                },
+                {
+                    shouldProcessNode: node =>
+                        node.name === 'commentmd' || node.type === 'commentmd' ||
+                        node.name === 'mdcomment' || node.type === 'mdcomment',
+                    replaceChildren: false,
+                    processNode: ((n, c) => <MdComment term={this.props.path} />).bind(this)
                 }
             ]
         });
