@@ -1,3 +1,7 @@
+<!-- {
+    "desc": "Put UE4 generated projects into CMake generated solutions"
+} -->
+
 ## Useless knowledge: Put UE4 generated projects into CMake generated solutions
 
 [(04.29.2021)](/c/log/cmake-your-ue-project)

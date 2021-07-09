@@ -1,3 +1,7 @@
+<!-- {
+    "desc": "Info about Rendering Dependency Graph"
+} -->
+
 # Rendering Dependency Graph
 [(04.07.2021)](/c/log/rdg)
 

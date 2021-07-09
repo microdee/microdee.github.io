@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "webpack -d && webpack-dev-server --open",
-    "deploy": "webpack -p"
+    "deploy": "webpack -p",
+    "social": "node generate_social.js"
   },
   "homepage": "https://github.com/rafrex/react-github-pages#readme",
   "dependencies": {
@@ -22,7 +23,10 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.7",
     "json-loader": "^0.5.7",
+    "mustache": "^4.2.0",
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",

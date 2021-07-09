@@ -1,3 +1,7 @@
+<!-- {
+    "desc": "Info about Rendering Dependency Graph"
+} -->
+
 # Rendering Dependency Graph
 
 ![md.parallax md.invert-desaturate md.not-in-article](blue-marbles.gif)

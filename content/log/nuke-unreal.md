@@ -1,3 +1,7 @@
+<!-- {
+    "desc": "Automate the tasks involved in creating Marketplace complaint plugins and other useful scripts"
+} -->
+
 # Nuke.Unreal
 [(10.04.2021)](/c/log/nuke-unreal)
 

@@ -1,3 +1,6 @@
+<!-- {
+    "desc": "Announcing comments"
+} -->
 
 # Comments!
 

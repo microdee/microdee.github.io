@@ -1,3 +1,8 @@
+<!-- {
+    "img": "log/wiity.jpg",
+    "desc": "Make programs with Unreal Engine"
+} -->
+
 ## Useless knowledge: Make programs with UE
 
 [(05.07.2021)](/c/log/unreal-program)

@@ -1,3 +1,8 @@
+<!-- {
+    "img": "log/swizzle-sticks-1.jpg",
+    "desc": "Full vector swizzle in C++ with templates, as elegant as it can get, without generated code or macros."
+} -->
+
 ## Elegant™ vector swizzling in C++
 
 [(07.07.2021)](/c/log/swizzle)
