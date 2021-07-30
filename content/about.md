@@ -23,7 +23,7 @@
 
 | | |
 |-|-|
-|**[Realworld One GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal Programmer | 2021 - Present |
+|**[realworld one GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal Engineer | 2021 - Present |
 |**[MESO Digital Interiors GmbH.](https://meso.design)**<br>as Real-time Software Developer | 2018 - 2021 |
 | **[Uberact Ltd.](https://uberact.com/)**<br>as Lead Developer | 2014 - 2018 |
 | **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
@@ -40,20 +40,20 @@
 
 Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
 
-* **.NET**
-  * C#
-  * XAML (WPF)
-  * C++/CLI
-* **[VVVV](https://vvvv.org)**
 * **C++** (mostly on Windows)
   * Unreal Engine 4
   * CMake
   * Chromium Embedded Framework (CEF)
   * Graphics programming with Direct3D
   * boost
+* **.NET**
+  * C#
+  * C++/CLI
+  * XAML (WPF)
 * **Tooling/Scripting**
   * Python
   * Powershell
+* **[VVVV](https://vvvv.org)**
 
 Still usable, in order of confidence
 
@@ -77,7 +77,7 @@ Still usable, in order of confidence
 
 #### Education:
 
-* Started computer science then media arts university, and then I didn't finish them.
+* Started computer science then media arts university, and then I didn't finish either of them.
   * BME (Budapest University of Technology and Economy)
   * MOME (Moholy Nagy University of Arts and Design)
 

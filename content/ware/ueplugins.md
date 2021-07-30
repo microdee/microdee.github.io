@@ -2,7 +2,7 @@
 
 ![md.center](ur_logo_atom_ondark.png)
 
-The fastest full CEF implementation for UE4 so far, embracing recent features of CEF's Off-screen rendering mode.
+The fastest full CEF implementation for UE4 so far.
 
 ### [Get it](https://github.com/microdee/Uranium)
 
@@ -13,7 +13,8 @@ The fastest full CEF implementation for UE4 so far, embracing recent features of
 * Integration into Unreal's own audio system.
 * UMG abstraction layer, a full fledged browser widget.
 
-**Recently open-sourced. It started development at MESO**  
+**Recently open-sourced. It started development at [MESO](https://meso.design)**  
+**Now being developed at [realworld one](https://realworld-one.com/)**  
 A lot of enhancements and features are planned, but the basic components are already usable.
 
 ----
@@ -62,6 +63,7 @@ A shared, managed and IWYU dependency on [Boost](https://www.boost.org/) for you
 Industry-proof and versatile implementation of Azure Kinect into UE4. Main features are:
 
 * Support for any number of local or remote devices.
+  * And share their data in on 3D space.
 * Support for any number of tracked people.
 * Zero-config network discovery and sharing data of remote Kinect Azure devices.
   * Especially engineered with nDisplay clusters in mind, however BlueKinect doesn't use nDisplay event system. It uses its own UDP communication.
@@ -70,18 +72,5 @@ Industry-proof and versatile implementation of Azure Kinect into UE4. Main featu
 * Retrieve camera images efficiently. Upload only color and raw depth to graphics memory from Kinect Azure SDK, calculate the rest with compute-shaders.
   * (images are not yet shared across the network)
 
-**Currently being developed at MESO.**  
-It's already used and well tested in one of our large-scale interactive projects at MESO.
-
-----
-
-## BlueWindow
-
-Manage multiple UMG windows from Blueprint and other UI related features.
-
-* Create windows managed by an actor component. It's being used for multi-display scenarios, where nDisplay would be too bloaty, or too attended.
-* Utilities for complex multitouch interactions.
-* UMG utilities for better preview at design time.
-
-**Currently being developed at MESO.**  
-It's already being used almost in all of our complete and running projects at MESO.
+**Currently being developed at [MESO](https://meso.design).**  
+It's already used and well tested in one of our large-scale interactive projects at [MESO](https://meso.design).
