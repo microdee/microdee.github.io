@@ -194,7 +194,6 @@ table {
     width: 100vw;
     max-width: none;
     margin-bottom: 0px !important;
-    transform: translate(0, 25%) translateZ(-40px) scale(5);
 }
 
 .mdArticle img[alt*="md.center"] {
