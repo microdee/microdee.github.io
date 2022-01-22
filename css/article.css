@@ -1,0 +1,50 @@
+
+.header-anchor {
+    position: relative;
+    top: -150px;
+    display: table-column;
+}
+
+.mdArticle {
+    position: relative;
+    top: 0px;
+    margin-top: 50px;
+    overflow-y: clip;
+}
+
+.mdArticle::before {
+    display: block;
+    width: 100vw;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: calc(var(--app-left) * -1);
+    border-bottom: solid #fff;
+}
+
+.mdArticle pre::-webkit-scrollbar {
+    height: 5px;
+    background-color: transparent;
+}
+
+.mdArticle pre::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.md-full {
+    position: relative;
+    width: 100vw;
+    max-width: none;
+    left: calc(var(--app-left) * -1);
+    z-index: 20;
+    margin-bottom: -7px;
+    overflow: hidden;
+}
+
+.mdArticle .md-full:last-child {
+    margin-bottom: calc(var(--emphasized-content-margin) - 10px);
+}
+
+.thumb {
+    background-color: white;
+}

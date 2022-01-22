@@ -1,0 +1,36 @@
+:root {
+    --app-left: 15vw;
+    --app-width: 60vw;
+    --p-margin: 18px;
+    --anchor-offs: -200px;
+    --main-menu-pos: sticky;
+    --main-menu-flexdir: row;
+    
+    --emphasized-content-margin: 15px;
+    --iframe-anti-margin: 6px;
+    
+    --app-calc-width: calc(min(var(--app-width), 800px));
+    --app-total-width: calc(var(--app-calc-width) + var(--app-left));
+    --app-side-width: calc(100vw - var(--app-total-width));
+    --app-side-center: calc(100vw - var(--app-side-width) / 2);
+
+    --approot-shadows: calc(var(--app-side-width) * 0.25);
+
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --app-left: 7.5vw;
+        --app-width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --app-left: 5vw;
+        --app-width: 90vw;
+        --main-menu-pos: relative;
+        --main-menu-flexdir: column;
+    }
+}
