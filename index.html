@@ -21,23 +21,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/vars.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main-menu.css">
-    <link rel="stylesheet" href="css/article.css">
-    <link rel="stylesheet" href="css/article-img.css">
-    <link rel="stylesheet" href="css/article-iframe.css">
-    <link rel="stylesheet" href="css/toc.css">
-    <link rel="stylesheet" href="css/comments.css">
-    <link rel="stylesheet" href="css/glitch-1.css">
-    <link rel="stylesheet" href="css/glitch-2.css">
-    <link rel="stylesheet" href="css/please-scroll.css">
+    <link rel="stylesheet" href="/css/vars.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main-menu.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/article-img.css">
+    <link rel="stylesheet" href="/css/article-iframe.css">
+    <link rel="stylesheet" href="/css/toc.css">
+    <link rel="stylesheet" href="/css/comments.css">
+    <link rel="stylesheet" href="/css/glitch-1.css">
+    <link rel="stylesheet" href="/css/glitch-2.css">
+    <link rel="stylesheet" href="/css/please-scroll.css">
     
     <title>mcro.de</title>
   </head>
   <body>
     <div id="root"></div>
-    <script src="anim-worklet.js"></script>
+    <script src="/anim-worklet.js"></script>
     <script>
       (scope => {
         
@@ -52,8 +52,8 @@
         }
 
         window.animationWorkletPolyfill.load()
-          .then(_ => CSS.animationWorklet.addModule('animators/scroll-test.js'))
-          .then(_ => loadScript('__build__/bundle.js'));
+          .then(_ => CSS.animationWorklet.addModule('/animators/scrollbased.js'))
+          .then(_ => loadScript('/__build__/bundle.js'));
       
       })(self)
     </script>

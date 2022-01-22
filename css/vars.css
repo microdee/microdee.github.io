@@ -15,6 +15,7 @@
     --app-side-center: calc(100vw - var(--app-side-width) / 2);
 
     --approot-shadows: calc(var(--app-side-width) * 0.25);
+    --parallax-coeff: 0.55;
 
     scroll-behavior: smooth;
 }
