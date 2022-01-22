@@ -1,0 +1,38 @@
+
+.tocContent {
+    padding: 10px 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .tocContent {
+        background-image: linear-gradient(to right, rgba(0,0,0,1.0), 86%, rgba(0,0,0,0.0));
+        width: 60%;
+        padding: 25px 10px 25px 5px;
+        border-left: solid #fff;
+        margin-left: 30px;
+        max-height: calc(100vh - 260px);
+        overflow-y: scroll;
+        direction: rtl;
+    }
+    .tocContent * {
+        direction: ltr;
+    }
+
+    .tocContent::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+    .tocContent::-webkit-scrollbar-thumb {
+        background-color: white;
+    }
+    .mdSideToc {
+        position: sticky;
+        top: 140px;
+        transform: translate(var(--app-calc-width), 0);
+        height:0px;
+        z-index: 2;
+        width: var(--app-side-width);
+        max-width: none;
+        min-width: 100%;
+    }
+}

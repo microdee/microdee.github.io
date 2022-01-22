@@ -5,6 +5,7 @@ import htmlParser from 'react-markdown/plugins/html-parser';
 import CodeBlock from "./CodeBlock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
+import MdImg from './MdImg';
 import MdLottie from './MdLottie';
 import MdComment from './MdComment';
 import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
@@ -268,15 +269,7 @@ export default class MdArticle extends React.Component {
                             code: CodeBlock,
                             heading: MdHeading,
                             link: MdLinkHandler,
-                            image: (props) => props.alt === "md.full"
-                                ? (
-                                    <div className="md-full">
-                                        <img {...props} />
-                                    </div>
-                                )
-                                : (
-                                    <img {...props} />
-                                )
+                            image: (props) => <MdImg {...props} />
                         }}
                         astPlugins={[
                             this.parseHtml

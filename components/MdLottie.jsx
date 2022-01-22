@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
+import ParallaxEffect from './parallax';
 import * as loadingData from '../lottie/blender-loader.json';
 import * as errorData from '../lottie/404.json';
 
@@ -7,25 +8,34 @@ export default class MdLottie extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            animData: loadingData
+            animData: loadingData,
+            parallax: new ParallaxEffect()
         };
+        this.mainDiv = React.createRef();
     }
 
     componentDidMount() {
         fetch(this.props.href)
-        .then(response => {
+        .then((response => {
             if(response.status < 200 || response.status >= 300)
             throw {
                 status: response.statusText
             }
             return response.text()
-        })
-        .then(data => this.setState({
-            animData: JSON.parse(data)
-        }))
-        .catch(reason => this.setState({
+        }).bind(this))
+
+        .then((data => {
+            this.setState({
+                animData: JSON.parse(data)
+            });
+            if('parallax' in this.props) {
+                this.state.parallax.register(this.mainDiv.current);
+            }
+        }).bind(this))
+
+        .catch((reason => this.setState({
             animData: errorData
-        }));
+        }).bind(this)));
     }
 
     render() {
@@ -35,7 +45,7 @@ export default class MdLottie extends React.Component {
             passProps.style = {filter: passProps.filter};
         }
         return (
-            <div className="mdLottie" {...passProps}>
+            <div ref={this.mainDiv} className="mdLottie" {...passProps}>
                 <Lottie
                     options={{
                         loop: true,

@@ -8,6 +8,10 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    componentDidMount()
+    {
+    }
     
     render() {
         const { children, location } = this.props;
