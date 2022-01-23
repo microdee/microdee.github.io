@@ -11,7 +11,7 @@ export default function MdComment({term}) {
                 issueTerm={term}
                 theme="github-dark"
                 crossorigin="anonymous"
-                async
+                async={false}
             />
         </details>
     )

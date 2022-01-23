@@ -43,9 +43,9 @@ export function GetMdUrl(href) {
             isRoute: false,
             isAnchor: false
         };
-    if(url.href.startsWith('about:blank#'))
+    if(IsCurrentDomain(url.href) && url.href.includes('#'))
         return {
-            url: url.href.replace('about:blank', ''),
+            url: url.href.replace(/.*#/gm, '#'),
             isRoot: false,
             isFile: false,
             isLocal: false,

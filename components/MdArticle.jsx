@@ -26,8 +26,7 @@ function MdHeading(props) {
         .replace(/[^a-z0-9]+$/gi, '')
         .toLowerCase();
     let hprops = {
-        ...props,
-        id: anchorText
+        ...props
     }
     function H(inprops, inhprops)
     {
@@ -38,7 +37,7 @@ function MdHeading(props) {
 
     return (
         <div>
-            <a id={anchorText} className="header-anchor">anchor</a>
+            <a id={anchorText} className="header-anchor"></a>
             {
                 H(props, hprops)
             }
@@ -288,7 +287,8 @@ export default class MdArticle extends React.Component {
     
 export function RoutedMdArticle({ location })
 {
+    let loc = location.pathname.replace(/\/$/gm, '');
     return (
-        <MdArticle path={location.pathname} />
+        <MdArticle path={loc} />
     )
 }
