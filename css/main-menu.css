@@ -22,10 +22,8 @@
     width: 100vw;
     height: 100%;
     left: calc(var(--app-left) * -1);
-    background: black;
+    background: #000000;
     border-bottom: solid;
-    margin-top: -134px;
-    border-top: solid 134px black;
 }
 
 #mainMenu .flexing {
@@ -49,11 +47,11 @@ div.logo {
     position: relative;
     left: calc(var(--app-left) * -1);
     width: 100vw;
-    height: calc(100vh - 86px);
-    /* overflow: hidden; */
+    height: calc(100vh);
+    overflow: hidden;
     max-width: none;
     z-index: 0;
-    margin-bottom: -116px;
+    margin-bottom: -200px;
 }
 
 div.logo video {

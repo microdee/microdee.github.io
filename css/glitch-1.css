@@ -5,6 +5,10 @@
     --f: calc(var(--f-size) * var(--f-unit));
 }
 
+.glitch-1 {
+    mix-blend-mode: lighten;
+}
+
 .glitch-1 .before, .glitch-1 .after,
 .glitch-1-hover .before, .glitch-1-hover .after {
     --top: 0;
