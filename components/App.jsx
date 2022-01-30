@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { Gh1, Gh2 } from './Gh';
 import MainMenu from './MainMenu';
 import Logo from './Logo';
+import MainScrollbar from './MainScrollbar';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -25,6 +26,7 @@ export default class App extends React.Component {
                     <MainMenu />
                     {children}
                     <div id="footer"></div>
+                    <MainScrollbar />
                 </div>
             );
         }
@@ -36,6 +38,7 @@ export default class App extends React.Component {
                     <MainMenu />
                     {children}
                     <div id="footer"></div>
+                    <MainScrollbar />
                 </div>
             );
         }

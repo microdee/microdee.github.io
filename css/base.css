@@ -111,3 +111,11 @@ table {
 #footer {
     height: 150px;
 }
+
+.mainScrollbar {
+    opacity: 1.0;
+}
+
+.mainScrollbar.hidden {
+    opacity: 0.0;
+}

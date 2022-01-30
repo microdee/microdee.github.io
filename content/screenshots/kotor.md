@@ -1,6 +1,6 @@
 ## SW: Knights of the Old Republic
 
-Making SW: KotOR look like the original Star Wars trilogy. (minor spoilers ahead)
+Making SW: KotOR look like the original Star Wars trilogy. **(minor spoilers ahead)**
 
 ![md.full](kotor\swkotor_2021-12-13_01-10-00.jpg)
 ![md.full](kotor\swkotor_2021-12-13_03-35-28.jpg)
