@@ -51,6 +51,12 @@
     }
 }
 
+@media only screen and (max-width: 740px) and (orientation: portrait) {
+    .md-full {
+        --parallax-coeff: 0.0;
+    }
+}
+
 .mdArticle img[alt*="md.invert"], .mdArticle .invert, .mdArticle *[invert] {
     filter: invert(100%);
 }
