@@ -23,7 +23,7 @@ parallax:
 
 expanded:
 
-![md.expand](toiletposition.gif)
+![md.expand md.invert](toiletposition.gif)
 ![md.expand](emergent.gif)
 
 full width:
