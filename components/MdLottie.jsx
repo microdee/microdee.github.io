@@ -44,13 +44,19 @@ export default class MdLottie extends React.Component {
         if('filter' in passProps) {
             passProps.style = {filter: passProps.filter};
         }
+
+        let animData = this.state.animData
+        if('default' in this.state.animData) {
+            animData = this.state.animData.default;
+        }
+        
         return (
             <div ref={this.mainDiv} className="mdLottie" {...passProps}>
                 <Lottie
                     options={{
                         loop: true,
                         autoplay: true,
-                        animationData: this.state.animData,
+                        animationData: animData,
                         rendererSettings: {
                             preserveAspectRatio: 'xMidYMid slice'
                         }

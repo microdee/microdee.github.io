@@ -8,6 +8,7 @@ import {Gh1, Gh2} from './Gh';
 import MdImg from './MdImg';
 import MdLottie from './MdLottie';
 import MdComment from './MdComment';
+import MdCompare from './MdCompare';
 import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
 
 function getMainTextOfComponent(component) {
@@ -138,6 +139,13 @@ export default class MdArticle extends React.Component {
                 },
                 {
                     shouldProcessNode: node =>
+                        node.name === 'comparemd' || node.type === 'comparemd' ||
+                        node.name === 'mdcompare' || node.type === 'mdcompare',
+                    replaceChildren: false,
+                    processNode: this.handleMdCompare.bind(this)
+                },
+                {
+                    shouldProcessNode: node =>
                         node.name === 'commentmd' || node.type === 'commentmd' ||
                         node.name === 'mdcomment' || node.type === 'mdcomment',
                     replaceChildren: false,
@@ -203,6 +211,15 @@ export default class MdArticle extends React.Component {
         return (
             <div className="mdLottie invalid"></div>
         )
+    }
+
+    handleMdCompare(node, children) {
+        let ls = GetMdUrl(node.attribs.ls);
+        let rs = GetMdUrl(node.attribs.rs);
+        let passAttribs = {...node.attribs};
+        delete passAttribs.ls;
+        delete passAttribs.rs;
+        return <MdCompare ls={ls.url} rs={rs.url} {...passAttribs} />
     }
         
     getAppDomNode() {

@@ -25,6 +25,8 @@ expanded:
 
 ![md.expand md.invert](toiletposition.gif)
 ![md.expand](emergent.gif)
+<mdcompare ls="reshade-off-0.jpg" rs="reshade-on-0.jpg" ></mdcompare>
+<mdcompare full="true" ls="reshade-off-1.jpg" rs="reshade-on-1.jpg" ></mdcompare>
 
 full width:
 

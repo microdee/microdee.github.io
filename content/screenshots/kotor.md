@@ -9,6 +9,7 @@ Making SW: KotOR look like the original Star Wars trilogy with reshade.
 
 **Spoilers ahead!**
 
+<mdcompare full="true" ls="kotor/swkotor_2022-01-18_01-46-04.jpg" rs="kotor/swkotor_2022-01-18_01-46-32.jpg" ></mdcompare>
 ![md.full](kotor/swkotor_2021-12-13_01-10-00.jpg)
 ![md.full](kotor/swkotor_2021-12-13_03-35-28.jpg)
 ![md.full](kotor/swkotor_2021-12-13_03-59-15.jpg)
@@ -117,8 +118,6 @@ Making SW: KotOR look like the original Star Wars trilogy with reshade.
 ![md.full](kotor/swkotor_2022-01-18_01-17-40.jpg)
 ![md.full](kotor/swkotor_2022-01-18_01-24-40.jpg)
 ![md.full](kotor/swkotor_2022-01-18_01-40-39.jpg)
-![md.full](kotor/swkotor_2022-01-18_01-46-04.jpg)
-![md.full](kotor/swkotor_2022-01-18_01-46-32.jpg)
 ![md.full](kotor/swkotor_2022-01-18_01-46-41.jpg)
 ![md.full](kotor/swkotor_2022-01-18_01-46-57.jpg)
 ![md.full](kotor/swkotor_2022-01-18_01-47-23.jpg)
