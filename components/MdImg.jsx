@@ -1,5 +1,6 @@
 import React from 'react';
 import ParallaxEffect from './parallax';
+import MdFullParallaxWrap from './MdFullParallaxWrap';
 
 export default class MdImg extends React.Component {
     constructor(props) {
@@ -7,15 +8,13 @@ export default class MdImg extends React.Component {
         this.state = {
             parallax: new ParallaxEffect()
         };
-        this.mainDiv = React.createRef();
         this.mainImg = React.createRef();
     }
     componentDidMount() {
         let alt = 'alt' in this.props ? this.props.alt : "";
         let isParallax = alt.search("md.parallax") >= 0;
-        let isFull = alt.search("md.full") >= 0;
 
-        if(isParallax || isFull)
+        if(isParallax)
             this.state.parallax.register(this.mainImg.current);
     }
 
@@ -24,15 +23,9 @@ export default class MdImg extends React.Component {
         if(alt.search("md.full") >= 0)
         {
             return (
-                <div ref={this.mainDiv} className="md-full" style={{
-                    backgroundColor: "black",
-                }} >
-                    <img {...this.props} style={{
-                        position: "absolute",
-                        filter: "blur(40px)"
-                    }} />
-                    <img ref={this.mainImg} {...this.props} />
-                </div>
+                <MdFullParallaxWrap>
+                    <img {...this.props} />
+                </MdFullParallaxWrap>
             );
         }
         else
