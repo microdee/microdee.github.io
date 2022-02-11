@@ -9,6 +9,7 @@ import MdImg from './MdImg';
 import MdLottie from './MdLottie';
 import MdComment from './MdComment';
 import MdCompare from './MdCompare';
+import MdLazyLoad from './MdLazyLoad';
 import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
 
 function getMainTextOfComponent(component) {
@@ -181,7 +182,9 @@ export default class MdArticle extends React.Component {
     
     handleIframe(node, children) {
         return (
-            <IframeWrapper {...node.attribs} />
+            <MdLazyLoad>
+                <IframeWrapper {...node.attribs} />
+            </MdLazyLoad>
         )
     }
         
@@ -206,7 +209,9 @@ export default class MdArticle extends React.Component {
         let passAttribs = {...node.attribs};
         delete passAttribs.href;
         if(isFile || !isDomain) return (
-            <MdLottie href={url} {...passAttribs} />
+            <MdLazyLoad>
+                <MdLottie href={url} {...passAttribs} />
+            </MdLazyLoad>
         );
         return (
             <div className="mdLottie invalid"></div>
@@ -219,7 +224,11 @@ export default class MdArticle extends React.Component {
         let passAttribs = {...node.attribs};
         delete passAttribs.ls;
         delete passAttribs.rs;
-        return <MdCompare ls={ls.url} rs={rs.url} {...passAttribs} />
+        return (
+            <MdLazyLoad>
+                <MdCompare ls={ls.url} rs={rs.url} {...passAttribs} />
+            </MdLazyLoad>
+        );
     }
         
     getAppDomNode() {
@@ -262,7 +271,7 @@ export default class MdArticle extends React.Component {
         this.intersectionObserver = new IntersectionObserver(this.handleIntersection.bind(this), {
             root: document.querySelector("#root"),
             rootMargin: '0px',
-            threshold: 0.75
+            threshold: 0.333
         });
         if(this.elementCache !== null)
             this.intersectionObserver.observe(this.elementCache);
@@ -273,7 +282,14 @@ export default class MdArticle extends React.Component {
         return <div ref={this.onRef.bind(this)}>
             {
                 this.state.loading ? (
-                    <Gh1 glitchtype="1">Loading</Gh1>
+                    <div
+                        style={{
+                            position: "relative",
+                            height: "100vh"
+                        }}
+                    >
+                        <Gh1 glitchtype="1">scroll...</Gh1>
+                    </div>
                 ) : (
                     <ReactMarkdown
                         className="mdArticle"
@@ -285,7 +301,11 @@ export default class MdArticle extends React.Component {
                             code: CodeBlock,
                             heading: MdHeading,
                             link: MdLinkHandler,
-                            image: (props) => <MdImg {...props} />
+                            image: (props) => (
+                                <MdLazyLoad>
+                                    <MdImg {...props} />
+                                </MdLazyLoad>
+                            )
                         }}
                         astPlugins={[
                             this.parseHtml
