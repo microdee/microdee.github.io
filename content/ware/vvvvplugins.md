@@ -1,3 +1,7 @@
+# vvvv plugins
+
+![md.parallax md.not-in-article](vvvv_logo.svg)
+
 ## VPM
 Vvvv Package Manager
 
