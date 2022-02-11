@@ -27,7 +27,7 @@ export default class MdLazyLoad extends React.Component {
         this.intersectionObserver = new IntersectionObserver(this.handleIntersection.bind(this), {
             root: document.querySelector("#root"),
             rootMargin: '0px',
-            threshold: 0.25
+            threshold: 0.01
         });
         this.intersectionObserver.observe(this.placeHolderDiv.current)
     }

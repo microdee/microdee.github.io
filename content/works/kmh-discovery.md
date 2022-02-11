@@ -1,14 +1,10 @@
-## KMH Discovery @ Kurpfälzisches Museum Heidelberg
+## Kurpfälzisches Museum Heidelberg Discovery
 
 **@ MESO Digital Interiors**  
 2020
 
 **Role:** On-site software architecture engineering in Unreal Engine 4
 
-![md.full](kmh-discovery.png)
+<iframe full="true" width="560" height="315" src="https://www.youtube-nocookie.com/embed/XkkPP-MI-VM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## [More info](https://meso.design/en/news/high-definition-portal-to-ancient-times)
-
-Proper documentation is coming soon.
-
-<nextmd href="/c/works/here2020" />
+## [More info](https://meso.design/en/projects/kurpfalzisches-museum-heidelberg-high-definition-time-machine-for-cultural-history-museum)

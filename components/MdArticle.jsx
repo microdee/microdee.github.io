@@ -271,7 +271,7 @@ export default class MdArticle extends React.Component {
         this.intersectionObserver = new IntersectionObserver(this.handleIntersection.bind(this), {
             root: document.querySelector("#root"),
             rootMargin: '0px',
-            threshold: 0.333
+            threshold: 0.01
         });
         if(this.elementCache !== null)
             this.intersectionObserver.observe(this.elementCache);
