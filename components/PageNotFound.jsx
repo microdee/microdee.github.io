@@ -1,11 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-function PageNotFound({ location }) {
+export default function PageNotFound() {
+  let location = useLocation();
+  
   return (
     <p>
       I'm sorry but, <b>{location.pathname}</b>, is not a thing.
     </p>
   );
 }
-
-export default PageNotFound;

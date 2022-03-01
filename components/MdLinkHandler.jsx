@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export function IsCurrentDomain(urlin) {
     return urlin.includes('localhost') || urlin.includes('mcro.de')

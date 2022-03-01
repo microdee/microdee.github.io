@@ -9,39 +9,20 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
     }
-
-    componentDidMount()
-    {
-    }
     
     render() {
-        const { children, location } = this.props;
+        const { children, intro } = this.props;
 
-        if(location.pathname === "/")
-        {
-            return(
-                <div id="appRoot">
-                    <Logo />
-                    <Gh1 className="h0" glitchtype="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
-                    <MainMenu />
-                    {children}
-                    <div id="footer"></div>
-                    <MainScrollbar />
-                </div>
-            );
-        }
-        else
-        {
-            return(
-                <div id="appRoot">
-                    <Gh1 className="h0" glitchtype="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
-                    <MainMenu />
-                    {children}
-                    <div id="footer"></div>
-                    <MainScrollbar />
-                </div>
-            );
-        }
+        return (
+            <div id="appRoot">
+                {intro ? <Logo /> : <div style={{display: "none"}} />}
+                <Gh1 className="h0" glitchtype="1" id="mcrode"><Link to="/">mcro.de</Link></Gh1>
+                <MainMenu />
+                {children}
+                <div id="footer"></div>
+                <MainScrollbar />
+            </div>
+        );
     }
 }
     
