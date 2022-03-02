@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import {Gh1, Gh2} from './Gh';
 
 export default class MainMenu extends React.Component {

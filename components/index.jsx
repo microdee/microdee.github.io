@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 
 import {
     BrowserRouter,
+    Routes,
+    Route,
     Navigate,
     Outlet,
     useNavigate,
@@ -42,5 +44,6 @@ render(
                 <Route path="*" element={<PageNotFound />} />
             </Route>
         </Routes>
-    </BrowserRouter>
+    </BrowserRouter>,
+    document.getElementById('root')
 )

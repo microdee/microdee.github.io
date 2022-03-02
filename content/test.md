@@ -1,14 +1,12 @@
 # Testing custom tags
 
-<MyTag yolo="swag">I wonder what will happen</MyTag>.
-
 ## Testing Lottie
 
-<mdlottie href="dotcom-bubble.json" parallax />
+<mdlottie href="dotcom-bubble.json" parallax></mdlottie>
 
-<mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" />
+<mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" ></mdlottie>
 
-<mdlottie href="hello.json" invert />
+<mdlottie href="hello.json" invert ></mdlottie>
 
 ## Testing pictures
 

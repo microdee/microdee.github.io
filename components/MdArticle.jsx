@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link } from 'react-router';
-import htmlParser from 'react-markdown/plugins/html-parser';
-import CodeBlock from "./CodeBlock";
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+
+import {
+    useLocation
+} from 'react-router-dom';
+
+import CodeBlock from "./Codeblock";
 import IframeWrapper from './IframeWrapper';
 import {Gh1, Gh2} from './Gh';
 import MdImg from './MdImg';
@@ -14,37 +19,8 @@ import { MdLinkHandler, GetMdUrl } from './MdLinkHandler';
 
 function getMainTextOfComponent(component) {
     if(typeof(component) === 'string') return component;
+    if(typeof(component[0]) === 'string') return component[0];
     return getMainTextOfComponent(component[0].props.children);
-}
-
-function getCoreProps(props) {
-    return props['data-sourcepos'] ? {'data-sourcepos': props['data-sourcepos']} : {}
-}
-
-function MdHeading(props) {
-    let headerText = getMainTextOfComponent(props.children);
-    let anchorText = headerText
-        .replace(/[^a-z0-9]+/gi, '-')
-        .replace(/[^a-z0-9]+$/gi, '')
-        .toLowerCase();
-    let hprops = {
-        ...props
-    }
-    function H(inprops, inhprops)
-    {
-        if(inprops.level == 1) return (<Gh1 glitchtype="2" id={anchorText}>{inprops.children}</Gh1>);
-        if(inprops.level == 2) return (<Gh2 glitchtype="2" id={anchorText}>{inprops.children}</Gh2>);
-        return React.createElement(`h${inhprops.level}`, inhprops, inhprops.children);
-    }
-
-    return (
-        <div>
-            <a id={anchorText} className="header-anchor"></a>
-            {
-                H(props, hprops)
-            }
-        </div>
-    )
 }
 
 function trLinkUri(uri, path) {
@@ -67,30 +43,66 @@ function trImageUri(uri, path) {
     }
 }
 
+function MdCodeComponent(props) {
+
+    let langMatch = /language-(\w+)/.exec(props.className || '');
+    return props.inline ? (<code {...props} />)
+    : (
+        <CodeBlock language={langMatch ? langMatch[1] : "text"} >
+            {props.children}
+        </CodeBlock>
+    )
+}
+
+function MdHeadingComponent(props) {
+    let headerText = getMainTextOfComponent(props.children);
+    let anchorText = headerText
+        .replace(/[^a-z0-9]+/gi, '-')
+        .replace(/[^a-z0-9]+$/gi, '')
+        .toLowerCase();
+    let hprops = {
+        ...props
+    }
+    function H(inprops, inhprops)
+    {
+        if(inprops.level == 1) return (<Gh1 glitchtype="2" id={anchorText}>{inprops.children}</Gh1>);
+        if(inprops.level == 2) return (<Gh2 glitchtype="2" id={anchorText}>{inprops.children}</Gh2>);
+        return React.createElement(`h${inhprops.level}`, inhprops, inhprops.children);
+    }
+
+    return (
+        <>
+            <a id={anchorText} className="header-anchor"></a>
+            {H(props, hprops)}
+        </>
+    )
+}
+
+let baseComponents = {
+    code: MdCodeComponent,
+    h1: MdHeadingComponent,
+    h2: MdHeadingComponent,
+    h3: MdHeadingComponent,
+    h4: MdHeadingComponent,
+    h5: MdHeadingComponent,
+    h6: MdHeadingComponent,
+    a: MdLinkHandler,
+};
+
 function MdSideToc({mdText, path, realMdPath}) {
     return (
         <div className="mdSideToc">
             <ReactMarkdown
                 className="tocContent"
                 source={mdText}
-                escapeHtml={false}
+                skipHtml={false}
                 sourcePos={true}
-                allowNode={() => true}
-                renderers={{
-                    code: CodeBlock,
-                    heading: MdHeading,
-                    link: MdLinkHandler
-                }}
-                astPlugins={[
-                    htmlParser({
-                        isValidNode: () => true
-                    })
-                ]}
+                allowElement={() => true}
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
+                components={baseComponents}
                 transformLinkUri={(uri) => trLinkUri(uri, path)}
                 transformImageUri={(uri) => trImageUri(uri, realMdPath)}
-                parserOptions={{
-                    gfm: true
-                }}
             />
         </div>
     )
@@ -106,56 +118,53 @@ export default class MdArticle extends React.Component {
             loading: true,
             error: false
         };
-        this.parseHtml = htmlParser({
-            isValidNode: () => true,
-            processingInstructions: [
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'iframe' || node.type === 'iframe',
-                    replaceChildren: false,
-                    processNode: this.handleIframe.bind(this)
-                },
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'nextmd' || node.type === 'nextmd' ||
-                        node.name === 'mdnext' || node.type === 'mdnext' ||
-                        node.name === 'mdinsert' || node.type === 'mdinsert' ||
-                        node.name === 'insertmd' || node.type === 'insertmd',
-                    replaceChildren: false,
-                    processNode: this.handleNextMd.bind(this)
-                },
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'tocmd' || node.type === 'tocmd' ||
-                        node.name === 'mdtoc' || node.type === 'mdtoc',
-                    replaceChildren: false,
-                    processNode: this.handleTocMd.bind(this)
-                },
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'lottiemd' || node.type === 'lottiemd' ||
-                        node.name === 'mdlottie' || node.type === 'mdlottie',
-                    replaceChildren: false,
-                    processNode: this.handleMdLottie.bind(this)
-                },
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'comparemd' || node.type === 'comparemd' ||
-                        node.name === 'mdcompare' || node.type === 'mdcompare',
-                    replaceChildren: false,
-                    processNode: this.handleMdCompare.bind(this)
-                },
-                {
-                    shouldProcessNode: node =>
-                        node.name === 'commentmd' || node.type === 'commentmd' ||
-                        node.name === 'mdcomment' || node.type === 'mdcomment',
-                    replaceChildren: false,
-                    processNode: ((n, c) => <MdComment term={this.props.path} />).bind(this)
-                }
-            ]
-        });
         this.intersectionObserver = null;
         this.elementCache = null;
+    }
+
+    MdNextComponent(props) {
+        return <MdArticle path={props.href} />
+    }
+
+    MdTocComponent(props) {
+        return (
+            <MdSideToc
+                mdText={props.node.children[0].data}
+                path={this.props.path}
+                realMdPath={this.getRealMdPath()}
+            />
+        )
+    }
+
+    MdLottieComponent(props) {
+        let {url, isFile, isDomain} = GetMdUrl(props.href);
+        let passProps = {...props};
+        delete passProps.href;
+        if(isFile || !isDomain) return (
+            <MdLazyLoad>
+                <MdLottie href={url} {...passProps} />
+            </MdLazyLoad>
+        );
+        return (
+            <div className="mdLottie invalid"></div>
+        )
+    }
+
+    MdCompareComponent(props) {
+        let ls = GetMdUrl(props.ls);
+        let rs = GetMdUrl(props.rs);
+        let passAttribs = {...props};
+        delete passAttribs.ls;
+        delete passAttribs.rs;
+        return (
+            <MdLazyLoad>
+                <MdCompare ls={ls.url} rs={rs.url} {...passAttribs} />
+            </MdLazyLoad>
+        );
+    }
+
+    MdCommentComponent(props) {
+        return <MdComment term={this.props.path} />;
     }
 
     onRef(element) {
@@ -178,57 +187,6 @@ export default class MdArticle extends React.Component {
                 console.log("article entered")
             }
         });
-    }
-    
-    handleIframe(node, children) {
-        return (
-            <MdLazyLoad>
-                <IframeWrapper {...node.attribs} />
-            </MdLazyLoad>
-        )
-    }
-        
-    handleNextMd(node, children) {
-        return (
-            <MdArticle path={node.attribs.href} />
-        )
-    }
-
-    handleTocMd(node, children) {
-        return (
-            <MdSideToc
-                mdText={node.children[0].data}
-                path={this.props.path}
-                realMdPath={this.getRealMdPath()}
-            />
-        )
-    }
-
-    handleMdLottie(node, children) {
-        let {url, isFile, isDomain} = GetMdUrl(node.attribs.href);
-        let passAttribs = {...node.attribs};
-        delete passAttribs.href;
-        if(isFile || !isDomain) return (
-            <MdLazyLoad>
-                <MdLottie href={url} {...passAttribs} />
-            </MdLazyLoad>
-        );
-        return (
-            <div className="mdLottie invalid"></div>
-        )
-    }
-
-    handleMdCompare(node, children) {
-        let ls = GetMdUrl(node.attribs.ls);
-        let rs = GetMdUrl(node.attribs.rs);
-        let passAttribs = {...node.attribs};
-        delete passAttribs.ls;
-        delete passAttribs.rs;
-        return (
-            <MdLazyLoad>
-                <MdCompare ls={ls.url} rs={rs.url} {...passAttribs} />
-            </MdLazyLoad>
-        );
     }
         
     getAppDomNode() {
@@ -293,37 +251,56 @@ export default class MdArticle extends React.Component {
                 ) : (
                     <ReactMarkdown
                         className="mdArticle"
-                        source={this.state.mdText}
-                        escapeHtml={false}
+                        skipHtml={false}
                         sourcePos={true}
-                        allowNode={() => true}
-                        renderers={{
-                            code: CodeBlock,
-                            heading: MdHeading,
-                            link: MdLinkHandler,
-                            image: (props) => (
+                        allowElement={() => true}
+                        remarkPlugins={[remarkGfm]}
+                        rehypePlugins={[rehypeRaw]}
+                        components={{
+                            ...baseComponents,
+
+                            img: props => (
                                 <MdLazyLoad>
                                     <MdImg {...props} />
                                 </MdLazyLoad>
-                            )
+                            ),
+                            iframe: props => (
+                                <MdLazyLoad>
+                                    <IframeWrapper {...props} />
+                                </MdLazyLoad>
+                            ),
+                            nextmd: this.MdNextComponent.bind(this),
+                            mdnext: this.MdNextComponent.bind(this),
+                            mdinsert: this.MdNextComponent.bind(this),
+                            insertmd: this.MdNextComponent.bind(this),
+
+                            tocmd: this.MdTocComponent.bind(this),
+                            mdtoc: this.MdTocComponent.bind(this),
+
+                            lottiemd: this.MdLottieComponent.bind(this),
+                            mdlottie: this.MdLottieComponent.bind(this),
+
+                            comparemd: this.MdCompareComponent.bind(this),
+                            mdcompare: this.MdCompareComponent.bind(this),
+
+                            commentmd: this.MdCommentComponent.bind(this),
+                            mdcomment: this.MdCommentComponent.bind(this)
                         }}
-                        astPlugins={[
-                            this.parseHtml
-                        ]}
+
                         transformLinkUri={((uri) => trLinkUri(uri, this.props.path)).bind(this)}
                         transformImageUri={((uri) => trImageUri(uri, this.getRealMdPath())).bind(this)}
-                        parserOptions={{
-                            gfm: true
-                        }}
-                    />
+                    >
+                        {this.state.mdText}
+                    </ReactMarkdown>
                 )
             }
         </div>
     }
 }
     
-export function RoutedMdArticle({ location })
+export function RoutedMdArticle()
 {
+    let location = useLocation();
     let loc = location.pathname.replace(/\/$/gm, '');
     return (
         <MdArticle path={loc} />
