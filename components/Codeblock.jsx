@@ -1,16 +1,18 @@
 
 import React, { PureComponent } from "react";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { monokai } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 export default class CodeBlock extends React.Component {
     
     render() {
-        const { language, value } = this.props;
+        console.log(this.props.language);
         return (
-            <SyntaxHighlighter language={language} style={monokai}>
-                {value}
-            </SyntaxHighlighter>
+            <SyntaxHighlighter
+                children={String(this.props.children)}
+                language={this.props.language.toLowerCase()}
+                style={vscDarkPlus}
+            />
         );
     }
 }
