@@ -94,7 +94,6 @@ function MdSideToc({mdText, path, realMdPath}) {
         <div className="mdSideToc">
             <ReactMarkdown
                 className="tocContent"
-                source={mdText}
                 skipHtml={false}
                 sourcePos={true}
                 allowElement={() => true}
@@ -103,7 +102,9 @@ function MdSideToc({mdText, path, realMdPath}) {
                 components={baseComponents}
                 transformLinkUri={(uri) => trLinkUri(uri, path)}
                 transformImageUri={(uri) => trImageUri(uri, realMdPath)}
-            />
+            >
+                {mdText}
+            </ReactMarkdown>
         </div>
     )
 }
@@ -129,7 +130,7 @@ export default class MdArticle extends React.Component {
     MdTocComponent(props) {
         return (
             <MdSideToc
-                mdText={props.node.children[0].data}
+                mdText={props.children[0]}
                 path={this.props.path}
                 realMdPath={this.getRealMdPath()}
             />

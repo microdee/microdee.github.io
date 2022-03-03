@@ -1,4 +1,6 @@
-# Testing custom tags
+# Testing styling
+
+This text says <span style="color: pink; text-shadow: 0px 0px 20px red; display: inline-block; transform: scale(1.5) rotate(-8deg)">**some bold things**</span>
 
 ## Testing Lottie
 
@@ -52,7 +54,7 @@ Some paragraph right after iframes.
 # Markdown: Syntax
 
 <tocmd>
-- [Testing custom tags](#testing-custom-tags)
+- [Testing styling](#testing-styling)
   - [Testing Lottie](#testing-lottie)
   - [Testing pictures](#testing-pictures)
   - [Testing embedded content](#testing-embedded-content)
