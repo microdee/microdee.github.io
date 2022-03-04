@@ -1,5 +1,6 @@
 import React from 'react';
 import ParallaxEffect from './parallax';
+import mcrodeLogo from '../mcrode.logo.webm'
 
 export default class Logo extends React.Component {
     constructor(props) {
@@ -44,7 +45,7 @@ export default class Logo extends React.Component {
                 </div>
                 <div ref={this.mainDiv} style={divcontainerStyle}>
                     <video loop muted autoPlay>
-                        <source src="/mcrode.logo.webm" type="video/webm" />
+                        <source src={mcrodeLogo} type="video/webm" />
                     </video>
                 </div>
             </div>

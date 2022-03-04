@@ -1,3 +1,5 @@
+<nextmd href="/c/log/new-website-features-2"></nextmd>
+
 <nextmd href="/c/log/new-website-features-1"></nextmd>
 
 <nextmd href="/c/log/comments"></nextmd>
