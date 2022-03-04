@@ -21,41 +21,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/vars.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/main-menu.css">
-    <link rel="stylesheet" href="/css/article.css">
-    <link rel="stylesheet" href="/css/article-img.css">
-    <link rel="stylesheet" href="/css/article-iframe.css">
-    <link rel="stylesheet" href="/css/toc.css">
-    <link rel="stylesheet" href="/css/comments.css">
-    <link rel="stylesheet" href="/css/glitch-1.css">
-    <link rel="stylesheet" href="/css/glitch-2.css">
-    <link rel="stylesheet" href="/css/please-scroll.css">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     <title>mcro.de</title>
+    <script type="module" crossorigin src="/assets/index.a32ac3a9.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.ed780a75.js">
+    <link rel="stylesheet" href="/assets/index.1b4ccf8d.css">
   </head>
   <body>
     <div id="root"></div>
-    <script src="/anim-worklet.js"></script>
-    <script>
-      (scope => {
-        
-        function loadScript(src) {
-          return new Promise((resolve, reject) => {
-            var script = document.createElement('script');
-            script.src = src;
-            script.onload = () => resolve();
-            script.onerror = () => reject(Error('Failed to load ' + src));
-            document.body.appendChild(script);
-          });
-        }
-
-        window.animationWorkletPolyfill.load()
-          .then(_ => CSS.animationWorklet.addModule('/animators/scrollbased.js'))
-          .then(_ => loadScript('/__build__/bundle.js'));
-      
-      })(self)
-    </script>
+    
   </body>
 </html>
