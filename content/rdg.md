@@ -4,7 +4,7 @@
 
 # Rendering Dependency Graph
 
-![md.parallax md.invert-desaturate md.not-in-article](blue-marbles.gif)
+![_parallax(side) notInArticle filter:'invert(100%) saturate(0%)'](blue-marbles.gif)
 
 <tocmd>
 - [Rendering Dependency Graph](#rendering-dependency-graph)
@@ -604,7 +604,7 @@ Look at 2nd iteration specifically "DOFGatherForeground"
 
 The downside of deferred execution: the callstack doesn't represent where actually the problem happened.
 
-![md.expand](rdg/202-stacktrace.png)
+![_expand](rdg/202-stacktrace.png)
 
 In other words the setup of the pass might hold the reason of your bug but it is long gone when executing the pass itself
 
@@ -622,7 +622,7 @@ Using `-rdgimmediate`
 
 In action:
 
-![md.expand](rdg/204-stacktrace.png)
+![_expand](rdg/204-stacktrace.png)
 
 #### Early Validation of Shader Parameters
 
@@ -1017,7 +1017,7 @@ RWTexture2D<float4> OutputMips_1_SeparateCoc;
 
 ↓↓↓↓↓
 
-![md.expand](rdg/221-event-scopes.png)
+![_expand](rdg/221-event-scopes.png)
 
 #### GPU Timing Aggregation
 
@@ -1084,7 +1084,7 @@ public:
 * Would like to abstract from shader code.
   * Mostly a setup detail. Shader doesn’t care.
 
-![md.expand](rdg/303-texture-vp.png)
+![_expand](rdg/303-texture-vp.png)
 
 **Multiple Input Viewports**
 
@@ -1092,7 +1092,7 @@ public:
   * E.g. anything after TAA upsample which also requires depth / velocity.
   * We need an easy way to map UV coordinates between viewports.
 
-![md.expand](rdg/304-texture-vp.png)
+![_expand](rdg/304-texture-vp.png)
 
 #### Texture Viewport Parameters
 

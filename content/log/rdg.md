@@ -5,7 +5,7 @@
 # Rendering Dependency Graph
 [(04.07.2021)](/c/log/rdg)
 
-![md.parallax md.invert-desaturate md.not-in-article](../blue-marbles.gif)
+![_parallax(side) notInArticle filter:'invert(100%) saturate(0%)'](../blue-marbles.gif)
 
 Unreal Engine has a nice graphics development framework, going in tandem with **RHI** (**R**endering **H**ardware **I**nterface) called **RDG** (**R**endering **D**ependency **G**raph). I've collected couple of resources about it scattered around and put them in a nice long article, which has code as text, and because it's public, search engines can find it.
 

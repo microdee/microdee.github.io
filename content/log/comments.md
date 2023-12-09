@@ -1,4 +1,5 @@
 <!-- {
+    "title": "Comments!",
     "desc": "Announcing comments"
 } -->
 
@@ -10,4 +11,4 @@ Now you can too express your exclusive disappointment in my stuff on select arti
 
 What a time to be alive!
 
-<mdcomment />
+<mdcomment></mdcomment>

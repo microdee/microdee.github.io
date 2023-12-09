@@ -1,5 +1,6 @@
 <!-- {
     "img": "log/wiity.jpg",
+    "title": "Useless knowledge: Make programs with UE",
     "desc": "Make programs with Unreal Engine"
 } -->
 
@@ -7,7 +8,7 @@
 
 [(05.07.2021)](/c/log/unreal-program)
 
-![md.parallax md.not-in-article](wiity.jpg)
+![_parallax(side) notInArticle](wiity.jpg)
 
 What if I told you, Unreal Engine is a C++ framework, and as such you can make arbitrary programs with it, without all the Game-engine related bloat. Now there are not too many reasons to make such applications but here are couple really persuasive ones:
 
@@ -69,4 +70,4 @@ I haven't tested Unreal plugins and to be fair I give them like 45% chance of wo
 
 Now go and eat your vegetables!
 
-<mdcomment />
+<mdcomment></mdcomment>

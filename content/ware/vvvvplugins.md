@@ -1,6 +1,6 @@
 # vvvv plugins
 
-![md.parallax md.not-in-article](vvvv_logo.svg)
+![_parallax(side) notInArticle](vvvv_logo.svg)
 
 ## VPM
 Vvvv Package Manager
@@ -25,7 +25,7 @@ Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom b
 
 ### [Get it](https://github.com/meso-unimpressed/Vanadium)
 
-![md.expand](vanadium.png)
+![_expand](vanadium.png)
 
 ----
 
@@ -41,5 +41,5 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 
 ### [Get it](https://vvvv.org/contribution/mp.dx)
 
-![md.expand md.invert](mp.dx.png)
-![md.expand md.invert](mp.essentials.png)
+![_expand invert](mp.dx.png)
+![_expand invert](mp.essentials.png)

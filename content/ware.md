@@ -6,28 +6,7 @@
 
 # Unreal plugins
 
-## Uranium
-
-![md.center](ware/ur_logo_atom_ondark.png)
-
-![md.parallax md.not-in-article](uelogo.svg)
-
-The fastest full CEF implementation for UE4 so far.
-
-### [Get it](https://github.com/microdee/Uranium)
-
-* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
-* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
-  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
-* Full multitouch capability.
-* Integration into Unreal's own audio system.
-* UMG abstraction layer, a full fledged browser widget.
-
-**Recently open-sourced. It started development at [MESO](https://meso.design)**  
-**Now being developed at [realworld one](https://realworld-one.com/)**  
-A lot of enhancements and features are planned, but the basic components are already usable.
-
-----
+![_parallax(side) notInArticle](uelogo.svg)
 
 ## SpaceMouse for Unreal Engine
 
@@ -35,7 +14,7 @@ Control Editor viewports with the best camera control device out there, even wit
 
 ### [Get it](https://github.com/microdee/UE4-SpaceMouse) | [Buy it](https://www.unrealengine.com/marketplace/en-US/product/spacemouse-for-unreal-engine)
 
-![md.expand](ware/sm-thumb.png)
+![_expand](ware/sm-thumb.png)
 
 ----
 
@@ -49,20 +28,32 @@ High level project automations for UE4 in C#, using the [Nuke build tool](https:
 
 ----
 
+## Uranium
+
+![_center](ware/ur_logo_atom_ondark.png)
+
+The fastest full CEF implementation for UE4 so far.
+
+### [Get it](https://github.com/microdee/Uranium)
+
+* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
+* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
+  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
+* Full multitouch capability.
+* Integration into Unreal's own audio system.
+* UMG abstraction layer, a full fledged browser widget.
+* 
+**Recently open-sourced. It started development at [MESO](https://meso.design)**  
+Currently this is under major redesign.
+
+----
+
 ## UE4 Material Expression node Generator
 
 This is a VS Code plugin to generate custom material expression nodes and their boilerplate for UE4 to the clipboard, ready to be pasted in the material editor.
 
 Get it via the extensions panel in VS Code or,  
 [Check out the source code](https://github.com/microdee/ue4-material-expression-generator)
-
-----
-
-## Buest \[byːst\]
-
-A shared, managed and IWYU dependency on [Boost](https://www.boost.org/) for your C++ plugins and projects. No need to deal with manual installation of Boost and its BCP tool.
-
-### [Get it](https://github.com/microdee/Buest)
 
 ----
 # VVVV plugins
@@ -74,7 +65,7 @@ Decentralized package manager for vvvv. Without it, contribution dependency is a
 
 ### [Get it](https://vvvvpm.github.io)
 
-![md.parallax md.not-in-article](vvvv_logo.svg)
+![_parallax(side) notInArticle](vvvv_logo.svg)
 
 ----
 
@@ -92,7 +83,7 @@ Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom b
 
 ### [Get it](https://github.com/meso-unimpressed/Vanadium)
 
-![md.expand](ware/vanadium.png)
+![_expand](ware/vanadium.png)
 
 ----
 
@@ -108,8 +99,8 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 
 ### [Get it](https://vvvv.org/contribution/mp.dx)
 
-![md.expand md.invert](ware/mp.dx.png)
-![md.expand md.invert](ware/mp.essentials.png)
+![_expand invert](ware/mp.dx.png)
+![_expand invert](ware/mp.essentials.png)
 
 ----
 # programs

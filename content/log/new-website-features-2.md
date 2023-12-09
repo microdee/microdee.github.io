@@ -1,11 +1,12 @@
 <!-- {
+    "title": "Updates! ... Again!",
     "desc": "Recording some new features on this website"
 } -->
 
 # Updates! ... Again!
 [(03.03.2022)](/c/log/new-website-features-2)
 
-![md.parallax md.not-in-article](3dview.png)
+![_parallax(side) notInArticle](3dview.png)
 
 I've done yet another barely noticable update to my website. Barely noticable on the surface but almost a rewrite under the hood.
 

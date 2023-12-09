@@ -1,4 +1,5 @@
 <!-- {
+    "title": "Nuke.Unreal",
     "desc": "Automate the tasks involved in creating Marketplace complaint plugins and other useful scripts"
 } -->
 
@@ -18,7 +19,7 @@
   - [Fluent Unreal Tools API](#fluent-unreal-tools-api)
 </tocmd>
 
-![md.parallax](../nu_logo.svg)
+![_parallax(side)](../nu_logo.svg)
 
 This article is about using C# and [Nuke](https://nuke.build) to automate tasks and build steps around your Unreal project. It will generally describe the workflow and how to set it up yourself. This is still deep in development so this article should be a teaser-trailer really.
 
@@ -29,7 +30,7 @@ This article is about using C# and [Nuke](https://nuke.build) to automate tasks 
 * Common UE4 build tasks (generate project files, build editor, cook, package, etc)
 * Prepare plugins for release in Marketplace
 * Bind Unreal tools to Nuke with fluent C# API *\[very WIP\]*
-* Generate boilerplate code and scaffolding from Scriban templates so no editor or heavy IDE needs to be opened *\[WIP\]*
+* Generate boilerplate code and scaffolding from Scriban templates so no editor or heavy IDE needs to be opened
   * New Unreal classes
   * New Plugin
   * New Module
@@ -130,13 +131,5 @@ public:
 ```
 
 Scriban templating is also used for file and foldernames, so basically templates are not only single files, but an entire file/folder structure. See for example the [Module template](https://github.com/microdee/Nuke.Unreal/tree/develop/src/Nuke.Unreal/templates/Module/%7B%7B%20name%20%7D%7D). As you can also see `*.sbn*` files are the ones which content will be parsed with Scriban, and the `sbn` part will be removed from their extension upon rendering.
-
-## Fluent Unreal Tools API
-
-This feature is incomplete yet, and this article will be updated once I fully implementn it. anyway:
-
-`Nuke.Unreal` includes a dotnet generator which references the C# automation DLL's from an Unreal installation. Using reflection it can extract all the automations you can do with them and transforms those into a fluent command-line builder API. The resulting API then executes the associated tool with the arguments built up with the `Fluent().Function().Calls()`.
-
-[ATM it is developed here](https://github.com/microdee/Nuke.Unreal/tree/topic/fluent-uetool-api/src/Nuke.Unreal.ToolGenerators)
 
 <mdcomment />

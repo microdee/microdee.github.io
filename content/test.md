@@ -4,11 +4,20 @@ This text says <span style="color: pink; text-shadow: 0px 0px 20px red; display:
 
 ## Testing Lottie
 
-<mdlottie href="dotcom-bubble.json" parallax></mdlottie>
+<mdlottie href="dotcom-bubble.json" sideparallax></mdlottie>
 
 <mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" ></mdlottie>
 
 <mdlottie href="hello.json" invert ></mdlottie>
+
+<mdlottie href="nonono.json" invert ></mdlottie>
+
+## Testing PDF
+
+<mdpdf href="cv2023_eng.pdf" cover="true"></mdpdf>
+<mdpdf href="test.pdf" mergedpairs="true"></mdpdf>
+<mdpdf href="projects/133rd-story/2024.pdf" cover="true" mergedpairs="true" full="true"></mdpdf>
+<mdpdf href="nonono.pdf" mergedpairs="true" full="true"></mdpdf>
 
 ## Testing pictures
 
@@ -17,21 +26,30 @@ normal:
 ![](toiletposition.gif)
 ![](emergent.gif)
 
+center:
+
+![_center](toiletposition.gif)
+![_center](emergent.gif)
+
 parallax:
 
-![md.parallax](emergent.gif)
+![_parallax(side)](emergent.gif)
+![_expand parallax(coeff:1.5) transform:'translateX(200px)' zindex:10010](emergent.gif)
 
-expanded:
+expanded and filters:
 
-![md.expand md.invert](toiletposition.gif)
-![md.expand](emergent.gif)
+![_expand filter:'invert(100%) saturate(0%)'](toiletposition.gif)
+![_expand filter:'url(#cartoonWiggle)'](emergent.gif)
+
+compare:
+
 <mdcompare ls="reshade-off-0.jpg" rs="reshade-on-0.jpg" ></mdcompare>
 <mdcompare full="true" ls="reshade-off-1.jpg" rs="reshade-on-1.jpg" ></mdcompare>
 
 full width:
 
-![md.full](toiletposition.gif)
-![md.full](emergent.gif)
+![_full parallax(coeff:-1)](toiletposition.gif)
+![_full caption:'^'tis be a caption for: GoL (metapixels)'](emergent.gif)
 
 Some paragraph right after images.
 

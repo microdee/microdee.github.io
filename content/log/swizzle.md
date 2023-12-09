@@ -1,5 +1,6 @@
 <!-- {
     "img": "log/swizzle-sticks-1.jpg",
+    "title": "Elegant™ vector swizzling in C++",
     "desc": "Full vector swizzle in C++ with templates, as elegant as it can get, without generated code or macros."
 } -->
 
@@ -7,7 +8,7 @@
 
 [(07.07.2021)](/c/log/swizzle)
 
-![md.parallax md.not-in-article](swizzle-sticks.jpg)
+![_parallax(side) notInArticle](swizzle-sticks.jpg)
 
 [Vector swizzling](https://en.wikipedia.org/wiki/Swizzling_(computer_graphics)) is when you can get / assign the components of your vector in any order at once. In HLSL or GLSL it looks like this:
 
@@ -400,4 +401,4 @@ That's it! I'm sure it can be improved and it can be more modular, but it's good
 
 (photo of swizzle sticks by [Lizzie Munro](http://www.lizziemunro.com/))
 
-<mdcomment />
+<mdcomment></mdcomment>

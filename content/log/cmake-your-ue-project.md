@@ -1,4 +1,5 @@
 <!-- {
+    "title": "Useless knowledge: Put UE4 generated projects into CMake generated solutions",
     "desc": "Put UE4 generated projects into CMake generated solutions"
 } -->
 
@@ -6,7 +7,7 @@
 
 [(04.29.2021)](/c/log/cmake-your-ue-project)
 
-![md.parallax md.not-in-article](Cmake.svg)
+![_parallax(side) notInArticle](Cmake.svg)
 
 Because god has abandoned us long ago.
 
@@ -88,7 +89,7 @@ set_target_properties(UE4 PROPERTIES
 
 Also be prepared that VS intellisense will get even more confused about the UE4 code than it regularly is. Basically it will not recognize anything and will act completely retarded.
 
-![md.expand](ue4-in-cmake-intellisense.png)
+![_expand](ue4-in-cmake-intellisense.png)
 
 Alright now go and save the world!
 
