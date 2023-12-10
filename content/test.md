@@ -2,16 +2,6 @@
 
 This text says <span style="color: pink; text-shadow: 0px 0px 20px red; display: inline-block; transform: scale(1.5) rotate(-8deg)">**some bold things**</span>
 
-## Testing Lottie
-
-<mdlottie href="dotcom-bubble.json" sideparallax></mdlottie>
-
-<mdlottie href="izecube.json" filter="invert(100%) saturate(0%)  brightness(0.6) contrast(14)" ></mdlottie>
-
-<mdlottie href="hello.json" invert ></mdlottie>
-
-<mdlottie href="nonono.json" invert ></mdlottie>
-
 ## Testing PDF
 
 <mdpdf href="cv2023_eng.pdf" cover="true"></mdpdf>
@@ -73,7 +63,6 @@ Some paragraph right after iframes.
 
 <tocmd>
 - [Testing styling](#testing-styling)
-  - [Testing Lottie](#testing-lottie)
   - [Testing pictures](#testing-pictures)
   - [Testing embedded content](#testing-embedded-content)
 - [Markdown: Syntax](#markdown-syntax)
