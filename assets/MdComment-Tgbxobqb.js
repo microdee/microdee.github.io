@@ -1,4 +1,4 @@
-import { g as getAugmentedNamespace, r as reactExports, a as getDefaultExportFromCjs, j as jsxRuntimeExports } from "./index-7wwMFn0r.js";
+import { g as getAugmentedNamespace, r as reactExports, a as getDefaultExportFromCjs, j as jsxRuntimeExports } from "./index-OP675atP.js";
 var lib = {};
 var Utterances$1 = {};
 function sheetForTag(tag) {
@@ -1229,4 +1229,4 @@ function MdComment({ term }) {
 export {
   MdComment as default
 };
-//# sourceMappingURL=MdComment-dSTkLlw0.js.map
+//# sourceMappingURL=MdComment-Tgbxobqb.js.map

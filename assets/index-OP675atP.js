@@ -53581,14 +53581,14 @@ const PathContext = reactExports.createContext({
   webPath: "",
   filePath: ""
 });
-const MdComment = React.lazy(() => __vitePreload(() => import("./MdComment-dSTkLlw0.js"), true ? __vite__mapDeps([]) : void 0));
+const MdComment = React.lazy(() => __vitePreload(() => import("./MdComment-Tgbxobqb.js"), true ? __vite__mapDeps([]) : void 0));
 function MdCommentExt(props) {
   const path2 = reactExports.useContext(PathContext);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MdLazyLoad, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(React.Suspense, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "importFallback", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "glitch big digital", children: "♾️" }) }), children: /* @__PURE__ */ jsxRuntimeExports.jsx(MdComment, { term: path2.webPath }) }) });
 }
 Utils.mdExt.commentmd = MdCommentExt;
 Utils.mdExt.mdcomment = MdCommentExt;
-const MdCompare = React.lazy(() => __vitePreload(() => import("./MdCompare-0gMixqdM.js"), true ? __vite__mapDeps([]) : void 0));
+const MdCompare = React.lazy(() => __vitePreload(() => import("./MdCompare-cfOg2sDE.js"), true ? __vite__mapDeps([]) : void 0));
 function MdCompareExt(props) {
   let ls = GetMdUrl(props.ls);
   let rs = GetMdUrl(props.rs);
@@ -53606,7 +53606,7 @@ Utils.mdExt.mdnext = MdNextExt;
 Utils.mdExt.nextmd = MdNextExt;
 Utils.mdExt.mdinsert = MdNextExt;
 Utils.mdExt.insertmd = MdNextExt;
-const MdPdfRoot = React.lazy(() => __vitePreload(() => import("./MdPdfRoot-PR82Bs7J.js"), true ? __vite__mapDeps([0,1]) : void 0));
+const MdPdfRoot = React.lazy(() => __vitePreload(() => import("./MdPdfRoot-F_zLt4VL.js"), true ? __vite__mapDeps([0,1]) : void 0));
 function MdPdfExt(props) {
   let { url, isFile: isFile2, isDomain } = GetMdUrl(props.href);
   let passProps = { ...props };
@@ -63450,10 +63450,10 @@ export {
   reactExports as r,
   toPropertyKey as t
 };
-//# sourceMappingURL=index-7wwMFn0r.js.map
+//# sourceMappingURL=index-OP675atP.js.map
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/MdPdfRoot-PR82Bs7J.js","assets/MdPdfRoot-87Z3IxrS.css"]
+    __vite__mapDeps.viteFileDeps = ["assets/MdPdfRoot-F_zLt4VL.js","assets/MdPdfRoot-TvQ-e1bR.css"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }

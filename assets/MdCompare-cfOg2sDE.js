@@ -1,4 +1,4 @@
-import { r as reactExports, R as React, j as jsxRuntimeExports, M as MdFullParallaxWrap } from "./index-7wwMFn0r.js";
+import { r as reactExports, R as React, j as jsxRuntimeExports, M as MdFullParallaxWrap } from "./index-OP675atP.js";
 const ContainerClip = /* @__PURE__ */ reactExports.forwardRef((props, ref) => {
   const style = {
     position: "absolute",
@@ -409,4 +409,4 @@ class MdCompare extends React.Component {
 export {
   MdCompare as default
 };
-//# sourceMappingURL=MdCompare-0gMixqdM.js.map
+//# sourceMappingURL=MdCompare-cfOg2sDE.js.map
