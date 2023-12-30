@@ -6,5 +6,3 @@ node_modules
 
 # Files marked with gitigx
 *gitigx*
-
-package-lock.json

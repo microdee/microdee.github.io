@@ -28,8 +28,11 @@ parallax:
 
 expanded and filters:
 
-![_expand filter:'invert(100%) saturate(0%)'](toiletposition.gif)
+![_expand filter:'saturate(0%) url(#glitch_AnalogBig) invert(100%)'](toiletposition.gif)
 ![_expand filter:'url(#cartoonWiggle)'](emergent.gif)
+![_expand filter:'url(#glitch_Analog)'](toiletposition.gif)
+![_expand filter:'url(#glitch_Digital)'](emergent.gif)
+![_expand filter:'url(#glitch_DigitalBig)'](toiletposition.gif)
 
 compare:
 
