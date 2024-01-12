@@ -1,0 +1,945 @@
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Thin.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Thin.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedThin.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedThin.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedThin.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedThin.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-ThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-ThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedThinOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedThinOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-ThinItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ThinItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedThinItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedThinItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 100;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedThinItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedThinItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-ExtraLight.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraLight.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraLight.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraLight.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraLight.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraLight.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-ExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-ExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-ExtraLightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraLightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraLightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraLightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Light.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Light.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedLight.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedLight.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedLight.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedLight.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-LightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-LightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-LightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-LightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedLightOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedLightOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-LightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-LightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedLightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedLightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 300;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedLightItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedLightItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Regular.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Regular.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensed.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensed.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Condensed.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Condensed.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-Oblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Oblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-Oblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Oblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-Italic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Italic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Medium.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Medium.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedMedium.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedMedium.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedMedium.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedMedium.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-MediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-MediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-MediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-MediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedMediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedMediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedMediumOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedMediumOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-MediumItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-MediumItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedMediumItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedMediumItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedMediumItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedMediumItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedSemiBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedSemiBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedSemiBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedSemiBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 600;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedSemiBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedSemiBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Bold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Bold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-BoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-BoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-BoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-BoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-BoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-BoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-ExtraBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraBold.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraBold.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-ExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-ExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-ExtraBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-ExtraBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedExtraBoldItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedExtraBoldItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-Heavy.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-Heavy.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: semi-condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedHeavy.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedHeavy.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: condensed;
+	font-style: normal;
+	src: url('woff2/IosevkaRatsTerminal-CondensedHeavy.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedHeavy.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-HeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-HeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	src: url('woff2/IosevkaRatsTerminal-HeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-HeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: semi-condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: semi-condensed;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: condensed;
+	font-style: oblique;
+	src: url('woff2/IosevkaRatsTerminal-CondensedHeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedHeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web Oblique';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: condensed;
+	src: url('woff2/IosevkaRatsTerminal-CondensedHeavyOblique.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedHeavyOblique.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-HeavyItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-HeavyItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: semi-condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-SemiCondensedHeavyItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-SemiCondensedHeavyItalic.TTF') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Rats Terminal Web';
+	font-display: swap;
+	font-weight: 900;
+	font-stretch: condensed;
+	font-style: italic;
+	src: url('woff2/IosevkaRatsTerminal-CondensedHeavyItalic.WOFF2') format('woff2'), url('ttf/IosevkaRatsTerminal-CondensedHeavyItalic.TTF') format('truetype');
+}
