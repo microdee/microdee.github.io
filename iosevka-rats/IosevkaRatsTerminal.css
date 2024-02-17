@@ -5,7 +5,7 @@
 	font-weight: 100;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Thin.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Thin.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Thin.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Thin.ttf') format('truetype');
 }
 
 @font-face {
@@ -14,7 +14,7 @@
 	font-weight: 100;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThin.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThin.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThin.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThin.ttf') format('truetype');
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 	font-weight: 100;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThin.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThin.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThin.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThin.ttf') format('truetype');
 }
 
 @font-face {
@@ -32,7 +32,7 @@
 	font-weight: 100;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -40,7 +40,7 @@
 	font-display: swap;
 	font-weight: 100;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
 	font-weight: 100;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -57,7 +57,7 @@
 	font-display: swap;
 	font-weight: 100;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -66,7 +66,7 @@
 	font-weight: 100;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -74,7 +74,7 @@
 	font-display: swap;
 	font-weight: 100;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -83,7 +83,7 @@
 	font-weight: 100;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ThinItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ThinItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -92,7 +92,7 @@
 	font-weight: 100;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedThinItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedThinItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -101,7 +101,7 @@
 	font-weight: 100;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedThinItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedThinItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -110,7 +110,7 @@
 	font-weight: 200;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLight.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLight.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLight.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -119,7 +119,7 @@
 	font-weight: 200;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLight.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLight.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLight.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -128,7 +128,7 @@
 	font-weight: 200;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLight.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLight.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLight.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -137,7 +137,7 @@
 	font-weight: 200;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -145,7 +145,7 @@
 	font-display: swap;
 	font-weight: 200;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -154,7 +154,7 @@
 	font-weight: 200;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -162,7 +162,7 @@
 	font-display: swap;
 	font-weight: 200;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -171,7 +171,7 @@
 	font-weight: 200;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -179,7 +179,7 @@
 	font-display: swap;
 	font-weight: 200;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -188,7 +188,7 @@
 	font-weight: 200;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraLightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -197,7 +197,7 @@
 	font-weight: 200;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -206,7 +206,7 @@
 	font-weight: 200;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraLightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -215,7 +215,7 @@
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Light.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Light.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Light.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -224,7 +224,7 @@
 	font-weight: 300;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLight.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLight.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLight.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -233,7 +233,7 @@
 	font-weight: 300;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLight.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLight.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLight.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLight.ttf') format('truetype');
 }
 
 @font-face {
@@ -242,7 +242,7 @@
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -250,7 +250,7 @@
 	font-display: swap;
 	font-weight: 300;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -259,7 +259,7 @@
 	font-weight: 300;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -267,7 +267,7 @@
 	font-display: swap;
 	font-weight: 300;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -276,7 +276,7 @@
 	font-weight: 300;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -284,7 +284,7 @@
 	font-display: swap;
 	font-weight: 300;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -293,7 +293,7 @@
 	font-weight: 300;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-LightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -302,7 +302,7 @@
 	font-weight: 300;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedLightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -311,7 +311,7 @@
 	font-weight: 300;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedLightItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedLightItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -320,7 +320,7 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Regular.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Regular.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Regular.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -329,7 +329,7 @@
 	font-weight: 400;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensed.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensed.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensed.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensed.ttf') format('truetype');
 }
 
 @font-face {
@@ -338,7 +338,7 @@
 	font-weight: 400;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Condensed.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Condensed.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Condensed.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Condensed.ttf') format('truetype');
 }
 
 @font-face {
@@ -347,7 +347,7 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Oblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Oblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Oblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Oblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -355,7 +355,7 @@
 	font-display: swap;
 	font-weight: 400;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Oblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Oblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Oblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Oblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -364,7 +364,7 @@
 	font-weight: 400;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -372,7 +372,7 @@
 	font-display: swap;
 	font-weight: 400;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -381,7 +381,7 @@
 	font-weight: 400;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -389,7 +389,7 @@
 	font-display: swap;
 	font-weight: 400;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -398,7 +398,7 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Italic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Italic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Italic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -407,7 +407,7 @@
 	font-weight: 400;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -416,7 +416,7 @@
 	font-weight: 400;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -425,7 +425,7 @@
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Medium.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Medium.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Medium.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -434,7 +434,7 @@
 	font-weight: 500;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMedium.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMedium.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMedium.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMedium.ttf') format('truetype');
 }
 
 @font-face {
@@ -443,7 +443,7 @@
 	font-weight: 500;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMedium.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMedium.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMedium.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMedium.ttf') format('truetype');
 }
 
 @font-face {
@@ -452,7 +452,7 @@
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -460,7 +460,7 @@
 	font-display: swap;
 	font-weight: 500;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -469,7 +469,7 @@
 	font-weight: 500;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -477,7 +477,7 @@
 	font-display: swap;
 	font-weight: 500;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -486,7 +486,7 @@
 	font-weight: 500;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -494,7 +494,7 @@
 	font-display: swap;
 	font-weight: 500;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -503,7 +503,7 @@
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-MediumItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -512,7 +512,7 @@
 	font-weight: 500;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedMediumItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedMediumItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -521,7 +521,7 @@
 	font-weight: 500;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedMediumItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedMediumItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -530,7 +530,7 @@
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -539,7 +539,7 @@
 	font-weight: 600;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -548,7 +548,7 @@
 	font-weight: 600;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -557,7 +557,7 @@
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -565,7 +565,7 @@
 	font-display: swap;
 	font-weight: 600;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -574,7 +574,7 @@
 	font-weight: 600;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -582,7 +582,7 @@
 	font-display: swap;
 	font-weight: 600;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -591,7 +591,7 @@
 	font-weight: 600;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -599,7 +599,7 @@
 	font-display: swap;
 	font-weight: 600;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -608,7 +608,7 @@
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -617,7 +617,7 @@
 	font-weight: 600;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedSemiBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -626,7 +626,7 @@
 	font-weight: 600;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedSemiBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedSemiBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -635,7 +635,7 @@
 	font-weight: 700;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Bold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Bold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Bold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -644,7 +644,7 @@
 	font-weight: 700;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -653,7 +653,7 @@
 	font-weight: 700;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -662,7 +662,7 @@
 	font-weight: 700;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -670,7 +670,7 @@
 	font-display: swap;
 	font-weight: 700;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -679,7 +679,7 @@
 	font-weight: 700;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -687,7 +687,7 @@
 	font-display: swap;
 	font-weight: 700;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -696,7 +696,7 @@
 	font-weight: 700;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -704,7 +704,7 @@
 	font-display: swap;
 	font-weight: 700;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -713,7 +713,7 @@
 	font-weight: 700;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-BoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -722,7 +722,7 @@
 	font-weight: 700;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -731,7 +731,7 @@
 	font-weight: 700;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -740,7 +740,7 @@
 	font-weight: 800;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -749,7 +749,7 @@
 	font-weight: 800;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -758,7 +758,7 @@
 	font-weight: 800;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBold.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBold.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBold.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -767,7 +767,7 @@
 	font-weight: 800;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -775,7 +775,7 @@
 	font-display: swap;
 	font-weight: 800;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -784,7 +784,7 @@
 	font-weight: 800;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -792,7 +792,7 @@
 	font-display: swap;
 	font-weight: 800;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -801,7 +801,7 @@
 	font-weight: 800;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -809,7 +809,7 @@
 	font-display: swap;
 	font-weight: 800;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -818,7 +818,7 @@
 	font-weight: 800;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-ExtraBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-ExtraBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -827,7 +827,7 @@
 	font-weight: 800;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedExtraBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -836,7 +836,7 @@
 	font-weight: 800;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedExtraBoldItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedExtraBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -845,7 +845,7 @@
 	font-weight: 900;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Heavy.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Heavy.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-Heavy.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-Heavy.ttf') format('truetype');
 }
 
 @font-face {
@@ -854,7 +854,7 @@
 	font-weight: 900;
 	font-stretch: semi-condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavy.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavy.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavy.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavy.ttf') format('truetype');
 }
 
 @font-face {
@@ -863,7 +863,7 @@
 	font-weight: 900;
 	font-stretch: condensed;
 	font-style: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavy.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavy.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavy.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavy.ttf') format('truetype');
 }
 
 @font-face {
@@ -872,7 +872,7 @@
 	font-weight: 900;
 	font-stretch: normal;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -880,7 +880,7 @@
 	font-display: swap;
 	font-weight: 900;
 	font-stretch: normal;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -889,7 +889,7 @@
 	font-weight: 900;
 	font-stretch: semi-condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -897,7 +897,7 @@
 	font-display: swap;
 	font-weight: 900;
 	font-stretch: semi-condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -906,7 +906,7 @@
 	font-weight: 900;
 	font-stretch: condensed;
 	font-style: oblique;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -914,7 +914,7 @@
 	font-display: swap;
 	font-weight: 900;
 	font-stretch: condensed;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyOblique.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyOblique.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyOblique.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyOblique.ttf') format('truetype');
 }
 
 @font-face {
@@ -923,7 +923,7 @@
 	font-weight: 900;
 	font-stretch: normal;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-HeavyItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-HeavyItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -932,7 +932,7 @@
 	font-weight: 900;
 	font-stretch: semi-condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-SemiCondensedHeavyItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-SemiCondensedHeavyItalic.ttf') format('truetype');
 }
 
 @font-face {
@@ -941,5 +941,5 @@
 	font-weight: 900;
 	font-stretch: condensed;
 	font-style: italic;
-	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyItalic.WOFF2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyItalic.TTF') format('truetype');
+	src: url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/woff2/IosevkaRatsTerminal-CondensedHeavyItalic.woff2') format('woff2'), url('https://raw.githubusercontent.com/microdee/microdee.github.io/master/iosevka-rats/ttf/IosevkaRatsTerminal-CondensedHeavyItalic.ttf') format('truetype');
 }
