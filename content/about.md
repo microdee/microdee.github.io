@@ -14,7 +14,7 @@
 * Fully operational since 2010
 * I'm a **software developer** per occupation
   * Mainly working with:
-    * **UE4** (C++)
+    * **C++** (Unreal, NAP)
     * **.NET** (C#, C++/CLI)
     * many tools/languages required by specific projects (see below)
 * Also have minimal artistic/design background
@@ -23,29 +23,26 @@
 
 | | |
 |-|-|
-|**[realworld one GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal Engineer | 2021 - Present |
-|**[MESO Digital Interiors GmbH.](https://meso.design)**<br>as Real-time Software Developer | 2018 - 2021 |
+| **[realworld one GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal Engineer | 2021 - 2025 |
+| **[MESO Digital Interiors GmbH.](https://meso.design)**<br>as Real-time Software Developer | 2018 - 2021 |
 | **[Uberact Ltd.](https://uberact.com/)**<br>as Lead Developer | 2014 - 2018 |
 | **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
 | **Freelance work**<br>as Media Artist | 2009 - 2012 |
 
 #### Contacts:
 
-* _@mcro.de / m@mcro.de / david.morasz@meso.design
+* _@mcro.de / m@mcro.de
 * [Github](https://github.com/microdee)
-* [Mastodon](https://mastodon.social/web/accounts/850016)
-* [Twitter](https://twitter.com/microdeedev)
 
 #### Tools/Languages
 
 Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
 
-* **C++** (mostly on Windows)
-  * Unreal Engine 4
-  * CMake
+* **C++**
+  * Unreal Engine
   * Chromium Embedded Framework (CEF)
   * Graphics programming with Direct3D
-  * boost
+  * *And necessary build tools (CMake, GN, XMake, PreMake, Meson, etc...)*
 * **.NET**
   * C#
   * C++/CLI
@@ -72,8 +69,8 @@ Still usable, in order of confidence
 * Quickly learn and adopt to vast complex tools/frameworks/libraries.
 * Experience with UX design: manufacturing tools focusing on ease of usage, while maintaining versatility.
 * Efficiently working with teams, especially when it's assisted with infrastructure
-  * Git and other VCS's
-  * SCRUM project management
+  * Git or other version control systems
+  * SCRUM/Agile project management
 
 #### Education:
 
@@ -84,6 +81,4 @@ Still usable, in order of confidence
 #### Location:
 
 * Born in Hungary, Budapest
-* Currently living in Germany, Frankfurt am Main
-
-### [Get a printer friendly CV](root/cv.pdf)
+* Currently living in Germany, Freiburg (soon to be Berlin)
