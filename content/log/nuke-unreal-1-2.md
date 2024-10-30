@@ -4,7 +4,7 @@
 } -->
 
 # Nuke.Unreal 1.2
-[(16.05.2023)](/c/log/nuke-unreal-1.2)
+[(16.05.2023)](/c/log/nuke-unreal-1-2)
 
 ![_parallax(side) notInArticle](../nu_logo.svg)
 
