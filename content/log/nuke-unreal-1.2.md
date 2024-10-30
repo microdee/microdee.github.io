@@ -17,7 +17,7 @@
     - [Fluent API](#fluent-api)
     - [Automatically gathered documentation](#automatically-gathered-documentation)
     - [Handling multiple egnine versions](#handling-multiple-egnine-versions)
-  - [Build Plugins](#build-plugins)
+- [Build Plugins](#build-plugins)
 </tocmd>
 
 Last time I wrote about Nuke.Unreal here was two years ago. In fact I'm not doing a great job at promoting it but that changes today! <span style="opacity: 0.66;">(and then probably it won't)</span>. In that two years a lot has changed for the better and it became much more user friendly. Just the fact that since it's available as a nuget package helps a lot, so you don't need submodules or a project template, just do
@@ -126,7 +126,7 @@ Unfortunately if one parameter or one sub-tool is renamed from one version to th
 
 With each parameter or subtool an extra metadata is kept denoting which engine versions they're compatible with. If the developer would invoke a parameter which is not present in their target engine version, that will be ignored from the resulting command line arguments string and a warning will be logged.
 
-## Build Plugins
+# Build Plugins
 
 Nuke.Unreal 1.2 brought with it a separated utilities library for Nuke, which now lives on its own and doesn't concern Unreal at all. It's called [Nuke.Cola](https://github.com/microdee/md.Nuke.Cola). It brings couple of usability features which makes composing builds slightly less of a chore. One of them which is done especially for preparing independent Unreal plugins is its feature called "Build Plugins".
 
