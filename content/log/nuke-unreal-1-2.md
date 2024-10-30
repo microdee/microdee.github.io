@@ -27,7 +27,7 @@ nuke :setup
 nuke :addPackage md.Nuke.Unreal
 ```
 
-in your fresh Unreal project. For the uninitiated I recommend reading the [Prelude/Reasoning](/c/log/nuke-unreal#prelude-reasoning) of the article from ~2 years ago. <span style="opacity: 0.66;">(The rest of the article might have old things or plain bad advice. Tread accordingly. README.md in the main repo is the single source of truth.)</span>
+in your fresh Unreal project. For the uninitiated I recommend reading the [Prelude/Reasoning](/c/log/nuke-unreal) of the article from ~2 years ago. <span style="opacity: 0.66;">(The rest of the article might have old things or plain bad advice. Tread accordingly. README.md in the main repo is the single source of truth.)</span>
 
 Introductions aside there are several bigger things changed since then:
 
