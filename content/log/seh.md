@@ -1,4 +1,14 @@
-## From Unreal Engine:
+<!-- {
+    "title": "Structured Exception Handling (SEH)",
+    "desc": "Unix operating systems has signals, Windows has SEH. In characteristic Microsoft fashion there's a lot of peculiarities around that and this article collects some."
+} -->
+
+## Structured Exception Handling (SEH)
+[(12.01.2024)](/c/log/seh)
+
+Unix operating systems has signals, Windows has SEH. In characteristic Microsoft fashion there's a lot of peculiarities around that and this article ~~plagiarises~~ collects some.
+
+### Notes from Unreal Engine:
 
 The SEH mechanism is not very well documented, so to start with, few facts to know:
 
@@ -51,3 +61,9 @@ if enough stack space is available to call/run SEH, otherwise, the app exits wit
 - Heap corruption (like a double free) is a special exception. It is likely only visible to Vectored Exception Handler (VEH) before possibly beeing handled by Windows Error Reporting (WER). A popup may be shown asking to debug or exit. The application may exit with code `-1073740940 (STATUS_HEAP_CORRUPTION)` or `255 (Abort)` depending on the situation.
 
 The engine hooks itself in the unhandled exception filter. This is the best place to be as it runs after structured exception handlers and it can be easily overriden externally (because there can only be one) to do something else.
+
+### Other resources
+
+* See this article from 1997 [A Crash Course on the Depths of Win32™ Structured Exception Handling](https://web.archive.org/web/20180115191634/http://www.microsoft.com:80/msj/0197/exception/exception.aspx)
+
+<mdcomment></mdcomment>

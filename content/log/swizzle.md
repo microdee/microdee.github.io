@@ -6,9 +6,29 @@
 
 ## Elegant™ vector swizzling in C++
 
-[(07.07.2021)](/c/log/swizzle)
+[(07.07.2021, 29.10.2024)](/c/log/swizzle)
 
 ![_parallax(side) notInArticle](swizzle-sticks.jpg)
+
+<tocmd>
+- [Elegant™ vector swizzling in C++](#elegant-vector-swizzling-in-c)
+  - [Preamble](#preamble)
+  - [Swizzling](#swizzling)
+  - [Declare types](#declare-types)
+  - [Processing the selector](#processing-the-selector)
+  - [Getting the component at runtime](#getting-the-component-at-runtime)
+  - [Usage](#usage)
+  - [Even better syntax](#even-better-syntax)
+</tocmd>
+
+
+### Preamble
+
+This article have been updated with a better advice about how you should do the operator overloads, and as an extra I've added another approach to the end. Originally I wanted to maintain C++17 compatibility but C++20 concepts were just too useful, so now it's a C++20 article. Enjoy!
+
+SPOILERS: [View the full project on Compiler Explorer](https://godbolt.org/z/46GoTG7Px)
+
+### Swizzling
 
 [Vector swizzling](https://en.wikipedia.org/wiki/Swizzling_(computer_graphics)) is when you can get / assign the components of your vector in any order at once. In HLSL or GLSL it looks like this:
 
@@ -28,32 +48,39 @@ Recently I've been brewing a templated version where one can do this: (equivalen
     FVector4 A{ 1, 2, 3, 4 };
     FVector2D B{ 5, 6 };
 
-    sw<'xyz'>(A) = sw<'xyx'>(B);
+    sw<'xyz'>(A) = swg<'xyx'>(B);
     // A == {5, 6, 5, 4}
 ```
 
-[For the impatient check out the full code](https://gist.github.com/microdee/1b865d71af9568329a91fe6de547edc7)
-
 Not as natural as simple `.xyz` syntax but this is the closest I could get. This method doesn't use macro magic, doesn't rely on code generation, almost 0 copy (we do need to copy on getters), no external library, and type-safe.
+
+If we do allow ourselves generated code the syntax can be even closer (see [Even better syntax](#even-better-syntax))
+
+```Cpp
+(A,xyz) = B,xyx;
+```
 
 Now notice the template argument for our component selection text `<'xyz'>`. That's right, it's a multi-character constant with single quotes! The template argument for it is actually an `int`, which gives us 4 characters. I hope that 99% of times 4 dimensions are enough for your vectors of your game or whatever non scientific.
 
 The method relies on `constexpr` functions and some bit-shifting.
 
+### Declare types
+
 First our stupid vector types:
 
 ```Cpp
-// Define our stupid vector types
-// for example the big-brain genius Unreal Engine vector types
-struct FVector2D
+// Given our stupid vector types coming from third-party library
+// for example the galaxy-brain Unreal Engine 4 vector types
+// (they improved it a lot in Unreal Engine 5 though)
+struct alignas(float) FVector2D
 {
     float X; float Y;
 };
-struct FVector
+struct alignas(float) FVector
 {
     float X; float Y; float Z;
 };
-struct FVector4
+struct alignas(float) FVector4
 {
     float X; float Y; float Z; float W;
 };
@@ -61,7 +88,7 @@ struct FVector4
 
 Notice this method only works when XYZW components are in a continuous region of memory (such as these structs). You will see why later.
 
-Then we associate our vectors with their dimension (because our vectors are stupid, remember?)
+Then we associate our vectors with their dimension (because our vector types doesn't have consistent naming or doesn't have the )
 
 ```Cpp
 // and fail everywhere else
@@ -73,9 +100,13 @@ template<> struct vec<3> { using type = FVector; };
 template<> struct vec<4> { using type = FVector4; };
 
 template<int Dim> using vec_t = vec<Dim>::type;
+
+template<int Size> using vec_size_t = vec<Size / sizeof(float)>::type;
 ```
 
 One can also specify maybe a scalar type as a template argument, but that's outside of the scope of this idea. Treat that as a homework. We will just rely on floats here now.
+
+### Processing the selector
 
 First we get the number of dimensions we have. Because our use-case is limited to 4 dimensions we can do this:
 
@@ -160,177 +191,143 @@ constexpr int get_min_dims(T storage, int index = 'xyzw')
 }
 ```
 
+### Getting the component at runtime
+
 Then finally get the value of a vector's component:
 
 ```Cpp
 // get (a reference to) an individual component of a vector
-template<typename InVecT, typename OutCompT = float>
-OutCompT& get_comp(InVecT& in_vec, int d)
+// this overload accepts only vectors
+template<typename InVec, typename OutComp = default_scalar>
+requires (!scalar<InVec> && vector_like<InVec>)
+OutComp& get_comp(InVec& in_vec, int d)
 {
     // Maybe implement your own failure, skipping this check can be unsecure
-    if(d >= (sizeof(InVecT) / sizeof(OutCompT)))
+    if(d >= (sizeof(InVec) / sizeof(OutComp)))
         d = 0;
 
-    OutCompT* addr = const_cast<OutCompT*>(
-        reinterpret_cast<const OutCompT*>(&in_vec)
-    );
+    OutComp* addr = reinterpret_cast<OutComp*>(&in_vec);
     return *(addr + d);
 }
 
-// we specialize for float/scalars
-template<>
-float& get_comp<float, float>(float& in_vec, int d)
+// overload get_comp for simple scalars in which case it just returns itself
+// this is not expressed as `if constexpr` to avoid type conversion from number literals
+template<scalar InVec>
+InVec& get_comp(InVec& in_vec, int d)
 {
     return in_vec;
 }
+
+// overload get_comp for assigners, so the developer doesn't need to use getters
+template<std::derived_from<assigner_tag> InVec>
+auto& get_comp(InVec& in_vec, int d)
+{
+    return get_comp(in_vec.get(), d);
+}
 ```
 
-This is no longer a `constexpr` function so we can use reinterpret_cast and pointer arithmetic. This comes handy because we're not returning a copy of the component, we're returning a reference to it, so we can use this for assignment too. Because of that pointer shifting we assume that components are sequentially aligned in memory. (for the sake of keeping it simple)
+This is no longer a `constexpr` function so we can use reinterpret_cast and pointer arithmetics. This comes handy because we're not returning a copy of the component, we're returning a reference to it, so we can use this for assignment too. Because of that pointer shifting we assume that components are sequentially aligned in memory. (for the sake of keeping it simple)
 
 Next some extra bit of flare: I originally wanted this to work the same way as HLSL vectors. So `A.xz = float2(1, 2)` would correctly set the first and the third axis of vector A from the 2 axes of the input 2D vector. For this kind of operation we will need an intermediary struct in C++, which handles creating an output vector when getting, and correctly assigning axes from an input vector when setting.
 
 ```Cpp
-// We create an assigner struct which is returned by sw()
-// and allows to assign right hand side vectors or scalars
-// to any component with a natural syntax.
-// We will also use inheritence to slightly reduce code repetition
-// when specializing for scalar right hand side assignment input.
-// If we wouldn't specialize there can be cases where our assignment
-// overload would be defined twice
-template<int SwizzText, typename LeftVecT, typename RightVecT>
-struct assigner_base
+// We create an assigner struct which is returned by sw() and allows to assign
+// right hand side vectors or scalars to any component.
+template<int SwizzText, vector_like LeftVec>
+struct assigner : assigner_tag
 {
+private:
+    // we hold the output for further usage
+    vec_t<dimension(SwizzText)> output;
+public:
     // we hold the assignee as a reference
-    LeftVecT& left;
+    LeftVec& value;
 
-    // this is basically our getter for our swizzling
-    operator vec_t<dimension(SwizzText)> ()
+    // construct from an l-value ref
+    assigner(LeftVec& val) : value(val) {}
+
+    // calculate the output vector based on SwizzText characters
+    vec_t<dimension(SwizzText)>& get()
     {
-        vec_t<dimension(SwizzText)> Output;
         for(int i=0; i<dimension(SwizzText); i++)
         {
             auto curr_c = map_comp_char(get_byte(SwizzText, i));
-            get_comp(Output, i) = get_comp(left, curr_c);
+            get_comp(output, i) = get_comp(value, curr_c);
         }
-        return Output;
+        return output;
     }
-    
-    // per-component operation where T is float(int c, int i)
+
+    // conversion back to vector
+    operator vec_t<dimension(SwizzText)> ()
+    {
+        return get();
+    }
+
+    // per-component operation where T is scalar(int c, int i)
     template<typename T>
     void operation_base(T op)
     {
         for(int i=0; i<dimension(SwizzText); i++)
         {
             auto curr_c = map_comp_char(get_byte(SwizzText, i));
-            get_comp(left, curr_c) = op(i);
+            get_comp(value, curr_c) = op(curr_c, i);
         }
     }
 
     // assign a right hand side vector components to the
-    // components of the left vector specified by SwizzText
-    // and for the heck of it I've added incremental operators
-    void operator = (const RightVecT& right)
+    // components of the left vector ('value' member) specified by SwizzText
+    template <typename RightVec>
+    assigner& operator = (RightVec&& right)
     {
         operation_base([&](int, int i) { return get_comp(right, i); });
+        return *this;
     }
 
-    void operator *= (const RightVecT& right)
+    template <typename RightVec>
+    assigner& operator *= (RightVec&& right)
     {
-        operation_base([&](int c, int i) { return get_comp(left, c) * get_comp(right, i); });
+        operation_base([&](int c, int i) { return get_comp(value, c) * get_comp(right, i); });
+        return *this;
     };
 
-    void operator /= (const RightVecT& right)
+    template <typename RightVec>
+    assigner& operator /= (RightVec&& right)
     {
-        operation_base([&](int c, int i) { return get_comp(left, c) / get_comp(right, i); });
+        operation_base([&](int c, int i) { return get_comp(value, c) / get_comp(right, i); });
+        return *this;
     };
 
-    void operator += (const RightVecT& right)
+    template <typename RightVec>
+    assigner& operator += (RightVec&& right)
     {
-        operation_base([&](int c, int i) { return get_comp(left, c) + get_comp(right, i); });
+        operation_base([&](int c, int i) { return get_comp(value, c) + get_comp(right, i); });
+        return *this;
     };
 
-    void operator -= (const RightVecT& right)
+    template <typename RightVec>
+    assigner& operator -= (RightVec&& right)
     {
-        operation_base([&](int c, int i) { return get_comp(left, c) - get_comp(right, i); });
+        operation_base([&](int c, int i) { return get_comp(value, c) - get_comp(right, i); });
+        return *this;
     };
 
-    void operator --()
+    assigner& operator --(int)
     {
-        operation_base([&](int c, int) { return get_comp(left, c) - 1.0f; });
+        operation_base([&](int c, int) { return get_comp(value, c) - 1.0; });
+        return *this;
     };
 
-    void operator ++()
+    assigner& operator ++(int)
     {
-        operation_base([&](int c, int) { return get_comp(left, c) + 1.0f; });
+        operation_base([&](int c, int) { return get_comp(value, c) + 1.0; });
+        return *this;
     };
 };
 ```
 
-HLSL also allows this: `A.xyz = 1.0f`, in other words, assign all components to a single input scalar. With templated swizzling it would look like this: `sw<'xyz'>(A) = 1.0f` So we create a second overload operator for scalar assignment:
+This struct does the main heavy lifting of this method of swizzling. HLSL also allows this: `A.xyz = 1.0f`, in other words, assign all components to a single input scalar. With templated swizzling it would look like this: `sw<'xyz'>(A) = 1.0` . This is the reason the operators in `assigner` are templated, and `get_comp` function has multiple overloads driven by non-overlapping constraints.
 
-```Cpp
-// Assigner for more than one target components
-template<int SwizzText, typename LeftVecT, typename RightVecT>
-struct assigner : public assigner_base<SwizzText, LeftVecT, RightVecT>
-{
-    using super_t = assigner_base<SwizzText, LeftVecT, RightVecT>;
-    
-    // allow scalars to be assigned to multiple components
-    void operator = (const float& right)
-    {
-        super_t::operation_base([&](int, int) { return right; });
-    }
-
-    void operator *= (const float& right)
-    {
-        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) * right; });
-    };
-
-    void operator /= (const float& right)
-    {
-        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) / right; });
-    };
-
-    void operator += (const float& right)
-    {
-        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) + right; });
-    };
-
-    void operator -= (const float& right)
-    {
-        super_t::operation_base([&](int c, int) { return get_comp(super_t::left, c) - right; });
-    };
-    
-    // use parent class operators
-    // for some reason operator overloads of parent class didn't carry over
-    void operator = (const RightVecT& right) { super_t::operator=(right); }
-    void operator *= (const RightVecT& right) { super_t::operator*=(right); }
-    void operator /= (const RightVecT& right) { super_t::operator/=(right); }
-    void operator += (const RightVecT& right) { super_t::operator+=(right); }
-    void operator -= (const RightVecT& right) { super_t::operator-=(right); }
-    void operator ++ () { super_t::operator++(); }
-    void operator -- () { super_t::operator--(); }
-};
-```
-
-And to avoid redefinitions of operator overloads we define a special case for single component assignment (`sw<'y'>(A) = 1.0f`):
-
-```Cpp
-// Assigner for only one target component
-template<int SwizzText, typename LeftVecT>
-struct assigner<SwizzText, LeftVecT, float> : public assigner_base<SwizzText, LeftVecT, float>
-{
-    using super_t = assigner_base<SwizzText, LeftVecT, float>;
-    
-    // use parent class operator and omit the scalar equivalent (as that would be the same)
-    // for some reason operator overloads of parent class didn't carry over
-    void operator = (const float& right) { super_t::operator=(right); }
-    void operator *= (const float& right) { super_t::operator*=(right); }
-    void operator /= (const float& right) { super_t::operator/=(right); }
-    void operator += (const float& right) { super_t::operator+=(right); }
-    void operator -= (const float& right) { super_t::operator-=(right); }
-};
-```
+### Usage
 
 Then finally we add the main attraction the function we can use in our code:
 
@@ -352,10 +349,16 @@ Now the problem with this though is that we cannot really write
 
 ```Cpp
 auto B = sw<'xyxy'>(A); // B -> assigner, not a vector
-FVector4 C = sw<'xyxy'>(A); // it works but tedious.
 ```
 
-and expect B to be a vector. For situations like this we can have a little wrapper function:
+and expect B to be a vector. Howeever,
+
+```Cpp
+FVector4 C = sw<'xyxy'>(A); // this works but tedious.
+auto B = sw<'xyxy'>(A).get(); // this also works but now we have more clutter in our code
+```
+
+For situations like this we can have a little wrapper function:
 
 ```Cpp
 // Make a separate getter function so we can use `auto`, or other type inference
@@ -396,6 +399,43 @@ auto size = swg<'zw'>(rect);
 
 // etc...
 ```
+
+### Even better syntax
+
+Now this syntax can be improved further if we'd override the comma operator. Originally I hoped one can do this:
+
+```Cpp
+    A,'xyz' = B,'xyx';
+```
+
+The problem with this idea though is that we would need to infer the output type of `operator , (InVec&& left, int&& right)` based on the value of the `right` parameter, which is as of time of writing and according to my knowledge is not possible.
+
+To achieve that level of comfort we do need to unfortunately give in and generate the permutations of `xyzw` as global variables and individual types. For example
+
+```Cpp
+struct sw_wyx_t  { static constexpr int swizzle_text = 'wyx';  } wyx;
+```
+
+so when we use them with the comma operator overload
+
+```Cpp
+// overload the comma operator to not interfere with the others,
+// so one can have the syntax `my_vector,xyz`
+template<vector_like InVec, swizzler Swizzler>
+auto operator , (InVec& in_vec, const Swizzler& swizzle)
+{
+    return sw<Swizzler::swizzle_text>(in_vec);
+}
+```
+
+we can have the output vector type known during template instantiation. Now note that `,` as an operator has lower precedence than `=` or pretty much anything. That's why we need to have parenthesis around `A.xyz` to get the correct l-value.
+
+```Cpp
+    (A,xyz) = B,xyx;
+    // A == {5, 6, 5, 4}
+```
+
+[View the full project on Compiler Explorer](https://godbolt.org/z/46GoTG7Px)
 
 That's it! I'm sure it can be improved and it can be more modular, but it's good enough for me. Now I go and leave Earth, byeee!
 
