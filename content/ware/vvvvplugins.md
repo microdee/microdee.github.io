@@ -1,36 +1,48 @@
-# vvvv plugins
+<div class="mdCenter">
 
-![_parallax(side) notInArticle](vvvv_logo.svg)
-
-## VPM
+## [VPM](https://vvvvpm.github.io)
 Vvvv Package Manager
+
+</div>
 
 Decentralized package manager for vvvv. Without it, contribution dependency is a completely manual endeavour in vvvv.
 
-### [Get it](https://vvvvpm.github.io)
+<div class="mdCenter">
+
+</div>
+
+![_parallax(side) notInArticle](vvvv_logo.svg)
 
 ----
 
-## Notuiv
+<div class="mdCenter">
+
+## [Notuiv](https://vvvv.org/contribution/notuiv)
 Advanced UI interaction library in 3D space.
 
-### [Get it](https://vvvv.org/contribution/notuiv)
+</div>
 
 <iframe src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 ----
 
-## Vanadium
+<div class="mdCenter">
+
+## [Vanadium](https://github.com/meso-unimpressed/Vanadium)
 Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom build of CEF (Chromium Embedded Framework).
 
-### [Get it](https://github.com/meso-unimpressed/Vanadium)
+</div>
 
-![_expand](vanadium.png)
+![_expand](ware/vanadium.png)
 
 ----
 
-## mp.dx
+<div class="mdCenter">
+
+## [mp.dx](https://vvvv.org/contribution/mp.dx)
 and mp.essentials
+
+</div>
 
 A large collection of general purpose nodes and ecosystems. Think of it as a second addonpack. It also includes as dependencies:
 
@@ -39,7 +51,5 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 * **[md.stdl](https://github.com/microdee/md.stdl)** a C# standard library of misc things.
   * This is being deprecated tho in favor of its .NET Core port which doesn't rely on VVVV.Utils anymore
 
-### [Get it](https://vvvv.org/contribution/mp.dx)
-
-![_expand invert](mp.dx.png)
-![_expand invert](mp.essentials.png)
+![_expand invert](ware/mp.dx.png)
+![_expand invert](ware/mp.essentials.png)

@@ -8,43 +8,46 @@
 
 ![_parallax(side) notInArticle](uelogo.svg)
 
-## SpaceMouse for Unreal Engine
+## <span class="mdCenter">[SpaceMouse for Unreal Engine](https://github.com/microdee/UE4-SpaceMouse)</span>
 
 Control Editor viewports with the best camera control device out there, even without the official drivers.
-
-### [Get it](https://github.com/microdee/UE4-SpaceMouse) | [Buy it](https://www.unrealengine.com/marketplace/en-US/product/spacemouse-for-unreal-engine)
 
 ![_expand](ware/sm-thumb.png)
 
 ----
 
-## Nuke.Unreal
+<div class="mdCenter">
 
-High level project automations for UE4 in C#, using the [Nuke build tool](https://nuke.build).
+## [Nuke.Unreal](https://github.com/microdee/Nuke.Unreal)
 
-### [Get it](https://github.com/microdee/Nuke.Unreal)
+![_center](nu_logo-250.png)
 
-![](nu_logo-250.png)
+High level project automations for Unreal Engine in C#, using the great [Nuke build tool](https://nuke.build).
+
+</div>
+
+* Use Unreal tools from command line and in CI/CD
+* Generate boilerplates
+* Implicitly composable execution graph
+* Fluent API UBT/UAT wrappers in C#
+* Install C++ libraries with ease
+* And more!
 
 ----
 
+<div class="mdCenter">
+
 ## Uranium
 
-![_center](ware/ur_logo_atom_ondark.png)
+![_expand](ware/ur_logo_atom_on_dark.svg)
 
-The fastest full CEF implementation for UE4 so far.
+A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
 
-### [Get it](https://github.com/microdee/Uranium)
+### Coming soon™️
 
-* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
-* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
-  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
-* Full multitouch capability.
-* Integration into Unreal's own audio system.
-* UMG abstraction layer, a full fledged browser widget.
-* 
-**Recently open-sourced. It started development at [MESO](https://meso.design)**  
 Currently this is under major redesign.
+
+</div>
 
 ----
 
@@ -58,37 +61,51 @@ Get it via the extensions panel in VS Code or,
 ----
 # VVVV plugins
 
-## VPM
+<div class="mdCenter">
+
+## [VPM](https://vvvvpm.github.io)
 Vvvv Package Manager
+
+</div>
 
 Decentralized package manager for vvvv. Without it, contribution dependency is a completely manual endeavour in vvvv.
 
-### [Get it](https://vvvvpm.github.io)
+<div class="mdCenter">
+
+</div>
 
 ![_parallax(side) notInArticle](vvvv_logo.svg)
 
 ----
 
-## Notuiv
+<div class="mdCenter">
+
+## [Notuiv](https://vvvv.org/contribution/notuiv)
 Advanced UI interaction library in 3D space.
 
-### [Get it](https://vvvv.org/contribution/notuiv)
+</div>
 
 <iframe src="https://player.vimeo.com/video/268043752?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="640" height="370" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 ----
 
-## Vanadium
+<div class="mdCenter">
+
+## [Vanadium](https://github.com/meso-unimpressed/Vanadium)
 Industry-proof, fast and GPU accelerated HTML renderer for vvvv using a custom build of CEF (Chromium Embedded Framework).
 
-### [Get it](https://github.com/meso-unimpressed/Vanadium)
+</div>
 
 ![_expand](ware/vanadium.png)
 
 ----
 
-## mp.dx
+<div class="mdCenter">
+
+## [mp.dx](https://vvvv.org/contribution/mp.dx)
 and mp.essentials
+
+</div>
 
 A large collection of general purpose nodes and ecosystems. Think of it as a second addonpack. It also includes as dependencies:
 
@@ -97,18 +114,14 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 * **[md.stdl](https://github.com/microdee/md.stdl)** a C# standard library of misc things.
   * This is being deprecated tho in favor of its .NET Core port which doesn't rely on VVVV.Utils anymore
 
-### [Get it](https://vvvv.org/contribution/mp.dx)
-
 ![_expand invert](ware/mp.dx.png)
 ![_expand invert](ware/mp.essentials.png)
 
 ----
 # programs
 
-## WootingPiano
+## <span class ="mdCenter">[WootingPiano](https://github.com/simon-wh/WootingPiano/releases)</span>
 
 Little program converting the Wooting keyboard analog key-presses to expressive MIDI messages (per-note and per-channel after-touch or MIDI controls).
-
-### [Get it](https://github.com/simon-wh/WootingPiano/releases)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JXBlBfzc5S0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

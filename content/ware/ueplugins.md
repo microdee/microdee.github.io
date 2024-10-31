@@ -1,40 +1,43 @@
-## SpaceMouse for Unreal Engine
+## <span class="mdCenter">[SpaceMouse for Unreal Engine](https://github.com/microdee/UE4-SpaceMouse)</span>
 
 Control Editor viewports with the best camera control device out there, even without the official drivers.
 
-### [Get it](https://github.com/microdee/UE4-SpaceMouse) | [Buy it](https://www.unrealengine.com/marketplace/en-US/product/spacemouse-for-unreal-engine)
-
-![_expand](sm-thumb.png)
+![_expand](ware/sm-thumb.png)
 
 ----
 
-## Nuke.Unreal
+<div class="mdCenter">
 
-High level project automations for UE4 in C#, using the [Nuke build tool](https://nuke.build).
+## [Nuke.Unreal](https://github.com/microdee/Nuke.Unreal)
 
-### [Get it](https://github.com/microdee/Nuke.Unreal)
+![_center](nu_logo-250.png)
 
-![](../nu_logo-250.png)
+High level project automations for Unreal Engine in C#, using the great [Nuke build tool](https://nuke.build).
+
+</div>
+
+* Use Unreal tools from command line and in CI/CD
+* Generate boilerplates
+* Implicitly composable execution graph
+* Fluent API UBT/UAT wrappers in C#
+* Install C++ libraries with ease
+* And more!
 
 ----
+
+<div class="mdCenter">
 
 ## Uranium
 
-![_center](ur_logo_atom_ondark.png)
+![_expand](ware/ur_logo_atom_on_dark.svg)
 
-The fastest full CEF implementation for UE4 so far.
+A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
 
-### [Get it](https://github.com/microdee/Uranium)
+### Coming soon™️
 
-* Use mostly everything what CEF can offer, translated to an Unreal friendly API.
-* Off-screen rendering result is retrieved through a shared texture on graphics memory. This means no rendering overhead for high resolution HTML content.
-  * Above allows to have Browser Atlas pipeline: a large canvas of HTML is used to render many in-game UI elements, just like a regular texture atlas.
-* Full multitouch capability.
-* Integration into Unreal's own audio system.
-* UMG abstraction layer, a full fledged browser widget.
-
-**Recently open-sourced. It started development at [MESO](https://meso.design)**  
 Currently this is under major redesign.
+
+</div>
 
 ----
 
