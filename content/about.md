@@ -14,7 +14,7 @@
 * Fully operational since 2010
 * I'm a **software developer** per occupation
   * Mainly working with:
-    * **C++** (Unreal, NAP)
+    * **C++**
     * **.NET** (C#, C++/CLI)
     * many tools/languages required by specific projects (see below)
 * Also have minimal artistic/design background
@@ -59,7 +59,7 @@ Still usable, in order of confidence
   * Frameworks:
     * React + Redux
     * Electron.js
-    * node.js
+    * node.js / bun / deno
 * Blender
 * Unity
 
