@@ -23,7 +23,7 @@
 
 | | |
 |-|-|
-| **[realworld one GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal Engineer | 2021 - 2025 |
+| **[realworld one GmbH. & Co. KG](https://realworld-one.com/)**<br>as Senior Unreal C++ Engineer | 2021 - 2024 |
 | **[MESO Digital Interiors GmbH.](https://meso.design)**<br>as Real-time Software Developer | 2018 - 2021 |
 | **[Uberact Ltd.](https://uberact.com/)**<br>as Lead Developer | 2014 - 2018 |
 | **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
@@ -41,6 +41,7 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 * **C++**
   * Unreal Engine
   * Chromium Embedded Framework (CEF)
+  * Boost libraries
   * Graphics programming with Direct3D
   * *And necessary build tools (CMake, GN, XMake, PreMake, Meson, etc...)*
 * **.NET**

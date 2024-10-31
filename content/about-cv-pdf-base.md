@@ -14,7 +14,7 @@
 * Fully operational since 2010
 * I'm a **software developer** per occupation
   * Mainly working with:
-    * **UE4** (C++)
+    * **C++**
     * **.NET** (C#, C++/CLI)
     * many tools/languages required by specific projects (see below)
 * I Also have minimal artistic/design background
@@ -23,8 +23,8 @@
 
 | | | |
 |-|-|-|
-|**Realworld One GmbH. & Co. KG**<br>as Senior Unreal Programmer | 2021 - present | https://realworld-one.com/ |
-|**MESO Digital Interiors GmbH.**<br>as Real-time Software Developer | 2018 - 2021 | https://meso.design |
+| **Realworld One GmbH. & Co. KG**<br>as Senior Unreal C++ Engineer | 2021 - 2024 | https://realworld-one.com/ |
+| **MESO Digital Interiors GmbH.**<br>as Real-time Software Developer | 2018 - 2021 | https://meso.design |
 | **Uberact Ltd.**<br>as Lead Developer | 2014 - 2018 | https://uberact.com/ |
 | **Kitchen Budapest**<br>as Media Systems Designer | 2012 - 2014 | http://kitchenbudapest.hu/ |
 | **Freelance work**<br>as Media Artist | 2009 - 2012 | |
@@ -33,20 +33,20 @@
 
 Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
 
+* **C++**
+  * Unreal Engine
+  * Chromium Embedded Framework (CEF)
+  * Boost libraries
+  * Graphics programming with Direct3D
+  * *And necessary build tools (CMake, GN, XMake, PreMake, Meson, etc...)*
 * **.NET**
   * C#
-  * XAML (WPF)
   * C++/CLI
-* **VVVV** (legacy large-scale-media creation tool)
-* **C++** (mostly on Windows)
-  * Unreal Engine 4
-  * CMake
-  * Chromium Embedded Framework (CEF)
-  * Graphics programming with Direct3D
-  * boost
+  * XAML (WPF)
 * **Tooling/Scripting**
   * Python
   * Powershell
+* **[VVVV](https://vvvv.org)**
 
 Still usable, in order of confidence
 
@@ -77,7 +77,7 @@ Still usable, in order of confidence
 ### Location:
 
 * **Born in Hungary, Budapest**
-* **Currently living in Germany, Frankfurt am Main**
+* **Currently living in Germany, Freiburg (soon to be Berlin)**
 
 ### Contacts / Web presence:
 
