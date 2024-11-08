@@ -148,3 +148,5 @@ There are multiple ways to set these up:
 All of them are fully supported by IDE's.
 
 In all cases to make them truly local `Nuke.Cola` provides the `ScriptFolder()` extension method, which is simply a wrapper around `[CallerFilePath]` C# compiler service.
+
+<mdcomment></mdcomment>
