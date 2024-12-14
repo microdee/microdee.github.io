@@ -8,6 +8,9 @@
 
 ![_parallax(side)](me.jpg)
 
+* [Github](https://github.com/microdee)
+* _@mcro.de / m@mcro.de
+
 #### Most importantly:
 
 * Name is **Dávid Mórász**
@@ -29,11 +32,6 @@
 | **[Kitchen Budapest](http://kitchenbudapest.hu/)**<br>as Media Systems Designer | 2012 - 2014 |
 | **Freelance work**<br>as Media Artist | 2009 - 2012 |
 
-#### Contacts:
-
-* _@mcro.de / m@mcro.de
-* [Github](https://github.com/microdee)
-
 #### Tools/Languages
 
 Industry applicable, in order of confidence. Also assume deep knowledge of related tools.
@@ -47,7 +45,6 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 * **.NET**
   * C#
   * C++/CLI
-  * XAML (WPF)
 * **Tooling/Scripting**
   * Python
   * Powershell
@@ -82,4 +79,4 @@ Still usable, in order of confidence
 #### Location:
 
 * Born in Hungary, Budapest
-* Currently living in Germany, Freiburg (soon to be Berlin)
+* Currently living in Germany, Freiburg

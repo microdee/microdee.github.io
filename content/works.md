@@ -1,3 +1,7 @@
+<nextmd href="/c/works/realworld-one" ></nextmd>
+
+<nextmd href="/c/works/what-lies-beneath" ></nextmd>
+
 <nextmd href="/c/works/here2021" ></nextmd>
 
 <nextmd href="/c/works/kmh-discovery" ></nextmd>

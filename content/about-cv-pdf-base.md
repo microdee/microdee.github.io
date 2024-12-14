@@ -3,14 +3,21 @@
     th {
         display: none;
     }
+    table {
+      width: 100%
+    }
 </style>
 
-<img src="http://www.mcro.de/content/me.jpg" style="width: 30%; max-width: 270px; float: right; margin-right: 10px" />
+<img src="https://mcro.de/content/me.jpg" style="width: 30%; max-width: 270px; float: right; margin-right: 10px" />
+
+* _@mcro.de / m@mcro.de
+* https://mcro.de
+* https://github.com/microdee
 
 ### Most importantly:
 
 * Name is **Dávid Mórász**
-* See portfolio at **http://mcro.de**
+* See portfolio at **https://mcro.de**
 * Fully operational since 2010
 * I'm a **software developer** per occupation
   * Mainly working with:
@@ -42,7 +49,6 @@ Industry applicable, in order of confidence. Also assume deep knowledge of relat
 * **.NET**
   * C#
   * C++/CLI
-  * XAML (WPF)
 * **Tooling/Scripting**
   * Python
   * Powershell
@@ -77,12 +83,6 @@ Still usable, in order of confidence
 ### Location:
 
 * **Born in Hungary, Budapest**
-* **Currently living in Germany, Freiburg (soon to be Berlin)**
+* **Currently living in Germany, Freiburg**
 
-### Contacts / Web presence:
-
-* _@mcro.de / m@mcro.de
-* http://mcro.de
-* https://github.com/microdee
-
-This document is a printable version of http://mcro.de/c/about
+This document is a printable version of https://mcro.de/c/about

@@ -37,6 +37,20 @@ High level project automations for Unreal Engine in C#, using the great [Nuke bu
 
 <div class="mdCenter">
 
+## [Nuke.Cola](https://github.com/microdee/md.Nuke.Cola)
+
+Generic extensions for [Nuke build tool](https://nuke.build).
+
+</div>
+
+* Compose builds with automatically discovered plugins
+* Manipulate file/folder structures with expressive declarative syntax
+* `Tool` delegate composition
+
+----
+
+<div class="mdCenter">
+
 ## Uranium
 
 ![_expand](ware/ur_logo_atom_on_dark.svg)
@@ -46,6 +60,18 @@ A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
 ### Coming soon™️
 
 Currently this is under major redesign.
+
+</div>
+
+----
+
+<div class="mdCenter">
+
+## MCRO
+
+A C++ utilities library for Unreal Engine for writing code in style for a more sophisticated age.
+
+### Coming soon™️
 
 </div>
 

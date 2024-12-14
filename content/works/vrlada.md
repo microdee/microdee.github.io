@@ -1,6 +1,6 @@
 ## VR Lada
 
-cooperation with **Holy Olga**  
+cooperation with **[Holy Olga](https://nyulga.com)**  
 2017
 
 **Role:** Software development in Unreal Engine 4
