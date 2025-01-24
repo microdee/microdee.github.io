@@ -20,7 +20,7 @@ Control Editor viewports with the best camera control device out there, even wit
 
 ## [Nuke.Unreal](https://github.com/microdee/Nuke.Unreal)
 
-![_center](nu_logo-250.png)
+![_expand style(maxWidth:'400px')](nu_logo.svg)
 
 High level project automations for Unreal Engine in C#, using the great [Nuke build tool](https://nuke.build).
 
@@ -39,6 +39,8 @@ High level project automations for Unreal Engine in C#, using the great [Nuke bu
 
 ## [Nuke.Cola](https://github.com/microdee/md.Nuke.Cola)
 
+![_expand style(maxWidth:'400px')](ware/nuke.cola.full.onDark.svg)
+
 Generic extensions for [Nuke build tool](https://nuke.build).
 
 </div>
@@ -51,15 +53,11 @@ Generic extensions for [Nuke build tool](https://nuke.build).
 
 <div class="mdCenter">
 
-## Uranium
+## [MCRO](https://mcro.de/mcro??literal)
 
-![_expand](ware/ur_logo_atom_on_dark.svg)
+![_expand style(maxWidth:'400px')](ware/proto-logo-0.webp)
 
-A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
-
-### Coming soon™️
-
-Currently this is under major redesign.
+A C++ utilities library for Unreal Engine for writing code in style for a more civilised age.
 
 </div>
 
@@ -67,11 +65,15 @@ Currently this is under major redesign.
 
 <div class="mdCenter">
 
-## MCRO
+## Uranium
 
-A C++ utilities library for Unreal Engine for writing code in style for a more sophisticated age.
+![_expand style(maxWidth:'400px')](ware/ur_logo_atom_on_dark.svg)
+
+A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
 
 ### Coming soon™️
+
+Currently this is under major redesign.
 
 </div>
 
