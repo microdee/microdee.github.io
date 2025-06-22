@@ -9,6 +9,7 @@
 ![_parallax(side) notInArticle](../nu_logo.svg)
 
 <tocmd>
+
 - [Nuke.Unreal 1.2](#nukeunreal-12)
 - [UAT / UBT Configurators](#uat--ubt-configurators)
   - [Motivation](#motivation)
@@ -18,6 +19,7 @@
     - [Automatically gathered documentation](#automatically-gathered-documentation)
     - [Handling multiple egnine versions](#handling-multiple-egnine-versions)
 - [Build Plugins](#build-plugins)
+
 </tocmd>
 
 Last time I wrote about Nuke.Unreal here was two years ago. In fact I'm not doing a great job at promoting it but that changes today! <span style="opacity: 0.66;">(and then probably it won't)</span>. In that two years a lot has changed for the better and it became much more user friendly. Just the fact that since it's available as a nuget package helps a lot, so you don't need submodules or a project template, just do

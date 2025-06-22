@@ -11,6 +11,7 @@
 ![_parallax(side) notInArticle](swizzle-sticks.jpg)
 
 <tocmd>
+
 - [Elegant™ vector swizzling in C++](#elegant-vector-swizzling-in-c)
   - [Preamble](#preamble)
   - [Swizzling](#swizzling)
@@ -19,6 +20,7 @@
   - [Getting the component at runtime](#getting-the-component-at-runtime)
   - [Usage](#usage)
   - [Even better syntax](#even-better-syntax)
+
 </tocmd>
 
 

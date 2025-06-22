@@ -7,16 +7,17 @@
 [(10.04.2021)](/c/log/nuke-unreal)
 
 <tocmd>
-- [Nuke.Unreal](#nuke-unreal)
+
+- [Nuke.Unreal](#nukeunreal)
     - [Get it here](#get-it-here)
-  - [TL;DR features](#tl-dr-features)
-  - [Prelude/Reasoning](#prelude-reasoning)
+  - [TL;DR features](#tldr-features)
+  - [Prelude/Reasoning](#preludereasoning)
   - [Setup](#setup)
     - [Scaffolding](#scaffolding)
     - [Working with UE4 Plugins](#working-with-ue4-plugins)
   - [Generate boilerplate code](#generate-boilerplate-code)
     - [Templating](#templating)
-  - [Fluent Unreal Tools API](#fluent-unreal-tools-api)
+
 </tocmd>
 
 ![_parallax(side)](../nu_logo.svg)

@@ -9,6 +9,7 @@ This article is just a quick summary about some of the problems we faced and the
 <iframe full="true" src="https://player.vimeo.com/video/412334178?color=a88e54&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <tocmd>
+
 - [HERE Technologies, CES 2020](#here-technologies-ces-2020)
     - [Versatile presentation tool](#versatile-presentation-tool)
   - [Read the official article at MESO](#read-the-official-article-at-meso)
@@ -18,6 +19,7 @@ This article is just a quick summary about some of the problems we faced and the
     - [Custom levels for individual use-cases](#custom-levels-for-individual-use-cases)
     - [Display diverse content from many external sources with high efficiency](#display-diverse-content-from-many-external-sources-with-high-efficiency)
     - [Conclusion](#conclusion)
+
 </tocmd>
 
 This article focuses on my involvement in the project and the challanges I faced. For an official representation of the entire project, and the list of others involved, please follow this link:

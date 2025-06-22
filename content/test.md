@@ -65,7 +65,9 @@ Some paragraph right after iframes.
 # Markdown: Syntax
 
 <tocmd>
+
 - [Testing styling](#testing-styling)
+  - [Testing PDF](#testing-pdf)
   - [Testing pictures](#testing-pictures)
   - [Testing embedded content](#testing-embedded-content)
 - [Markdown: Syntax](#markdown-syntax)
@@ -87,6 +89,7 @@ Some paragraph right after iframes.
         - [really sub sub thing](#really-sub-sub-thing)
     - [Code](#code)
   - [Testing autoloaded next article:](#testing-autoloaded-next-article)
+
 </tocmd>
 
 

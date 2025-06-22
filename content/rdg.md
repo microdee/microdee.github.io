@@ -7,8 +7,9 @@
 ![_parallax(side) notInArticle filter:'invert(100%) saturate(0%)'](blue-marbles.gif)
 
 <tocmd>
+
 - [Rendering Dependency Graph](#rendering-dependency-graph)
-  - [RenderGraph.h](#rendergraph-h)
+  - [RenderGraph.h](#rendergraphh)
   - [Code snippets from RDG 101:](#code-snippets-from-rdg-101)
     - [Shader Parameters](#shader-parameters)
       - [Shader Parameter Structs](#shader-parameter-structs)
@@ -33,12 +34,12 @@
       - [Extraction Queries](#extraction-queries)
       - [Creating Buffers](#creating-buffers)
       - [Reading from a Buffer Using an SRV](#reading-from-a-buffer-using-an-srv)
-      - [Indirect Draw/Dispatch  Buffer](#indirect-draw-dispatch-buffer)
+      - [Indirect Draw/Dispatch  Buffer](#indirect-drawdispatch--buffer)
     - [Pass Debugging and Methodology](#pass-debugging-and-methodology)
       - [VisualizeTexture Integration](#visualizetexture-integration)
-      - [-rdgimmediate](#rdgimmediate)
+      - [-rdgimmediate](#-rdgimmediate)
       - [Early Validation of Shader Parameters](#early-validation-of-shader-parameters)
-      - [-rdgdebug](#rdgdebug)
+      - [-rdgdebug](#-rdgdebug)
       - [Dependency Methodology](#dependency-methodology)
       - [Repetitive AddPass Pattern](#repetitive-addpass-pattern)
       - [GPU Debugging UAV Trick](#gpu-debugging-uav-trick)
@@ -55,8 +56,9 @@
       - [Texture Viewport Parameter Setup](#texture-viewport-parameter-setup)
       - [Defining in the shader](#defining-in-the-shader)
       - [Draw Screen Pass API](#draw-screen-pass-api)
-      - [Transform UV’s Between Viewports](#transform-uv-s-between-viewports)
+      - [Transform UV’s Between Viewports](#transform-uvs-between-viewports)
   - [Discussion](#discussion)
+
 </tocmd>
 
 If you have any comments or insights [please tell us!](#discussion)
