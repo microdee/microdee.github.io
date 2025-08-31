@@ -1,0 +1,59 @@
+[buildPlans.IosevkaRatsTerminal]
+family = "Iosevka Rats Terminal"
+spacing = "term"
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = true
+
+  [buildPlans.IosevkaRatsTerminal.variants]
+  inherits = "ss14"
+
+    [buildPlans.IosevkaRatsTerminal.variants.design]
+    a = "double-storey-serifed"
+    l = "zshaped"
+    q = "earless-corner-diagonal-tailed-serifless"
+    lower-alpha = "crossing"
+    six = "open-contour"
+    seven = "straight-serifless"
+    nine = "straight-bar"
+    diacritic-dot = "round"
+    punctuation-dot = "round"
+    tilde = "low"
+    asterisk = "penta-low"
+    underscore = "above-baseline"
+    caret = "high"
+    ascii-grave = "straight"
+    ascii-single-quote = "straight"
+    paren = "flat-arc"
+    brace = "straight"
+    guillemet = "straight"
+    number-sign = "slanted"
+    ampersand = "upper-open"
+    at = "fourfold-solid-inner"
+    dollar = "open"
+    percent = "dots"
+    bar = "natural-slope"
+    lig-ltgteq = "slanted"
+    lig-neq = "slightly-slanted-dotted"
+    lig-equal-chain = "without-notch"
+    lig-hyphen-chain = "without-notch"
+    lig-plus-chain = "without-notch"
+    lig-double-arrow-bar = "without-notch"
+
+  [buildPlans.IosevkaRatsTerminal.ligations]
+  inherits = "dlig"
+
+[buildPlans.IosevkaRatsTerminal.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.IosevkaRatsTerminal.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
+
+[buildPlans.IosevkaRatsTerminal.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
