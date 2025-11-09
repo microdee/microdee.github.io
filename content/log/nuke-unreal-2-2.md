@@ -6,7 +6,7 @@
 # Nuke.Unreal 2.2
 [(15.08.2025)](/c/log/nuke-unreal-2-2)
 
-![_parallax(side) notInArticle](../nu_logo.svg)
+![_parallax(side) notInArticle](../ware/nu.icon.onDark.svg)
 
 <tocmd>
 

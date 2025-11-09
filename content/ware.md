@@ -1,28 +1,34 @@
-<tocmd>
-
-- **[Unreal plugins](#unreal-plugins)**
-- **[vvvv plugins](#vvvv-plugins)**
-- **[programs](#programs)**
-
-</tocmd>
-
-# Unreal plugins
+# <span class="mdCenter">Unreal plugins</span>
 
 ![_parallax(side) notInArticle](uelogo.svg)
 
-## <span class="mdCenter">[SpaceMouse for Unreal Engine](https://github.com/microdee/UE4-SpaceMouse)</span>
+<div class="mdCenter">
+
+## [Open Unreal SpaceMouse](https://github.com/microdee/OpenUnrealSpaceMouse)
+
+&nbsp;
+
+<a href="https://github.com/microdee/OpenUnrealSpaceMouse">
+
+![_expand style(maxWidth:'400px')](ware/ouesm.svg)
+
+</a>
 
 Control Editor viewports with the best camera control device out there, even without the official drivers.
 
-![_expand](ware/sm-thumb.png)
+</div>
 
 ----
 
+&nbsp;
+
 <div class="mdCenter">
 
-## [Nuke.Unreal](https://github.com/microdee/Nuke.Unreal)
+<a href="https://mcro.de/Nuke.Unreal??literal">
 
-![_expand style(maxWidth:'400px')](nu_logo.svg)
+![_expand style(maxWidth:'500px')](ware/nu.full.onDark.svg)
+
+</a>
 
 High level project automations for Unreal Engine in C#, using the great [Nuke build tool](https://nuke.build).
 
@@ -39,9 +45,13 @@ High level project automations for Unreal Engine in C#, using the great [Nuke bu
 
 <div class="mdCenter">
 
-## [Nuke.Cola](https://github.com/microdee/md.Nuke.Cola)
+&nbsp;
+
+<a href="https://mcro.de/md.Nuke.Cola??literal">
 
 ![_expand style(maxWidth:'400px')](ware/nuke.cola.full.onDark.svg)
+
+</a>
 
 Generic extensions for [Nuke build tool](https://nuke.build).
 
@@ -57,39 +67,18 @@ Generic extensions for [Nuke build tool](https://nuke.build).
 
 ## [MCRO](https://mcro.de/mcro??literal)
 
+<a href="https://mcro.de/mcro??literal">
+
 ![_expand style(maxWidth:'400px')](ware/proto-logo-0.webp)
+
+</a>
 
 A C++ utilities library for Unreal Engine for writing code in style for a more civilised age.
 
 </div>
 
 ----
-
-<div class="mdCenter">
-
-## Uranium
-
-![_expand style(maxWidth:'400px')](ware/ur_logo_atom_on_dark.svg)
-
-A fast multi-backend web-browser/HTML-renderer for Unreal Engine.
-
-### Coming soon™️
-
-Currently this is under major redesign.
-
-</div>
-
-----
-
-## UE4 Material Expression node Generator
-
-This is a VS Code plugin to generate custom material expression nodes and their boilerplate for UE4 to the clipboard, ready to be pasted in the material editor.
-
-Get it via the extensions panel in VS Code or,  
-[Check out the source code](https://github.com/microdee/ue4-material-expression-generator)
-
-----
-# VVVV plugins
+# <span class="mdCenter">VVVV plugins</span>
 
 <div class="mdCenter">
 
@@ -146,12 +135,3 @@ A large collection of general purpose nodes and ecosystems. Think of it as a sec
 
 ![_expand invert](ware/mp.dx.png)
 ![_expand invert](ware/mp.essentials.png)
-
-----
-# programs
-
-## <span class ="mdCenter">[WootingPiano](https://github.com/simon-wh/WootingPiano/releases)</span>
-
-Little program converting the Wooting keyboard analog key-presses to expressive MIDI messages (per-note and per-channel after-touch or MIDI controls).
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JXBlBfzc5S0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
